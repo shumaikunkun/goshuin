@@ -65,17 +65,17 @@
 
     <?php
     $arr=array(
-      array("image/094nedu.jpg","根津神社"),
-      array("image/000kanda.jpg","神田明神"),
-      array("image/037kameido.jpg","亀戸天神社"),
-      array("image/093shirayama.jpg","白山神社"),
-      array("image/092ouji.jpg","王子神社"),
+      array("094nedu","根津神社"),
+      array("000kanda","神田明神"),
+      array("037kameido","亀戸天神社"),
+      array("093shirayama","白山神社"),
+      array("092ouji","王子神社"),
 
-      array("image/064hie.jpg","日枝神社"),
-      array("image/000shinagawa.jpg","品川神社"),
-      array("image/077tomioka.jpg","富岡八幡宮"),
-      array("image/063akasakahikawa.jpg","赤坂氷川神社"),
-      array("image/059shibadai.jpg","芝大神宮"),
+      array("064hie","日枝神社"),
+      array("000shinagawa","品川神社"),
+      array("077tomioka","富岡八幡宮"),
+      array("063akasakahikawa","赤坂氷川神社"),
+      array("059shibadai","芝大神宮"),
     );
 
     $size=sizeof($arr);
@@ -109,7 +109,7 @@ foreach($div as $a){
 <?php
   foreach($a as $b){
 ?>
-    <td class="text"><image class="img" src="<?php echo $b[0] ?>"/></td>
+    <td class="text"><image class="img" src="image/<?php echo $b[0] ?>.jpg"/></td>
 <?php
   }
 ?>

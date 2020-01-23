@@ -79,7 +79,6 @@
     );
 
     $size=sizeof($arr);
-
     if($size%5==0){
       $num=5;  #区切る要素数
     }elseif($size%4==0){
@@ -132,7 +131,7 @@ foreach($div as $a){
 
 
 
-    <h2> 東京五社 </h2>
+    <!-- <h2> 東京五社 </h2>
     <p>  </p>
     <table class="matome" border="5px" cellpadding="10">
       <tr>
@@ -1559,7 +1558,7 @@ foreach($div as $a){
         <td class="text">信濃国分寺</td>
         <td class="text">飛騨国分寺</td>
       </tr>
-    </table><br>
+    </table><br> -->
 
   </div>
   <footer class="site-footer">

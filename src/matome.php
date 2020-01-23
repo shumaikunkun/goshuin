@@ -29,7 +29,6 @@
   });
   </script>
 
-
 </head>
 <body background="../image/test.jpg">
   <header class="site-header">
@@ -123,6 +122,11 @@
 </body>
 </html>
 
-
-
-<!--http://cgi.u.tsukuba.ac.jp/‾s1711520/goshuin/matome.html
+<!--
+●ローカルでの実行コマンド
+php -S 127.0.0.1:8080
+●ローカルでのURL
+http://localhost:8080/src/matome.php
+●リモートでのURL
+http://cgi.u.tsukuba.ac.jp/~s1711520/goshuin/src/matome.php
+-->

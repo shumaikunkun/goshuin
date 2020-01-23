@@ -38,7 +38,7 @@
       <ul class="gnav__menu">
         <li class="gnav__menu__item"><a href="">トップ</a></li>
         <li class="gnav__menu__item"><a href="">活動</a></li>
-        <li class="gnav__menu__item"><a href="member.html">メンバー</a></li>
+        <li class="gnav__menu__item"><a href="member.php">メンバー</a></li>
         <li class="gnav__menu__item"><a href="">更新情報</a></li>
         <li class="gnav__menu__item"><a href="">Twitter</a></li>
       </ul>

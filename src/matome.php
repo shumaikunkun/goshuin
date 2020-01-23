@@ -59,51 +59,8 @@
   <div class="content">
 
     <?php
-    $hash=[
-      "東京十社"=>
-      [
-        ["094nedu","根津神社"],
-        ["000kanda","神田明神"],
-        ["037kameido","亀戸天神社"],
-        ["093shirayama","白山神社"],
-        ["092ouji","王子神社"],
 
-        ["064hie","日枝神社"],
-        ["000shinagawa","品川神社"],
-        ["077tomioka","富岡八幡宮"],
-        ["063akasakahikawa","赤坂氷川神社"],
-        ["059shibadai","芝大神宮"],
-      ],
-      "東京五社"=>
-      [
-        ["025meiji","明治神宮"],
-        ["023yasukuni","靖国神社"],
-        ["064hie","日枝神社"],
-        ["022toukyou","東京大神宮"],
-        ["208ookunitama","大國魂神社"],
-      ],
-      "日蓮宗四大本山"=>
-      [
-        ["233kuon","久遠寺"],
-        ["131ikegami","池上本門寺"],
-        ["000hokekyou","法華経寺"],
-        ["160seichou","清澄寺"],
-        ["162tanjou","誕生寺"],
-      ],
-      ""=>
-      [
-
-      ],
-      ""=>
-      [
-
-      ],
-      ""=>
-      [
-
-      ],
-
-    ];
+    require('hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
 
     foreach($hash as $name => $arr){
 
@@ -162,7 +119,24 @@
 
 
 
-    <!--
+    <!-- <h2> 東京五社 </h2>
+    <p>  </p>
+    <table class="matome" border="5px" cellpadding="10">
+      <tr>
+        <td class="text"><image class="img" src="image/025meiji.jpg"/></td>
+        <td class="text"><image class="img" src="image/023yasukuni.jpg"/></td>
+        <td class="text"><image class="img" src="image/064hie.jpg"/></td>
+        <td class="text"><image class="img" src="image/022toukyou.jpg"/></td>
+        <td class="text"><image class="img" src="image/208ookunitama.jpg"/></td>
+      </tr>
+      <tr>
+        <td class="text">明治神宮</td>
+        <td class="text">靖国神社</td>
+        <td class="text">日枝神社</td>
+        <td class="text">東京大神宮</td>
+        <td class="text">大國魂神社</td>
+      </tr>
+    </table><br>
 
 
     <h2> 日蓮宗四大本山 </h2>

@@ -77,7 +77,26 @@
       array("image/063akasakahikawa.jpg","赤坂氷川神社"),
       array("image/059shibadai.jpg","芝大神宮"),
     );
-    $num=5;  #区切る要素数
+
+    $size=sizeof($arr);
+
+    if($size%5==0){
+      $num=5;  #区切る要素数
+    }elseif($size%4==0){
+      $num=4;
+    }elseif($size==3 or $size==6){
+      $num=3;
+    }elseif($size==2){
+      $num=2;
+    }elseif($size%5==4){
+      $num=5;
+    }elseif($size%4==3){
+      $num=4;
+    }else{
+      $num=5;
+    }
+
+
     $div=array_chunk($arr,$num);
 ?>
 

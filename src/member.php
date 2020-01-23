@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title> 双馬の御朱印日記【メンバー】 </title>
-    <link rel="stylesheet" href="all.css" type="text/css">
+    <link rel="stylesheet" href="../css/all.css" type="text/css">
     <script type="text/javascript">
 <!--
 
@@ -28,21 +28,21 @@
 // -->
 </script>
   </head>
-  <body background="image/test.jpg">
+  <body background="../image/test.jpg">
     <header class="site-header">
     	<h1 class="site-logo">双馬の御朱印日記</h1>
     	<nav class="gnav">
     		<ul class="gnav__menu">
-    			<li class="gnav__menu__item"><a href="matome.html">トップ</a></li>
+    			<li class="gnav__menu__item"><a href="matome.php">トップ</a></li>
     			<li class="gnav__menu__item"><a href="">活動</a></li>
-    			<li class="gnav__menu__item"><a href="member.html">メンバー</a></li>
+    			<li class="gnav__menu__item"><a href="member.php">メンバー</a></li>
     			<li class="gnav__menu__item"><a href="">更新情報</a></li>
     			<li class="gnav__menu__item"><a href="">Twitter</a></li>
     		</ul>
     	</nav>
   	</header>
     <div class="hide">
-      <img src="image/test.jpg" alt="">
+      <img src="../image/test.jpg" alt="">
     </div>
     <div class="hero">
     </div>

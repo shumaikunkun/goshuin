@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title> 双馬の御朱印日記【トップ】 </title>
-  <link rel="stylesheet" href="all.css" type="text/css">
+  <link rel="stylesheet" href="../css/all.css" type="text/css">
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -31,7 +31,7 @@
 
 
 </head>
-<body background="image/test.jpg">
+<body background="../image/test.jpg">
   <header class="site-header">
     <h1 class="site-logo">双馬の御朱印日記</h1>
     <nav class="gnav">
@@ -49,11 +49,11 @@
   </div>
   <div class="slide">
     <ul class="bxslider">
-      <li><img src="image/00toga.jpg" alt=""></li>
-      <li><img src="image/00kashima.jpg" alt=""></li>
-      <li><img src="image/00matsudaira.jpg" alt=""></li>
-      <li><img src="image/0toyokawa.jpg" alt=""></li>
-      <li><img src="image/00tsurugaya.jpg" alt=""></li>
+      <li><img src="../image/00toga.jpg" alt=""></li>
+      <li><img src="../image/00kashima.jpg" alt=""></li>
+      <li><img src="../image/00matsudaira.jpg" alt=""></li>
+      <li><img src="../image/0toyokawa.jpg" alt=""></li>
+      <li><img src="../image/00tsurugaya.jpg" alt=""></li>
     </ul>
   </div>
   <div class="content">
@@ -109,7 +109,7 @@ foreach($div as $a){
 <?php
   foreach($a as $b){
 ?>
-    <td class="text"><image class="img" src="image/<?php echo $b[0] ?>.jpg"/></td>
+    <td class="text"><image class="img" src="../image/<?php echo $b[0] ?>.jpg"/></td>
 <?php
   }
 ?>

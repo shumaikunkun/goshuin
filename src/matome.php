@@ -45,7 +45,7 @@
     </nav>
   </header>
   <div class="hide">
-    <img src="image/test.jpg" alt="">
+    <img src="../image/test.jpg" alt="">
   </div>
   <div class="slide">
     <ul class="bxslider">
@@ -58,97 +58,111 @@
   </div>
   <div class="content">
 
-
-    <?php ?>
-    <?php ?>
-
-
     <?php
-    $arr=array(
-      array("094nedu","根津神社"),
-      array("000kanda","神田明神"),
-      array("037kameido","亀戸天神社"),
-      array("093shirayama","白山神社"),
-      array("092ouji","王子神社"),
+    $hash=[
+      "東京十社"=>
+      [
+        ["094nedu","根津神社"],
+        ["000kanda","神田明神"],
+        ["037kameido","亀戸天神社"],
+        ["093shirayama","白山神社"],
+        ["092ouji","王子神社"],
 
-      array("064hie","日枝神社"),
-      array("000shinagawa","品川神社"),
-      array("077tomioka","富岡八幡宮"),
-      array("063akasakahikawa","赤坂氷川神社"),
-      array("059shibadai","芝大神宮"),
-    );
+        ["064hie","日枝神社"],
+        ["000shinagawa","品川神社"],
+        ["077tomioka","富岡八幡宮"],
+        ["063akasakahikawa","赤坂氷川神社"],
+        ["059shibadai","芝大神宮"],
+      ],
+      "東京五社"=>
+      [
+        ["025meiji","明治神宮"],
+        ["023yasukuni","靖国神社"],
+        ["064hie","日枝神社"],
+        ["022toukyou","東京大神宮"],
+        ["208ookunitama","大國魂神社"],
+      ],
+      "日蓮宗四大本山"=>
+      [
+        ["233kuon","久遠寺"],
+        ["131ikegami","池上本門寺"],
+        ["000hokekyou","法華経寺"],
+        ["160seichou","清澄寺"],
+        ["162tanjou","誕生寺"],
+      ],
+      ""=>
+      [
 
-    $size=sizeof($arr);
-    if($size%5==0){
-      $num=5;  #区切る要素数
-    }elseif($size%4==0){
-      $num=4;
-    }elseif($size==3 or $size==6){
-      $num=3;
-    }elseif($size==2){
-      $num=2;
-    }elseif($size%5==4){
-      $num=5;
-    }elseif($size%4==3){
-      $num=4;
-    }else{
-      $num=5;
+      ],
+      ""=>
+      [
+
+      ],
+      ""=>
+      [
+
+      ],
+
+    ];
+
+    foreach($hash as $name => $arr){
+
+      $size=sizeof($arr);
+      if($size%5==0){
+        $num=5;  #区切る要素数
+      }elseif($size%4==0){
+        $num=4;
+      }elseif($size==3 or $size==6){
+        $num=3;
+      }elseif($size==2){
+        $num=2;
+      }elseif($size%5==4){
+        $num=5;
+      }elseif($size%4==3){
+        $num=4;
+      }else{
+        $num=5;
+      }
+      $div=array_chunk($arr,$num);
+?>
+
+      <h2> <?php echo $name ?> </h2>
+      <p>  </p>
+      <table class="matome" border="5px" cellpadding="10">
+<?php
+      foreach($div as $a){
+?>
+        <tr>
+<?php
+        foreach($a as $b){
+?>
+          <td class="text"><image class="img" src="../image/<?php echo $b[0] ?>.jpg"/></td>
+<?php
+        }
+?>
+        </tr>
+        <tr>
+<?php
+        foreach($a as $b){
+?>
+          <td class="text"><?php echo $b[1] ?></td>
+<?php
+        }
+?>
+        </tr>
+<?php
+      }
+?>
+      </table><br>
+
+<?php
     }
-
-
-    $div=array_chunk($arr,$num);
 ?>
-
-<h2> 東京十社 </h2>
-<p>  </p>
-<table class="matome" border="5px" cellpadding="10">
-<?php
-foreach($div as $a){
-?>
-<tr>
-<?php
-  foreach($a as $b){
-?>
-    <td class="text"><image class="img" src="../image/<?php echo $b[0] ?>.jpg"/></td>
-<?php
-  }
-?>
-</tr>
-<tr>
-<?php
-  foreach($a as $b){
-?>
-    <td class="text"><?php echo $b[1] ?></td>
-<?php
-  }
-?>
-</tr>
-<?php
-}
-?>
-</table><br>
 
 
 
 
-    <!-- <h2> 東京五社 </h2>
-    <p>  </p>
-    <table class="matome" border="5px" cellpadding="10">
-      <tr>
-        <td class="text"><image class="img" src="image/025meiji.jpg"/></td>
-        <td class="text"><image class="img" src="image/023yasukuni.jpg"/></td>
-        <td class="text"><image class="img" src="image/064hie.jpg"/></td>
-        <td class="text"><image class="img" src="image/022toukyou.jpg"/></td>
-        <td class="text"><image class="img" src="image/208ookunitama.jpg"/></td>
-      </tr>
-      <tr>
-        <td class="text">明治神宮</td>
-        <td class="text">靖国神社</td>
-        <td class="text">日枝神社</td>
-        <td class="text">東京大神宮</td>
-        <td class="text">大國魂神社</td>
-      </tr>
-    </table><br>
+    <!--
 
 
     <h2> 日蓮宗四大本山 </h2>

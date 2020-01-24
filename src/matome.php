@@ -57,8 +57,7 @@
   </div>
   <div class="content">
 
-    <?php
-
+<?php
     require('hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
 
     foreach($hash as $name => $arr){

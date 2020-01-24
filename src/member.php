@@ -5,28 +5,6 @@
     <meta charset="utf-8">
     <title> 双馬の御朱印日記【メンバー】 </title>
     <link rel="stylesheet" href="../css/all.css" type="text/css">
-    <script type="text/javascript">
-<!--
-
-// function disp(n){
-// 		//location.href = "example_confirm.html"; // example_confirm.html へジャンプ
-//   switch (n) {
-//     case 1:
-//       window.alert('善光寺,川中島八幡社,松本城,開智高校,諏訪高島城,諏訪大社,信濃国分寺,上田城,真田神社'); // 警告ダイアログを表示
-//       break;
-//     case 2:
-//       window.alert('東寺,三十三間堂,法住寺,養源院,智積院,妙法寺,方広寺,豊国神社,野宮神社,鈴虫寺,天龍寺,壬生寺,本能寺,晴明神社,伏見稲荷大社');
-//       break;
-//     default:
-//   }
-// }
-//
-// <a href="#" onClick="disp(1); return false;">
-// <a href="#" onClick="disp(2); return false;">
-// で呼び出す
-
-// -->
-</script>
   </head>
   <body background="../image/test.jpg">
     <header class="site-header">
@@ -48,7 +26,7 @@
     </div>
     <div class="content">
 
-      <h2> しゅーまいくん (Webサイト製作者)</h2>
+      <h2> しゅーまいくん (Webサイト制作者)</h2>
       <table class="prof">
         <tr> <td class="month"> 1998年11月 </td> <td> 生誕 </td> </tr>
         <tr> <td class="month"> 2014年4月 </td> <td> 開智高等学校入学 </td> </tr>
@@ -137,4 +115,4 @@
   </body>
 </html>
 
-<!--http://cgi.u.tsukuba.ac.jp/‾s1711520/goshuin/matome.html
+<!--http://cgi.u.tsukuba.ac.jp/‾s1711520/goshuin/src/member.php

@@ -58,7 +58,7 @@
   <div class="content">
 
 <?php
-    require('hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
+    require('matome_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
 
     foreach($hash as $name => $arr){
 

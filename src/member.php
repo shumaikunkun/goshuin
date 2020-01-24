@@ -1,12 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+<?php $img_path="../img/" ?>
   <head>
     <meta charset="utf-8">
     <title> 双馬の御朱印日記【メンバー】 </title>
     <link rel="stylesheet" href="../css/all.css" type="text/css">
+    <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
   </head>
-  <body background="../image/test.jpg">
+  <body background="<?php echo $img_path ?>test.jpg">
     <header class="site-header">
     	<h1 class="site-logo">双馬の御朱印日記</h1>
     	<nav class="gnav">
@@ -20,7 +22,7 @@
     	</nav>
   	</header>
     <div class="hide">
-      <img src="../image/test.jpg" alt="">
+      <img src="<?php echo $img_path ?>test.jpg" alt="">
     </div>
     <div class="hero">
     </div>
@@ -28,10 +30,9 @@
 
       <h2> しゅーまいくん (Webサイト制作者)</h2>
       <table class="prof">
-
 <?php
-        require('member_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
-        foreach($all_trip as $arr){
+      require('member_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
+      foreach($all_trip as $arr){
 ?>
         <tr>
           <td class="month"> <?php echo $arr[0] ?> </td>
@@ -40,7 +41,7 @@
           if(!empty($arr[2])){
 ?>
             <ul  class="cp_list" style="font-size:75%;">
-            <!-- <ul> -->
+                <!-- <ul> -->
 <?php
             foreach($arr[2] as $a){
 ?>
@@ -55,7 +56,7 @@
           </td>
         </tr>
 <?php
-      }
+        }
 ?>
       </table>
 

@@ -1,10 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
+<?php $img_path="../img/" ?>
 <head>
   <meta charset="utf-8">
   <title> 双馬の御朱印日記【トップ】 </title>
   <link rel="stylesheet" href="../css/all.css" type="text/css">
+  <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -28,9 +30,8 @@
     $('.bxslider').bxSlider();
   });
   </script>
-
 </head>
-<body background="../image/test.jpg">
+<body background="<?php echo $img_path ?>test.jpg">
   <header class="site-header">
     <h1 class="site-logo">双馬の御朱印日記</h1>
     <nav class="gnav">
@@ -44,76 +45,76 @@
     </nav>
   </header>
   <div class="hide">
-    <img src="../image/test.jpg" alt="">
+    <img src="<?php echo $img_path ?>test.jpg" alt="">
   </div>
   <div class="slide">
     <ul class="bxslider">
-      <li><img src="../image/00toga.jpg" alt=""></li>
-      <li><img src="../image/00kashima.jpg" alt=""></li>
-      <li><img src="../image/00matsudaira.jpg" alt=""></li>
-      <li><img src="../image/0toyokawa.jpg" alt=""></li>
-      <li><img src="../image/00tsurugaya.jpg" alt=""></li>
-    </ul>
-  </div>
-  <div class="content">
-
 <?php
-    require('matome_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
-
-    foreach($hash as $name => $arr){
-
-      $size=sizeof($arr);
-      #区切る要素数を決める（優先度順）
-      if($size%5==0){
-        $num=5;
-      }elseif($size%4==0){
-        $num=4;
-      }elseif($size==3 or $size==6){
-        $num=3;
-      }elseif($size==2){
-        $num=2;
-      }elseif($size%5==4){
-        $num=5;
-      }elseif($size%4==3){
-        $num=4;
-      }else{
-        $num=5;
-      }
-      $div=array_chunk($arr,$num);
+    $moving_image=["00toga","00kashima","00matsudaira","0toyokawa","00tsurugaya"];
+    foreach ($moving_image as $a) {
 ?>
-      <h2> <?php echo $name ?> </h2>
-      <p>  </p>
-      <table class="matome" border="5px" cellpadding="10">
-<?php
-      foreach($div as $a){
-?>
-        <tr>
-<?php
-        foreach($a as $b){
-?>
-          <td class="text"><image class="img" src="../image/<?php echo $b[0] ?>.jpg"/></td>
-<?php
-        }
-?>
-        </tr>
-        <tr>
-<?php
-        foreach($a as $b){
-?>
-          <td class="text"><?php echo $b[1] ?></td>
-<?php
-        }
-?>
-        </tr>
-<?php
-      }
-?>
-      </table><br>
-
+      <li><img src="<?php echo $img_path ?><?php echo $a ?>.jpg" alt=""></li>
 <?php
     }
 ?>
+    </ul>
+  </div>
+  <div class="content">
+<?php
+  require('matome_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
 
+  foreach($hash as $name => $arr){
+    $size=sizeof($arr);
+    #区切る要素数を決める（優先度順）
+    if($size%5==0){
+      $num=5;
+    }elseif($size%4==0){
+      $num=4;
+    }elseif($size==3 or $size==6){
+      $num=3;
+    }elseif($size==2){
+      $num=2;
+    }elseif($size%5==4){
+      $num=5;
+    }elseif($size%4==3){
+      $num=4;
+    }else{
+      $num=5;
+    }
+    $div=array_chunk($arr,$num);
+?>
+    <h2> <?php echo $name ?> </h2>
+    <p>  </p>
+    <table class="matome" border="5px" cellpadding="10">
+<?php
+    foreach($div as $a){
+?>
+      <tr>
+<?php
+      foreach($a as $b){
+?>
+        <td class="text"><image class="img" src="<?php echo $img_path ?><?php echo $b[0] ?>.jpg"/></td>
+<?php
+      }
+?>
+      </tr>
+      <tr>
+<?php
+      foreach($a as $b){
+?>
+        <td class="text"><?php echo $b[1] ?></td>
+<?php
+      }
+?>
+      </tr>
+<?php
+    }
+?>
+    </table><br>
+
+<?php
+  }
+?>
   </div>
   <footer class="site-footer">
     <p class="copyright">&#169;2019 Shumaikun</p>

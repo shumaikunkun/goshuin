@@ -1,0 +1,14 @@
+<Files ~ "^\.ht">
+deny from all
+</Files>
+ErrorDocument 404 /Error404.html
+ErrorDocument 500 /Error500.html
+
+<FilesMatch "^$">
+ForceType application/x-httpd-php
+</FilesMatch>
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

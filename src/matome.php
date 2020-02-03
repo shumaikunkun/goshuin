@@ -54,7 +54,7 @@
     foreach ($moving_image as $a) {
 ?>
       <!-- <li> -->
-        <img src="<?php echo $img_path ?><?php echo $a ?>.jpg" alt="">
+      <img src="<?php echo $img_path ?><?php echo $a ?>.jpg" alt="">
       <!-- </li> -->
 <?php
     }
@@ -68,55 +68,58 @@
 <?php
   require('matome_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
   foreach($hash as $name => $arr){
-    $size=sizeof($arr);
-    #区切る要素数を決める（優先度順）
-    if($size%5==0){
-      $num=5;
-    }elseif($size%4==0){
-      $num=4;
-    }elseif($size==3 or $size==6){
-      $num=3;
-    }elseif($size==2){
-      $num=2;
-    }elseif($size%5==4){
-      $num=5;
-    }elseif($size%4==3){
-      $num=4;
-    }else{
-      $num=5;
-    }
-    $div=array_chunk($arr,$num);
 ?>
     <h2> <?php echo $name ?> </h2>
     <p>  </p>
-    <table class="matome" border="5px" cellpadding="10">
 <?php
-    foreach($div as $a){
+    if(!empty($arr)){
 ?>
-      <tr>
+      <table class="matome" border="5px" cellpadding="10">
 <?php
-      foreach($a as $b){
+      $size=sizeof($arr);
+      #区切る要素数を決める（優先度順）
+      if($size%5==0){
+        $num=5;
+      }elseif($size%4==0){
+        $num=4;
+      }elseif($size==3 or $size==6){
+        $num=3;
+      }elseif($size==2){
+        $num=2;
+      }elseif($size%5==4){
+        $num=5;
+      }elseif($size%4==3){
+        $num=4;
+      }else{
+        $num=5;
+      }
+      $div=array_chunk($arr,$num);
+      foreach($div as $a){
 ?>
-        <td class="text"><image class="img" src="<?php echo $img_path ?><?php echo $b[0] ?>.jpg"/></td>
+        <tr>
+<?php
+        foreach($a as $b){
+?>
+          <td class="text"><image class="img" src="<?php echo $img_path ?><?php echo $b[0] ?>.jpg"/></td>
+<?php
+        }
+?>
+        </tr>
+        <tr>
+<?php
+        foreach($a as $b){
+?>
+          <td class="text"><?php echo $b[1] ?></td>
+<?php
+        }
+?>
+        </tr>
 <?php
       }
 ?>
-      </tr>
-      <tr>
-<?php
-      foreach($a as $b){
-?>
-        <td class="text"><?php echo $b[1] ?></td>
-<?php
-      }
-?>
-      </tr>
+      </table><br>
 <?php
     }
-?>
-    </table><br>
-
-<?php
   }
 ?>
   </div>

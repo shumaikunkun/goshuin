@@ -36,24 +36,28 @@
 ?>
         <tr>
           <td class="month"> <?php echo $arr[0] ?> </td>
-          <td> <?php echo $arr[1] ?>旅行
 <?php
           if(!empty($arr[2])){
 ?>
-            <ul  class="cp_list" style="font-size:75%;">
-                <!-- <ul> -->
+            <td> <?php echo $arr[1] ?>旅行
+              <ul  class="cp_list" style="font-size:75%;">
+              <!-- <ul> -->
 <?php
-            foreach($arr[2] as $a){
+              foreach($arr[2] as $a){
 ?>
-              <li class="place"><?php echo $a ?></li>
+                <li class="place"><?php echo $a ?></li>
 <?php
-            }
+              }
 ?>
-            </ul>
+              </ul>
+            </td>
+<?php
+          }else{
+?>
+            <td> <?php echo $arr[1] ?> </td>
 <?php
           }
 ?>
-          </td>
         </tr>
 <?php
         }

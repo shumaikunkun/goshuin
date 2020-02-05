@@ -63,20 +63,21 @@
   </div>
     <!-- </ul>
   </div> -->
-
   <div class="content">
 <?php
   require('matome_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
   foreach($hash as $name => $arr){
+    $size=sizeof($arr);
+    $got_num=0;  //収集数を求める(画像ファイル名が000じゃないもの和)
+    if(!empty($arr)){ foreach($arr as $a){ if($a[0]!="000"){ $got_num+=1; }}}
 ?>
-    <h2> <?php echo $name ?> </h2>
+    <h2> <?php echo $name ?> <div class="title_right">収集率 <?php echo $got_num ?>/<?php echo $size ?></div> </h2>
     <p>  </p>
 <?php
     if(!empty($arr)){
 ?>
       <table class="matome" border="5px" cellpadding="10">
 <?php
-      $size=sizeof($arr);
       #区切る要素数を決める（優先度順）
       if($size%5==0){
         $num=5;

@@ -8,21 +8,14 @@
     <link rel="stylesheet" href="../css/all.css" type="text/css">
     <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
   </head>
-  <body background="<?php echo $img_path ?>test.jpg">
-    <header class="site-header">
-    	<h1 class="site-logo">双馬の御朱印日記</h1>
-    	<nav class="gnav">
-    		<ul class="gnav__menu">
-    			<li class="gnav__menu__item"><a href="top.php">トップ</a></li>
-    			<li class="gnav__menu__item"><a href="list.php">一覧</a></li>
-    			<li class="gnav__menu__item"><a href="member.php">メンバー</a></li>
-    			<li class="gnav__menu__item"><a href="">更新情報</a></li>
-    			<li class="gnav__menu__item"><a href="">Twitter</a></li>
-    		</ul>
-    	</nav>
-  	</header>
+  <body background="<?php echo $img_path ?>background.jpg">
+<?php
+    // 共通部分のヘッダーのhtmlファイルを読み込む
+    $fp=fopen("header.html","r");
+    while(!feof($fp)){echo fgets($fp);}
+?>
     <div class="hide">
-      <img src="<?php echo $img_path ?>test.jpg" alt="">
+      <img src="<?php echo $img_path ?>background.jpg" alt="">
     </div>
     <div class="hero">
     </div>
@@ -74,9 +67,10 @@
       <p> アサクサァァァ </p>
 
 	  </div>
-    <footer class="site-footer">
-		  <p class="copyright">&#169;2019 Shumaikun</p>
-	  </footer>
+<?php
+    $fp=fopen("footer.html","r");
+    while(!feof($fp)){echo fgets($fp);}
+?>
   </body>
 </html>
 

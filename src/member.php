@@ -13,8 +13,8 @@
     	<h1 class="site-logo">双馬の御朱印日記</h1>
     	<nav class="gnav">
     		<ul class="gnav__menu">
-    			<li class="gnav__menu__item"><a href="matome.php">トップ</a></li>
-    			<li class="gnav__menu__item"><a href="">活動</a></li>
+    			<li class="gnav__menu__item"><a href="top.php">トップ</a></li>
+    			<li class="gnav__menu__item"><a href="list.php">一覧</a></li>
     			<li class="gnav__menu__item"><a href="member.php">メンバー</a></li>
     			<li class="gnav__menu__item"><a href="">更新情報</a></li>
     			<li class="gnav__menu__item"><a href="">Twitter</a></li>
@@ -31,7 +31,7 @@
       <h2> しゅーまいくん (Webサイト制作者)</h2>
       <table class="prof">
 <?php
-      require('member_hash.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
+      require('member_data.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
       foreach($all_trip as $arr){
 ?>
         <tr>

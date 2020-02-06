@@ -59,7 +59,7 @@
   <div class="content">
 <?php
   require('top_data.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
-  foreach($data as $name => $arr){
+  foreach($all_group as $name => $arr){
     $size=sizeof($arr);
     $got_num=0;  //収集数を求める(画像ファイル名が000じゃないもの和)
     if(!empty($arr)){ foreach($arr as $a){ if($a[0]!="000"){ $got_num+=1; }}}

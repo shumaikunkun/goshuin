@@ -23,15 +23,37 @@
 
 <?php
   require('list_data.php');
+  require('top_data.php');
   foreach($all_goshuin as $image => $name){
 ?>
 
-<p><?php echo $name ?></p>
+    <p><?php echo $name ?></p>
+
+<?php
+    foreach($all_group as $title => $arr){
+      foreach ($arr as $a) {
+        if($a[0]==$image){
+          ?>
+        <p>　<?php echo $title ?></p>
+          <?php
+        }
+      }
+    }
+?>
 
 
 <?php
   }
 ?>
+
+<!-- <?php
+  //imgディレクトリ内の全ファイルを一覧表示
+  $arr=glob("../img/*");
+  foreach ($arr as $filename) {
+    echo str_replace("../img/","",$filename);
+    echo "<br>";
+  }
+?> -->
 
   </div>
 <?php
@@ -40,11 +62,3 @@
 ?>
 </body>
 </html>
-
-<?php
-  // //imgディレクトリ内の全ファイルを一覧表示
-  // $arr=glob("../img/*");
-  // foreach ($arr as $filename) {
-  //   echo $filename;
-  // }
-?>

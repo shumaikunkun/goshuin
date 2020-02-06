@@ -28,32 +28,30 @@
   foreach($all_goshuin as $image => $name){
 ?>
     <p> <?php echo ($index+=1)."." ?> <?php echo $name ?></p>
+    <image class="img" src="<?php echo $img_path ?><?php echo $image ?>.jpg"/>
 
 <?php
     foreach($all_group as $title => $arr){
       foreach ($arr as $a) {
         if($a[0]==$image){
-          ?>
-        <p>　<?php echo $title ?></p>
-          <?php
+?>
+          <p>　<?php echo $title ?></p>
+
+<?php
         }
       }
     }
+  }
 ?>
-
 
 <?php
-  }
+  // //imgディレクトリ内の全ファイルを一覧表示
+  // $arr=glob("../img/*");
+  // foreach ($arr as $filename) {
+  //   echo str_replace("../img/","",$filename);
+  //   echo "<br>";
+  // }
 ?>
-
-<!-- <?php
-  //imgディレクトリ内の全ファイルを一覧表示
-  $arr=glob("../img/*");
-  foreach ($arr as $filename) {
-    echo str_replace("../img/","",$filename);
-    echo "<br>";
-  }
-?> -->
 
   </div>
 <?php

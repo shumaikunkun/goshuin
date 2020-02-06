@@ -271,7 +271,9 @@ ul.cp_list li:before {
 	border-color: transparent transparent transparent black;
 }
 
-
+/* .title_left{
+  float: left;
+} */
 .title_right{
   float:right;
 }

@@ -25,22 +25,52 @@
   require('list_data.php');
   require('top_data.php');
   $index=0;
+  // $temple=["寺","院","堂","仏","殿","尊","動","師","山","天","塔","音","荷","神"];
+  $shrine=["社","宮"];
   foreach($all_goshuin as $image => $name){
+
 ?>
-    <p> <?php echo ($index+=1)."." ?> <?php echo $name ?></p>
-    <image class="img" src="<?php echo $img_path ?><?php echo $image ?>.jpg"/>
+
+
+
+<!-- <table class="matome" border="5px" cellpadding="10">
+  <tr>
+    <td rowspan="2"><image class="img" src="<?php echo $img_path ?><?php echo $image ?>.jpg"/></td>
+    <td><?php echo ($index+=1) ?></td>
+    <td><?php echo $name ?></td>
+    <td>神社</td>
+  </tr>
+    <td colspan="3"> -->
+
+    <p>
+      <?php echo ($index)."." ?> <?php echo $name ?>　　　<?php echo in_array(mb_substr($name,-1),$shrine) ? "神社" : "寺院"; ?>
+    </p>
 
 <?php
     foreach($all_group as $title => $arr){
       foreach ($arr as $a) {
         if($a[0]==$image){
 ?>
-          <p>　<?php echo $title ?></p>
-
+          <!-- <p>　<?php echo $title ?></p> -->
 <?php
         }
       }
     }
+?>
+
+    <!-- </td>
+  <tr>
+
+  </tr>
+</table> -->
+
+
+
+
+
+
+
+<?php
   }
 ?>
 

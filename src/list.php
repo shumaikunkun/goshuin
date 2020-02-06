@@ -24,10 +24,10 @@
 <?php
   require('list_data.php');
   require('top_data.php');
+  $index=0;
   foreach($all_goshuin as $image => $name){
 ?>
-
-    <p><?php echo $name ?></p>
+    <p> <?php echo ($index+=1)."." ?> <?php echo $name ?></p>
 
 <?php
     foreach($all_group as $title => $arr){

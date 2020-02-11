@@ -51,7 +51,7 @@
       foreach ($arr as $a) {
         if($a[0]==$image){
 ?>
-          <!-- <p>　<?php echo $title ?></p> -->
+          <p>　<?php echo $title ?></p>
 <?php
         }
       }

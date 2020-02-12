@@ -75,12 +75,12 @@
 ?>
 
 <?php
-  // //imgディレクトリ内の全ファイルを一覧表示
-  // $arr=glob("../img/*");
-  // foreach ($arr as $filename) {
-  //   echo str_replace("../img/","",$filename);
-  //   echo "<br>";
-  // }
+  //imgディレクトリ内の全ファイルを一覧表示
+  $arr=glob("../img/*");
+  foreach ($arr as $filename) {
+    echo str_replace("../img/","",$filename);
+    echo "<br>";
+  }
 ?>
 
   </div>

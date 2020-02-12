@@ -25,20 +25,21 @@
       <table class="prof">
 <?php
       require('member_data.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
+      // $index=0;
       foreach($all_trip as $arr){
 ?>
         <tr>
-          <td class="month"> <?php echo $arr[0] ?> </td>
+          <td class="month"> <?php echo $arr[0] //年月 ?> </td>
 <?php
           if(!empty($arr[2])){
 ?>
-            <td> <?php echo $arr[1] ?>旅行
+            <td> <?php echo $arr[1] //旅行場所 ?>旅行
               <ul  class="cp_list" style="font-size:75%;">
               <!-- <ul> -->
 <?php
-              foreach($arr[2] as $a){
+              foreach($arr[2] as $a){ //訪問史跡リスト
 ?>
-                <li class="place"><?php echo $a ?></li>
+                <li class="place"> <?php //echo $index+=1 ?> <?php echo $a ?></li>
 <?php
               }
 ?>

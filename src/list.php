@@ -43,7 +43,7 @@
     <td colspan="3"> -->
 
     <p>
-      <?php echo ($index)."." ?> <?php echo $name ?>　　　<?php echo in_array(mb_substr($name,-1),$shrine) ? "神社" : "寺院"; ?>
+      <?php echo ($index)."." ?> <?php echo $name[0] ?>　　　<?php echo in_array(mb_substr($name[0],-1),$shrine) ? "神社" : "寺院"; ?>
     </p>
 
 <?php

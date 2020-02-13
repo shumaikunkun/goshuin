@@ -21,6 +21,8 @@
   </div>
   <div class="content">
 
+
+
 <?php
   require('list_data.php');
   require('top_data.php');
@@ -29,8 +31,33 @@
   $shrine=["社","宮",];
   $temple_kind=["華厳","法相","律","天台","真言","浄土","浄土真","時","日蓮","臨済","曹洞","黄檗","融通念仏",];
   $shurine_kind=["神明","稲荷","八幡","天満","東照","熊野","住吉","祇園","護国","諏訪","大鳥","氷川","大鳥","日吉","愛宕","鹿島","香取","水天","白山","春日","三輪","秋葉","浅間","宗像","二荒","津島","大杉","気多","金山","塩釜","猿田彦","金山","三嶋","出雲","丹生",];
-  foreach($all_goshuin as $image => $name){
+?>
 
+
+
+    <select name="">
+<?php
+      foreach($shurine_kind as $n => $skind){
+?>
+        <option value="<?php echo $n ?>"> <?php echo $skind ?>信仰 </option>
+<?php
+      }
+?>
+    </select>
+
+
+    <select name="">
+<?php
+      foreach($temple_kind as $m => $tkind){
+?>
+        <option value="<?php echo $n ?>"> <?php echo $tkind ?>宗 </option>
+<?php
+      }
+?>
+    </select>
+
+<?php
+  foreach($all_goshuin as $image => $name){
 ?>
 
 
@@ -67,22 +94,13 @@
 </table> -->
 
 
-
-
-
-
-
 <?php
   }
 ?>
 
 <?php
   //imgディレクトリ内の全ファイルを一覧表示
-  $arr=glob("../img/*");
-  foreach ($arr as $filename) {
-    echo str_replace("../img/","",$filename);
-    echo "<br>";
-  }
+  foreach (glob("../img/*") as $filename) { if(preg_match('/\d\d\d\w+/',$filename)){ echo (str_replace("../img/","",$filename))."<br>"; }}
 ?>
 
   </div>

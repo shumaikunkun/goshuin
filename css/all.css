@@ -277,3 +277,14 @@ ul.cp_list li:before {
 .title_right{
   float:right;
 }
+
+
+.three-select li{
+  float: left;
+  list-style: none;
+  margin: 30px;
+}
+
+.not-three-select{
+  clear:both;
+}

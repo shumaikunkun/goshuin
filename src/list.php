@@ -34,27 +34,46 @@
 ?>
 
 
+    <form class="" action="list.php" method="post">
+      <select name="select_class">
+        <option value="0">全て</option>
+        <option value="1">神社</option>
+        <option value="2">寺院</option>
+      </select>
+      <input type="submit" value="送信">
+    </form>
 
-    <select name="">
+    <form class="" action="list.php" method="post">
+      <select name="select_shrine">
 <?php
-      foreach($shurine_kind as $n => $skind){
+        foreach($shurine_kind as $n => $skind){
 ?>
-        <option value="<?php echo $n ?>"> <?php echo $skind ?>信仰 </option>
+          <option value="<?php echo $n ?>"> <?php echo $skind ?>信仰 </option>
 <?php
-      }
+        }
 ?>
-    </select>
+      </select>
+      <input type="submit" value="送信">
+    </form>
+
+    <form class="" action="list.php" method="post">
+      <select name="select_temple">
+<?php
+        foreach($temple_kind as $m => $tkind){
+?>
+          <option value="<?php echo $m ?>"> <?php echo $tkind ?>宗 </option>
+<?php
+        }
+?>
+      </select>
+      <input type="submit" value="送信">
+    </form>
 
 
-    <select name="">
-<?php
-      foreach($temple_kind as $m => $tkind){
-?>
-        <option value="<?php echo $n ?>"> <?php echo $tkind ?>宗 </option>
-<?php
-      }
-?>
-    </select>
+    <?php echo $_POST["select_class"] ?>
+    <?php echo $_POST["select_shrine"] ?>
+    <?php echo $_POST["select_temple"] ?>
+
 
 <?php
   foreach($all_goshuin as $image => $name){
@@ -64,16 +83,14 @@
 
 <!-- <table class="matome" border="5px" cellpadding="10">
   <tr>
-    <td rowspan="2"><image class="img" src="<?php echo $img_path ?><?php echo $image ?>.jpg"/></td>
-    <td><?php echo ($index+=1) ?></td>
-    <td><?php echo $name ?></td>
+    <td rowspan="2"><image class="img" src="<?php //echo $img_path ?><?php //echo $image ?>.jpg"/></td>
+    <td><?php //echo ($index+=1) ?></td>
+    <td><?php //echo $name ?></td>
     <td>神社</td>
   </tr>
     <td colspan="3"> -->
 
-    <p>
-      <?php echo ($index)."." ?> <?php echo $name[0] //寺社名 ?>　　　<?php echo in_array(mb_substr($name[0],-1),$shrine) ? "神社" : "寺院"; ?>
-    </p>
+    <p> <?php echo ($index+=1)."." ?> <?php echo $name[0] //寺社名 ?>　　　<?php echo in_array(mb_substr($name[0],-1),$shrine) ? "神社" : "寺院"; ?> </p>
 
 <?php
     foreach($all_group as $title => $arr){

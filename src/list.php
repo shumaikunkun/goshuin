@@ -21,7 +21,7 @@
   </div>
   <div class="content">
 
-<h1>鋭意開発中</h1>
+<h1 class="big-title">条件</h1>
 
 <?php
   require('list_data.php');
@@ -41,23 +41,28 @@
 <ul class="three-select">
 
   <li>
-    神社か寺院で絞り込む
+    <h3>神社か寺院で絞り込む</h3>
     <form class="" action="list.php" method="post">
+      <div class="cp_ipselect cp_sl02">
       <select name="select_class">
+        <option value="" hidden>未選択</option>
         <option value="0">全て</option>
         <option value="1">神社</option>
         <option value="2">寺院</option>
         <option value="3">総本社</option>
         <option value="4">総本山</option>
       </select>
+      </div>
       <input type="submit" value="絞り込む">
     </form>
   </li>
 
   <li>
-    信仰で絞り込む（神社）
+    <h3>信仰で絞り込む（神社）</h3>
     <form class="" action="list.php" method="post">
+      <div class="cp_ipselect cp_sl02">
       <select name="select_shrine">
+        <option value="" hidden>未選択</option>
 <?php
         foreach($shrine_kind as $n => $skind){
 ?>
@@ -66,14 +71,17 @@
         }
 ?>
       </select>
+      </div>
       <input type="submit" value="絞り込む">
     </form>
   </li>
 
   <li>
-    宗派で絞り込む（寺院）
+    <h3>宗派で絞り込む（寺院）</h3>
     <form class="" action="list.php" method="post">
+      <div class="cp_ipselect cp_sl02">
       <select name="select_temple">
+        <option value="" hidden>未選択</option>
 <?php
         foreach($temple_kind as $m => $tkind){
 ?>
@@ -82,13 +90,12 @@
         }
 ?>
       </select>
+      </div>
       <input type="submit" value="絞り込む">
     </form>
   </li>
 
 </ul>
-
-<br>
 
     <?php $select_class = isset($_POST["select_class"]) ? $_POST["select_class"] : -1; ?>
     <?php $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1; ?>
@@ -96,25 +103,23 @@
 
 <div class="not-three-select">
 
-
-
 <?php
   if($select_class==1){  //全神社
-    echo "<h1>全ての神社</h1><br>";
+    echo "<h1 class='big-title2'>全ての神社</h1><br>";
     foreach($all_goshuin as $image => $name){
       if(in_array(mb_substr($name[0],-1),$shrine)){
         display($image,$name,$shrine,$all_group,$img_path);
       }
     }
   }elseif($select_class==2){  //全寺院
-    echo "<h1>全ての寺院</h1><br>";
+    echo "<h1 class='big-title2'>全ての寺院</h1><br>";
     foreach($all_goshuin as $image => $name){
       if(!in_array(mb_substr($name[0],-1),$shrine)){
         display($image,$name,$shrine,$all_group,$img_path);
       }
     }
   }elseif($select_class==3){  //全総本社
-    echo "<h1>全ての総本社</h1>";
+    echo "<h1 class='big-title2'>全ての総本社</h1>";
     foreach($shrine_kind as $shinko){
       echo "<h2>".$shinko."信仰総本社</h2>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
@@ -124,7 +129,7 @@
       }
     }
   }elseif($select_class==4){  //全総本山
-    echo "<h1>全ての総本山</h1>";
+    echo "<h1 class='big-title2'>全ての総本山</h1>";
     foreach($temple_kind as $shuha){
       echo "<h2>".$shuha."宗総本山</h2>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
@@ -134,7 +139,7 @@
       }
     }
   }elseif($select_shrine>-1){  //特定の信仰
-    echo "<h1>".$shrine_kind[$select_shrine]."信仰の神社</h1>";
+    echo "<h1 class='big-title2'>".$shrine_kind[$select_shrine]."信仰の神社</h1>";
     for($i=0; $i<4; $i++){
       echo "<h2>".$shrine_hierarchy[$i]."</h2>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
@@ -144,7 +149,7 @@
       }
     }
   }elseif($select_temple>-1){  //特定の宗派
-    echo "<h1>".$temple_kind[$select_temple]."宗の寺院</h1>";
+    echo "<h1 class='big-title2'>".$temple_kind[$select_temple]."宗の寺院</h1>";
     for($i=0; $i<4; $i++){
       echo "<h2>".$temple_hierarchy[$i]."</h2>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
@@ -154,23 +159,19 @@
       }
     }
   }else{  //全表示
-    echo "<h1>全ての御朱印</h1><br>";
+    echo "<h1 class='big-title2'>全ての御朱印</h1><br>";
     foreach($all_goshuin as $image => $name){
       display($image,$name,$shrine,$all_group,$img_path);
     }
   }
-
-
-
-
 ?>
+</div>
 
 <?php
   //imgディレクトリ内の全ファイルを一覧表示
   //foreach (glob("../img/*") as $filename) { if(preg_match('/\d\d\d\w+/',$filename)){ echo (str_replace("../img/","",$filename))."<br>"; }}
 ?>
 
-</div>
   </div>
 <?php
   $fp=fopen("footer.html","r");

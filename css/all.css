@@ -274,6 +274,7 @@ ul.cp_list li:before {
 /* .title_left{
   float: left;
 } */
+
 .title_right{
   float:right;
 }
@@ -282,9 +283,106 @@ ul.cp_list li:before {
 .three-select li{
   float: left;
   list-style: none;
-  margin: 30px;
+  margin: 35px;
 }
 
 .not-three-select{
   clear:both;
+}
+
+
+.big-title {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #deb887;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+.big-title2 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #f0e68c;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 90%;
+	margin: 2em auto;
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl02 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 2px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl02::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl02:after {
+	position: absolute;
+	top: 0;
+	right: 2.5em;
+	bottom: 0;
+	width: 1px;
+	content: '';
+	border-left: 1px solid #bbbbbb;
+}
+.cp_ipselect.cp_sl02 select {
+	padding: 8px 38px 8px 8px;
+	color: #666666;
+}
+
+
+.title-box1{
+  margin: 1em 0;
+  padding: 1em;
+  position: relative;
+  border: 1px solid #555;
+}
+
+.title-box1-title{
+  position: absolute;
+  top: -0.8em;
+  left: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: #fff;
+  padding: 0 0.5em;
+}
+
+.title-box1 p{
+  margin: 0;
+  padding: 0;
 }

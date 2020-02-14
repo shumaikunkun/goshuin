@@ -27,10 +27,10 @@
   require('list_data.php');
   require('top_data.php');
   $index=0;
-  // $temple=["寺","院","堂","仏","殿","尊","動","師","山","天","塔","音","荷","神",];
   $shrine=["社","宮",];
+  // $temple=["寺","院","堂","仏","殿","尊","動","師","山","天","塔","音","荷","神",];
+  $shrine_kind=["神明","稲荷","八幡","天満","東照","熊野","住吉","祇園","護国","諏訪","大鳥","氷川","大鳥","日吉","愛宕","鹿島","香取","水天","白山","春日","三輪","秋葉","浅間","宗像","二荒","津島","大杉","気多","金山","塩釜","猿田彦","金山","三嶋","出雲","丹生",];
   $temple_kind=["華厳","法相","律","天台","真言","浄土","浄土真","時","日蓮","臨済","曹洞","黄檗","融通念仏",];
-  $shurine_kind=["神明","稲荷","八幡","天満","東照","熊野","住吉","祇園","護国","諏訪","大鳥","氷川","大鳥","日吉","愛宕","鹿島","香取","水天","白山","春日","三輪","秋葉","浅間","宗像","二荒","津島","大杉","気多","金山","塩釜","猿田彦","金山","三嶋","出雲","丹生",];
 ?>
 
 
@@ -46,7 +46,7 @@
     <form class="" action="list.php" method="post">
       <select name="select_shrine">
 <?php
-        foreach($shurine_kind as $n => $skind){
+        foreach($shrine_kind as $n => $skind){
 ?>
           <option value="<?php echo $n ?>"> <?php echo $skind ?>信仰 </option>
 <?php
@@ -70,54 +70,55 @@
     </form>
 
 
-    <?php echo $_POST["select_class"] ?>
-    <?php echo $_POST["select_shrine"] ?>
-    <?php echo $_POST["select_temple"] ?>
+    <?php $select_class = isset($_POST["select_class"]) ? $_POST["select_class"] : -1; ?>
+    <?php $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1; ?>
+    <?php $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1; ?>
 
 
 <?php
-  foreach($all_goshuin as $image => $name){
-?>
-
-
-
-<!-- <table class="matome" border="5px" cellpadding="10">
-  <tr>
-    <td rowspan="2"><image class="img" src="<?php //echo $img_path ?><?php //echo $image ?>.jpg"/></td>
-    <td><?php //echo ($index+=1) ?></td>
-    <td><?php //echo $name ?></td>
-    <td>神社</td>
-  </tr>
-    <td colspan="3"> -->
-
-    <p> <?php echo ($index+=1)."." ?> <?php echo $name[0] //寺社名 ?>　　　<?php echo in_array(mb_substr($name[0],-1),$shrine) ? "神社" : "寺院"; ?> </p>
-
-<?php
-    foreach($all_group as $title => $arr){
-      foreach ($arr as $a) {
-        if($a[0]==$image){
-?>
-          <p>　<?php echo $title ?></p>
-<?php
-        }
+  if($select_class==1){
+    echo "全神社";  //全神社
+    foreach($all_goshuin as $image => $name){
+      if(in_array(mb_substr($name[0],-1),$shrine)){
+        display($image,$name,$shrine,$all_group);
       }
     }
-?>
-
-    <!-- </td>
-  <tr>
-
-  </tr>
-</table> -->
-
-
-<?php
+  }elseif($select_class==2){
+    echo "全寺院";  //全寺院
+    foreach($all_goshuin as $image => $name){
+      if(!in_array(mb_substr($name[0],-1),$shrine)){
+        display($image,$name,$shrine,$all_group);
+      }
+    }
+  }elseif($select_shrine>-1){
+    echo $shrine_kind[$select_shrine]."信仰の神社";  //特定の信仰
+    foreach($all_goshuin+$add_goshin as $image => $name){
+      if(array_key_exists($shrine_kind[$select_shrine],$name[1])){
+        display($image,$name,$shrine,$all_group);
+      }
+    }
+  }elseif($select_temple>-1){
+    echo $temple_kind[$select_temple]."宗の寺院";  //特定の宗派
+    foreach($all_goshuin+$add_goshin as $image => $name){
+      if(array_key_exists($temple_kind[$select_temple],$name[1])){
+        display($image,$name,$shrine,$all_group);
+      }
+    }
+  }else{  //全表示
+    echo "全表示";
+    foreach($all_goshuin as $image => $name){
+      display($image,$name,$shrine,$all_group);
+    }
   }
+
+
+
+
 ?>
 
 <?php
   //imgディレクトリ内の全ファイルを一覧表示
-  foreach (glob("../img/*") as $filename) { if(preg_match('/\d\d\d\w+/',$filename)){ echo (str_replace("../img/","",$filename))."<br>"; }}
+  //foreach (glob("../img/*") as $filename) { if(preg_match('/\d\d\d\w+/',$filename)){ echo (str_replace("../img/","",$filename))."<br>"; }}
 ?>
 
   </div>
@@ -127,3 +128,43 @@
 ?>
 </body>
 </html>
+
+
+
+
+<?php
+  function display($image,$name,$shrine,$all_group){
+?>
+
+    <!-- <table class="matome" border="5px" cellpadding="10">
+      <tr>
+        <td rowspan="2"><image class="img" src="<?php //echo $img_path ?><?php //echo $image ?>.jpg"/></td>
+        <td><?php //echo ($index+=1) ?></td>
+        <td><?php //echo $name ?></td>
+        <td>神社</td>
+      </tr>
+        <td colspan="3"> -->
+
+        <p> <?php //echo ($index+=1)."." ?> <?php echo $name[0] //寺社名 ?>　　　<?php echo in_array(mb_substr($name[0],-1),$shrine) ? "神社" : "寺院"; ?> </p>
+
+    <?php
+        foreach($all_group as $title => $arr){
+          foreach ($arr as $a) {
+            if($a[0]==$image){
+    ?>
+              <p>　<?php echo $title ?></p>
+    <?php
+            }
+          }
+        }
+    ?>
+
+        <!-- </td>
+      <tr>
+
+      </tr>
+    </table> -->
+
+<?php
+  }
+?>

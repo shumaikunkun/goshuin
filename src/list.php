@@ -31,6 +31,9 @@
   // $temple=["寺","院","堂","仏","殿","尊","動","師","山","天","塔","音","荷","神",];
   $shrine_kind=["神明","稲荷","八幡","天満","東照","熊野","住吉","祇園","護国","諏訪","大鳥","氷川","大鳥","日吉","愛宕","鹿島","香取","水天","白山","春日","三輪","秋葉","浅間","宗像","二荒","津島","大杉","気多","金山","塩釜","猿田彦","金山","三嶋","出雲","丹生",];
   $temple_kind=["華厳","法相","律","天台","真言","浄土","浄土真","時","日蓮","臨済","曹洞","黄檗","融通念仏",];
+  $shrine_hierarchy=["[総本社]","[旧本社]","[副本社]","[一般神社]"];
+  $temple_hierarchy=["[総本山級]","[大本山級]","[本山級]","[一般寺院]"];
+
 ?>
 
 
@@ -40,7 +43,7 @@
         <option value="1">神社</option>
         <option value="2">寺院</option>
       </select>
-      <input type="submit" value="送信">
+      <input type="submit" value="絞り込む">
     </form>
 
     <form class="" action="list.php" method="post">
@@ -53,7 +56,7 @@
         }
 ?>
       </select>
-      <input type="submit" value="送信">
+      <input type="submit" value="絞り込む">
     </form>
 
     <form class="" action="list.php" method="post">
@@ -66,7 +69,7 @@
         }
 ?>
       </select>
-      <input type="submit" value="送信">
+      <input type="submit" value="絞り込む">
     </form>
 
 
@@ -91,17 +94,25 @@
       }
     }
   }elseif($select_shrine>-1){
-    echo $shrine_kind[$select_shrine]."信仰の神社";  //特定の信仰
-    foreach($all_goshuin+$add_goshin as $image => $name){
-      if(array_key_exists($shrine_kind[$select_shrine],$name[1])){
-        display($image,$name,$shrine,$all_group);
+    echo $shrine_kind[$select_shrine]."信仰の神社<br>";  //特定の信仰
+    for($i=0; $i<4; $i++){
+      echo "　".$shrine_hierarchy[$i]."<br>";
+      foreach($all_goshuin+$add_goshin as $image => $name){
+        if(array_key_exists($shrine_kind[$select_shrine],$name[1]) && $name[1][$shrine_kind[$select_shrine]]==$i+1){  //クラスのキーを持っていてかつ階級が同じ時
+          display($image,$name,$shrine,$all_group);
+        }
       }
     }
+
+
   }elseif($select_temple>-1){
-    echo $temple_kind[$select_temple]."宗の寺院";  //特定の宗派
-    foreach($all_goshuin+$add_goshin as $image => $name){
-      if(array_key_exists($temple_kind[$select_temple],$name[1])){
-        display($image,$name,$shrine,$all_group);
+    echo $temple_kind[$select_temple]."宗の寺院<br>";  //特定の宗派
+    for($i=0; $i<4; $i++){
+      echo "　".$temple_hierarchy[$i]."<br>";
+      foreach($all_goshuin+$add_goshin as $image => $name){
+        if(array_key_exists($temple_kind[$select_temple],$name[1]) && $name[1][$temple_kind[$select_temple]]==$i+1){
+          display($image,$name,$shrine,$all_group);
+        }
       }
     }
   }else{  //全表示
@@ -145,14 +156,14 @@
       </tr>
         <td colspan="3"> -->
 
-        <p> <?php //echo ($index+=1)."." ?> <?php echo $name[0] //寺社名 ?>　　　<?php echo in_array(mb_substr($name[0],-1),$shrine) ? "神社" : "寺院"; ?> </p>
+        <p>　<?php //echo ($index+=1)."." ?> <?php echo $name[0] //寺社名 ?>　　　<?php echo in_array(mb_substr($name[0],-1),$shrine) ? "神社" : "寺院"; ?> </p>
 
     <?php
         foreach($all_group as $title => $arr){
           foreach ($arr as $a) {
             if($a[0]==$image){
     ?>
-              <p>　<?php echo $title ?></p>
+              <p>　　・<?php echo $title ?></p>
     <?php
             }
           }

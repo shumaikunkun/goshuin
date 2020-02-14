@@ -32,7 +32,7 @@
   $shrine_kind=["神明","稲荷","八幡","天満","東照","熊野","住吉","祇園","護国","諏訪","大鳥","氷川","大鳥","山王","愛宕","鹿島","香取","水天","白山","春日","三輪","秋葉","浅間","宗像","二荒","天王","大杉","気多","金山","塩釜","猿田彦","三嶋","出雲","丹生","岩木","駒形","伊佐須美","近津","大物忌","赤城","榛名","伊香保","妙義","貫前","息栖","筑波","磯前","妙見","玉前","安房","洲崎","秩父","金鑽","根津","小野","寒川","磯長","箱根","小国","真清田","大縣","熱田","針綱","砥鹿","知立","挟投","度津","弥彦","遠敷","気比","菅生","石動","天日陰","二上","立山","高瀬","戸隠","穂高","伊吹","稲葉","水無","建部","多度","多賀","加布良古","淡嶋","竈山","伊太祈曽","日前","国懸","敢国","蔵王","大和","石上","平野","廣瀬","龍田","廣田","生田","長田","恵比寿","賀茂","梅宮","貴船","出石","粟鹿","養父","宇倍","伊和","吉備津","中山","安仁","倭文","玉祖","琴平","大麻","田村","土佐","高良","河上","西寒多","阿蘇","都農","新田","枚聞","総社","天皇","人物",];
   $temple_kind=["華厳","法相","律","天台","真言","浄土","浄土真","時","日蓮","臨済","曹洞","黄檗","融通念仏",];
   $shrine_hierarchy=["総本社","副本社","中心神社","一般神社",];
-  $temple_hierarchy=["総本山級","大本山級","本山級","一般寺院",];
+  $temple_hierarchy=["総本山","大本山","本山","一般寺院",];
 
 ?>
 
@@ -44,7 +44,7 @@
     <h3>神社か寺院で絞り込む</h3>
     <form class="" action="list.php" method="post">
       <div class="cp_ipselect cp_sl02">
-      <select name="select_class">
+      <select name="select_class" onchange="submit(this.form)">
         <option value="" hidden>未選択</option>
         <option value="0">全て</option>
         <option value="1">神社</option>
@@ -53,7 +53,6 @@
         <option value="4">総本山</option>
       </select>
       </div>
-      <input type="submit" value="絞り込む">
     </form>
   </li>
 
@@ -61,7 +60,7 @@
     <h3>信仰で絞り込む（神社）</h3>
     <form class="" action="list.php" method="post">
       <div class="cp_ipselect cp_sl02">
-      <select name="select_shrine">
+      <select name="select_shrine" onchange="submit(this.form)">
         <option value="" hidden>未選択</option>
 <?php
         foreach($shrine_kind as $n => $skind){
@@ -72,7 +71,6 @@
 ?>
       </select>
       </div>
-      <input type="submit" value="絞り込む">
     </form>
   </li>
 
@@ -80,7 +78,7 @@
     <h3>宗派で絞り込む（寺院）</h3>
     <form class="" action="list.php" method="post">
       <div class="cp_ipselect cp_sl02">
-      <select name="select_temple">
+      <select name="select_temple" onchange="submit(this.form)">
         <option value="" hidden>未選択</option>
 <?php
         foreach($temple_kind as $m => $tkind){
@@ -91,7 +89,6 @@
 ?>
       </select>
       </div>
-      <input type="submit" value="絞り込む">
     </form>
   </li>
 

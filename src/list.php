@@ -49,8 +49,8 @@
         <option value="0">全て</option>
         <option value="1">神社</option>
         <option value="2">寺院</option>
-        <option value="3">総本社</option>
-        <option value="4">総本山</option>
+        <option value="3">総本社(神社)</option>
+        <option value="4">総本山(寺院)</option>
       </select>
       </div>
     </form>

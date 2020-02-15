@@ -218,9 +218,14 @@ position: static;
 padding: 0.25em 1em;
 border-top: solid 2px black;
 border-bottom: solid 2px black;
-margin-bottom: 20px;
-margin-top: 20px;
+margin-bottom: 10px;
+margin-top: 10px;
 clear: both;
+}
+
+.space-on-h2{
+  clear: both;
+  height: 10px;
 }
 /*
 h2:before, h2:after{
@@ -438,3 +443,38 @@ ul.cp_list li:before {
     .is-even{
       float: right;
     }
+
+
+
+    .card1 {
+        float:left;
+        width: 161px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: #fafafa;
+        box-shadow: 0 3px 6px #ccc;
+    }
+    .image1 {
+        width: 161px;
+        height: 232px;
+        /* height: 200px; */
+        object-fit: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .title1 {
+        text-align: center;
+        font-size: 90%;
+        margin-top: 10px;
+        color: #222;
+    }
+    .content1 {
+      text-align: center;
+      font-size: 60%;
+        padding: 10px;
+        color: #666;
+    }
+
+    .content p {
+    margin-bottom: 0px;
+    margin-left: 0px;
+}

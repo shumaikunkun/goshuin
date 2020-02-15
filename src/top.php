@@ -31,7 +31,7 @@
     foreach ($moving_image as $a) {
 ?>
       <!-- <li> -->
-      <img src="<?php echo $img_path ?><?php echo $a ?>.jpg" alt="">
+      <img src="<?php echo $img_path.$a ?>.jpg" alt="">
       <!-- </li> -->
 <?php
     }
@@ -46,15 +46,14 @@
   foreach($all_group as $name => $arr){
     $size=sizeof($arr);
     $got_num=0;  //収集数を求める(画像ファイル名が000じゃないもの和)
-    if(!empty($arr)){ foreach($arr as $a){ if(preg_match('/\d\d\d\w+/',$a[0]))  { $got_num+=1; }}}
+    if(!empty($arr)){ foreach($arr as $a){ if(preg_match('/\d\d\d\w+/',$a[0])){ $got_num+=1; }}}
 ?>
-    <h2> <?php echo $name ?> <div class="title_right">収集率 <?php echo $got_num ?>/<?php echo $size ?></div> </h2>
-    <p>  </p>
+    <div class="space-on-h2"></div>
+    <h2> <?php echo $name ?>
+      <div class="title_right">収集率 <?php echo $got_num."/".$size ?></div>
+    </h2>
 <?php
     if(!empty($arr)){
-?>
-      <table class="matome" border="5px" cellpadding="10">
-<?php
       #区切る要素数を決める（優先度順）
       if($size%5==0){
         $num=5;
@@ -73,34 +72,18 @@
       }
       $div=array_chunk($arr,$num);
       foreach($div as $a){
-?>
-        <tr>
-<?php
         foreach($a as $b){  //御朱印の画像
 ?>
-          <td class="text">
+          <div class="card1">
             <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w+/',$b[0]) ? $b[0] : "000").".jpg"; ?>" target="_blank">
-              <image class="img" src="<?php echo $merge_image_file ?>"/>
+              <image class="image1" src="<?php echo $merge_image_file ?>"/>
             </a>
-          </td>
+            <p class="title1"><?php echo preg_match('/<br>/',$b[1]) ? preg_split('/<br>/',$b[1])[1] : $b[1] ?></p>
+            <p class="content1"><?php echo preg_match('/<br>/',$b[1]) ? preg_split('/<br>/',$b[1])[0] : "本文" ?></p>
+          </div>
 <?php
         }
-?>
-        </tr>
-        <tr>
-<?php
-        foreach($a as $b){  //寺社の名前
-?>
-          <td class="text"><?php echo $b[1] ?></td>
-<?php
-        }
-?>
-        </tr>
-<?php
       }
-?>
-      </table><br>
-<?php
     }
   }
 ?>
@@ -112,11 +95,11 @@
 </body>
 </html>
 
-<!--
-●ローカルでの実行コマンド
-php -S 127.0.0.1:8080
-●ローカルでのURL
-http://localhost:8080/src/top.php
-●リモートでのURL
-http://cgi.u.tsukuba.ac.jp/~s1711520/goshuin/src/top.php
--->
+<?php
+  // ●ローカルでの実行コマンド
+  // php -S 127.0.0.1:8080
+  // ●ローカルでのURL
+  // http://localhost:8080/src/top.php
+  // ●リモートでのURL
+  // http://cgi.u.tsukuba.ac.jp/~s1711520/goshuin/src/top.php
+?>

@@ -183,6 +183,13 @@ body{
   background: white;
   padding: 20px 20px;
   clear: both;
+  display: block;
+}
+
+.content:after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .content p{

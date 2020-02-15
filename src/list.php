@@ -189,7 +189,9 @@ function display($image,$name,$shrine,$all_group,$img_path,$is_odd){
   <div class="<?php echo $is_odd ? "is-odd" : "is-even" ?>" >
     <div class="card3">
       <div class="box3">
-          <img src="<?php echo $img_path ?><?php echo preg_match('/\d\d\d\w./',$image) ? $image : "000" ; ?>.jpg" class="image3">
+          <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w./',$image) ? $image : "000").".jpg"; ?>" target="_blank">
+            <img src="<?php echo $merge_image_file ?>" class="image3">
+          </a>
           <div>
             <p class="title3"><?php echo $name[0] ?></p>
             <p class="content3">

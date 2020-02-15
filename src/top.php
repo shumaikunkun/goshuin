@@ -94,7 +94,11 @@
 <?php
         foreach($a as $b){  //御朱印の画像
 ?>
-          <td class="text"><image class="img" src="<?php echo $img_path ?><?php echo preg_match('/\d\d\d\w+/',$b[0]) ? $b[0] : "000"; ?>.jpg"/></td>
+          <td class="text">
+            <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w+/',$b[0]) ? $b[0] : "000").".jpg"; ?>" target="_blank">
+              <image class="img" src="<?php echo $merge_image_file ?>"/>
+            </a>
+          </td>
 <?php
         }
 ?>

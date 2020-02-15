@@ -62,7 +62,7 @@
   foreach($all_group as $name => $arr){
     $size=sizeof($arr);
     $got_num=0;  //収集数を求める(画像ファイル名が000じゃないもの和)
-    if(!empty($arr)){ foreach($arr as $a){ if($a[0]!="000"){ $got_num+=1; }}}
+    if(!empty($arr)){ foreach($arr as $a){ if(preg_match('/\d\d\d\w+/',$a[0]))  { $got_num+=1; }}}
 ?>
     <h2> <?php echo $name ?> <div class="title_right">収集率 <?php echo $got_num ?>/<?php echo $size ?></div> </h2>
     <p>  </p>
@@ -94,7 +94,7 @@
 <?php
         foreach($a as $b){  //御朱印の画像
 ?>
-          <td class="text"><image class="img" src="<?php echo $img_path ?><?php echo $b[0] ?>.jpg"/></td>
+          <td class="text"><image class="img" src="<?php echo $img_path ?><?php echo preg_match('/\d\d\d\w+/',$b[0]) ? $b[0] : "000"; ?>.jpg"/></td>
 <?php
         }
 ?>

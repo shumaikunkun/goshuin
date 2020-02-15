@@ -118,7 +118,7 @@
     }elseif($select_class==3){  //全総本社
       echo "<h1 class='big-title2'>全ての総本社</h1>";
       foreach($shrine_kind as $shinko){
-        echo "<h2>".$shinko."信仰総本社</h2>";
+        echo "<div class='space-on-h2'></div><h2>".$shinko."信仰総本社</h2>";
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shinko,$name[1]) && $name[1][$shinko]==1){
@@ -129,7 +129,7 @@
     }elseif($select_class==4){  //全総本山
       echo "<h1 class='big-title2'>全ての総本山</h1>";
       foreach($temple_kind as $shuha){
-        echo "<h2>".$shuha."宗総本山</h2>";
+        echo "<div class='space-on-h2'></div><h2>".$shuha."宗総本山</h2>";
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shuha,$name[1]) && $name[1][$shuha]==1){
@@ -140,7 +140,7 @@
     }elseif($select_shrine>-1){  //特定の信仰
       echo "<h1 class='big-title2'>".$shrine_kind[$select_shrine]."信仰の神社</h1>";
       for($i=0; $i<4; $i++){
-        echo "<h2>".$shrine_hierarchy[$i]."</h2>";
+        echo "<div class='space-on-h2'></div><h2>".$shrine_hierarchy[$i]."</h2>";
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shrine_kind[$select_shrine],$name[1]) && $name[1][$shrine_kind[$select_shrine]]==$i+1){  //クラスのキーを持っていてかつ階級が同じ時
@@ -151,7 +151,7 @@
     }elseif($select_temple>-1){  //特定の宗派
       echo "<h1 class='big-title2'>".$temple_kind[$select_temple]."宗の寺院</h1>";
       for($i=0; $i<4; $i++){
-        echo "<h2>".$temple_hierarchy[$i]."</h2>";
+        echo "<div class='space-on-h2'></div><h2>".$temple_hierarchy[$i]."</h2>";
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($temple_kind[$select_temple],$name[1]) && $name[1][$temple_kind[$select_temple]]==$i+1){
@@ -188,21 +188,21 @@ function display($image,$name,$shrine,$all_group,$img_path,$is_odd){
   <div class="<?php echo $is_odd ? "is-odd" : "is-even" ?>" >
     <div class="card3">
       <div class="box3">
-          <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w./',$image) ? $image : "000").".jpg"; ?>" target="_blank">
-            <img src="<?php echo $merge_image_file ?>" class="image3">
-          </a>
-          <div>
-            <p class="title3"><?php echo $name[0] ?></p>
-            <p class="content3">
+        <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w./',$image) ? $image : "000").".jpg"; ?>" target="_blank">
+          <img src="<?php echo $merge_image_file ?>" class="image3" />
+        </a>
+        <div>
+          <p class="title3"><?php echo $name[0] ?></p>
+          <p class="content3">
 <?php
-            $class_num=0;  //5つ以上のクラスは表示させない
-            foreach($all_group as $title => $arr){
-              foreach ($arr as $a) {
-                if($a[0]==$image && ($class_num+=1)<5){
-                  echo $title."<br>";
-                }
+          $class_num=0;  //5つ以上のクラスは表示させない
+          foreach($all_group as $title => $arr){
+            foreach ($arr as $a) {
+              if($a[0]==$image && ($class_num+=1)<5){
+                echo $title."<br>";
               }
             }
+          }
 ?>
           </p>
         </div>

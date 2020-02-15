@@ -49,9 +49,12 @@
     if(!empty($arr)){ foreach($arr as $a){ if(preg_match('/\d\d\d\w+/',$a[0])){ $got_num+=1; }}}
 ?>
     <div class="space-on-h2"></div>
-    <h2> <?php echo $name ?>
+    <h2 >
+      <?php echo $name ?>
       <div class="title_right">収集率 <?php echo $got_num."/".$size ?></div>
     </h2>
+    <div class="space-on-h2"></div>
+
 <?php
     if(!empty($arr)){
       #区切る要素数を決める（優先度順）
@@ -79,7 +82,7 @@
               <image class="image1" src="<?php echo $merge_image_file ?>"/>
             </a>
             <p class="title1"><?php echo preg_match('/<br>/',$b[1]) ? preg_split('/<br>/',$b[1])[1] : $b[1] ?></p>
-            <p class="content1"><?php echo preg_match('/<br>/',$b[1]) ? preg_split('/<br>/',$b[1])[0] : "本文" ?></p>
+            <p class="content1"><?php echo preg_match('/<br>/',$b[1]) ? preg_split('/<br>/',$b[1])[0] : "" ?></p>
           </div>
 <?php
         }

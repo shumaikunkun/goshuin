@@ -7,27 +7,11 @@
   <title> 双馬の御朱印日記【トップ】 </title>
   <link rel="stylesheet" href="../css/all.css" type="text/css">
   <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
-
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
-
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script type="text/javascript">
-  $(function(){
-    var setImg = '#photo';
-    var fadeSpeed = 1600;
-    var switchDelay = 3500;
-
-    $(setImg).children('img').css({opacity:'0'});
-    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-
-    setInterval(function(){
-      $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
-    },switchDelay);
-  });
-
-  </script>
+  <script src="../js/top.js" ></script>
 </head>
 <body background="<?php echo $img_path ?>background.jpg">
 <?php

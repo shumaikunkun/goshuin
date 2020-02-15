@@ -394,8 +394,8 @@ ul.cp_list li:before {
 
 
 .card3 {
-        width: 390px;
-        margin: 20px;
+        width: 410px;
+        margin: 10px;
         border-radius: 5px;
         background-color: #fafafa;
         box-shadow: 0 3px 6px #ccc;
@@ -405,6 +405,7 @@ ul.cp_list li:before {
     }
     .image3 {
         width: 120px;
+        height: 173px;
         /* height: 100px; */
         object-fit: cover;
         border-radius: 5px 0 0 5px;
@@ -416,7 +417,8 @@ ul.cp_list li:before {
         color: #444;
     }
     .content3 {
-        padding: 15px;
+        padding: 5px 0px 0px 15px;
+        /* 上、右、下、左 */
         color: #666;
     }
 

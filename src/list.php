@@ -26,10 +26,11 @@
 <?php
     require('list_data.php');
     require('top_data.php');
+    require('shrine_data.php');
     $index=0;
     $shrine=["社","宮",];
     // $temple=["寺","院","堂","仏","殿","尊","動","師","山","天","塔","音","荷","神",];
-    $shrine_kind=["神明","稲荷","八幡","天満","東照","熊野","住吉","祇園","護国","諏訪","大鳥","氷川","大鳥","山王","愛宕","鹿島","香取","水天","白山","春日","三輪","秋葉","浅間","宗像","二荒","天王","大杉","気多","金山","塩釜","猿田彦","三嶋","杵築","丹生","岩木","駒形","伊佐須美","近津","大物忌","月山","湯殿","羽黒","赤城","榛名","伊香保","妙義","貫前","息栖","筑波","磯前","妙見","玉前","安房","洲崎","秩父","三峯","火止","金鑽","根津","小野","寒川","磯長","雨降","箱根","走湯","小国","真清田","大縣","熱田","針綱","砥鹿","知立","挟投","度津","弥彦","遠敷","気比","織田","菅生","石動","天日陰","二上","立山","高瀬","戸隠","穂高","生島","足島","伊吹","稲葉","水無","建部","多賀","三上","多度","加布良古","淡嶋","竈山","伊太祈曽","日前","国懸","敢国","坐摩","蔵王","松尾","大和","石上","平野","廣瀬","龍田","廣田","生田","長田","恵比寿","賀茂","梅宮","貴船","籠守","出石","粟鹿","養父","宇倍","伊和","吉備津","中山","安仁","速谷","佐太","倭文","智明","物部","玉祖","琴平","田村","大麻","杉戸","土佐","高良","彦山","鵜戸","霧島","河上","西寒多","阿蘇","都農","新田","枚聞","総社","天皇","人物(古代)","人物(源平)","人物(建武)","人物(戦国)","人物(藩祖)","人物(中興)","人物(幕末)","人物(明治)","人物(戦前)",];
+    $shrine_kind=["神明","稲荷","八幡","天満","東照","熊野","住吉","祇園","護国","諏訪","大鳥","氷川","大鳥","山王","愛宕","鹿島","香取","水天","白山","春日","三輪","秋葉","浅間","宗像","二荒","天王","大杉","気多","金山","塩釜","猿田彦","三嶋","杵築","丹生","岩木","駒形","伊佐須美","近津","越王","大物忌","月山","湯殿","羽黒","赤城","榛名","伊香保","妙義","貫前","息栖","筑波","磯前","妙見","玉前","安房","洲崎","秩父","三峯","火止","金鑽","根津","小野","寒川","磯長","雨降","箱根","走湯","小国","真清田","大縣","熱田","針綱","砥鹿","知立","挟投","度津","弥彦","遠敷","気比","織田","菅生","石動","天日陰","二上","立山","高瀬","戸隠","穂高","生島","足島","伊吹","稲葉","水無","建部","多賀","三上","多度","加布良古","淡嶋","竈山","伊太祈曽","日前","国懸","敢国","坐摩","蔵王","松尾","大和","石上","平野","廣瀬","龍田","廣田","生田","長田","恵比寿","賀茂","梅宮","貴船","籠守","出石","粟鹿","養父","宇倍","伊和","吉備津","中山","安仁","速谷","佐太","倭文","智明","物部","玉祖","琴平","田村","石鎚","磯野","大麻","忌部","杉戸","土佐","海神","宝満","高良","彦山","鵜戸","霧島","青島","河上","西寒多","阿蘇","都農","新田","枚聞","総社","天皇","人物(古代)","人物(源平)","人物(建武)","人物(戦国)","人物(藩祖)","人物(中興)","人物(幕末)","人物(明治)","人物(戦前)",];
     $temple_kind=["華厳","法相","律","天台","真言","浄土","浄土真","時","日蓮","臨済","曹洞","黄檗","融通念仏",];
     $shrine_hierarchy=["総本社","副本社","中心神社","一般神社",];
     $temple_hierarchy=["総本山","大本山","本山","一般寺院",];
@@ -103,7 +104,7 @@
       $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
       foreach($all_goshuin as $image => $name){
         if(in_array(mb_substr($name[0],-1),$shrine)){
-          display($image,$name,$shrine,$all_group,$img_path,$is_odd=!$is_odd);
+          display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
           //$is_odd=!$is_odd;  //交互に値を変えることで奇数番目は左、偶数番目は右に配置を実装
         }
       }
@@ -112,7 +113,7 @@
       $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
       foreach($all_goshuin as $image => $name){
         if(!in_array(mb_substr($name[0],-1),$shrine)){
-          display($image,$name,$shrine,$all_group,$img_path,$is_odd=!$is_odd);
+          display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
         }
       }
     }elseif($select_class==3){  //全総本社
@@ -122,7 +123,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shinko,$name[1]) && $name[1][$shinko]==1){
-            display($image,$name,$shrine,$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
           }
         }
       }
@@ -133,7 +134,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shuha,$name[1]) && $name[1][$shuha]==1){
-            display($image,$name,$shrine,$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
           }
         }
       }
@@ -144,7 +145,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shrine_kind[$select_shrine],$name[1]) && $name[1][$shrine_kind[$select_shrine]]==$i+1){  //クラスのキーを持っていてかつ階級が同じ時
-            display($image,$name,$shrine,$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
           }
         }
       }
@@ -155,7 +156,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($temple_kind[$select_temple],$name[1]) && $name[1][$temple_kind[$select_temple]]==$i+1){
-            display($image,$name,$shrine,$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
           }
         }
       }
@@ -163,7 +164,7 @@
       echo "<h1 class='big-title2'>全ての御朱印</h1><br>";
       $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
       foreach($all_goshuin as $image => $name){
-        display($image,$name,$shrine,$all_group,$img_path,$is_odd=!$is_odd);
+        display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
       }
     }
 ?>

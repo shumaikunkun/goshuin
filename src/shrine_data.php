@@ -364,7 +364,7 @@ $all_ichinomiya=
   "官幣小社"=>
   [
     ["208ookunitama","大國魂神社"],
-    ["kamodo","竈門神社"],
+    ["kamado","竈門神社"],
     ["shikaumi","志賀海神社"],
     ["hakatasumiyoshi","博多住吉神社"],
     ["naminoue","波上宮"],
@@ -560,8 +560,8 @@ $all_ichinomiya=
     ["aoshima","青島神社"],
     ["amanoiwato","天岩戸神社"],
     ["takachiho","高千穂神社"],
-    ["",""],
-    ["",""],
+    // ["",""],
+    // ["",""],
 
   ]
 ];

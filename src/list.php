@@ -53,7 +53,7 @@
             <option value="2">寺院</option>
             <option value="3"><?php echo sizeof($shrine_kind) ?>信仰の総本社(神社)</option>
             <option value="4"><?php echo sizeof($temple_kind) ?>宗派の総本山(寺院)</option>
-            <option value="5">全て(未取得含む)</option>
+            <!-- <option value="5">全て(未取得含む)</option> -->
           </select>
           </div>
         </form>
@@ -98,7 +98,7 @@
 <?php
     if($select_class==1){  //全神社
       echo "<h1 class='big-title2'>全ての神社</h1><br>";
-      foreach($all_goshuin as $image => $name){
+      foreach($all_goshuin+$add_goshuin as $image => $name){
         if(in_array(mb_substr($name[0],-1),$shrine)){
           display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
           //$is_odd=!$is_odd;  //交互に値を変えることで奇数番目は左、偶数番目は右に配置を実装
@@ -106,7 +106,7 @@
       }
     }elseif($select_class==2){  //全寺院
       echo "<h1 class='big-title2'>全ての寺院</h1><br>";
-      foreach($all_goshuin as $image => $name){
+      foreach($all_goshuin+$add_goshuin as $image => $name){
         if(!in_array(mb_substr($name[0],-1),$shrine)){
           display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
         }
@@ -155,14 +155,14 @@
           }
         }
       }
-    }elseif($select_class==5){  //未取得を含む全表示
-      echo "<h1 class='big-title2'>未取得を含む全ての御朱印</h1><br>";
-      foreach($all_goshuin+$add_goshuin as $image => $name){
-        display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
-      }
+    // }elseif($select_class==5){  //未取得を含む全表示
+    //   echo "<h1 class='big-title2'>未取得を含む全ての御朱印</h1><br>";
+    //   foreach($all_goshuin+$add_goshuin as $image => $name){
+    //     display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+    //   }
     }else{  //全表示
       echo "<h1 class='big-title2'>全ての御朱印</h1><br>";
-      foreach($all_goshuin as $image => $name){
+      foreach($all_goshuin+$add_goshuin as $image => $name){
         display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
       }
     }

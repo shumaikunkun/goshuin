@@ -100,7 +100,7 @@
       echo "<h1 class='big-title2'>全ての神社</h1><br>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
         if(in_array(mb_substr($name[0],-1),$shrine)){
-          display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+          display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd,True);
           //$is_odd=!$is_odd;  //交互に値を変えることで奇数番目は左、偶数番目は右に配置を実装
         }
       }
@@ -108,7 +108,7 @@
       echo "<h1 class='big-title2'>全ての寺院</h1><br>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
         if(!in_array(mb_substr($name[0],-1),$shrine)){
-          display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+          display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd,True);
         }
       }
     }elseif($select_class==3){  //全総本社
@@ -118,7 +118,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shinko,$name[1]) && $name[1][$shinko]==1){
-            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd,False);
           }
         }
       }
@@ -129,7 +129,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shuha,$name[1]) && $name[1][$shuha]==1){
-            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd,False);
           }
         }
       }
@@ -140,7 +140,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shrine_kind_add[$select_shrine],$name[1]) && $name[1][$shrine_kind_add[$select_shrine]]==$i+1){  //クラスのキーを持っていてかつ階級が同じ時
-            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd,False);
           }
         }
       }
@@ -151,7 +151,7 @@
         $is_odd=False;  //奇数の時は左側、偶数の時は右側に並べる
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($temple_kind[$select_temple],$name[1]) && $name[1][$temple_kind[$select_temple]]==$i+1){
-            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+            display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd,False);
           }
         }
       }
@@ -163,7 +163,7 @@
     }else{  //全表示
       echo "<h1 class='big-title2'>全ての御朱印</h1><br>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
-        display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd);
+        display($image,$name,$shrine,$all_ichinomiya+$all_group,$img_path,$is_odd=!$is_odd,True);
       }
     }
 ?>
@@ -183,7 +183,7 @@
 
 <?php
 //各御朱印のカードデザインを表示する関数
-function display($image,$name,$shrine,$all_group,$img_path,$is_odd){
+function display($image,$name,$shrine,$all_group,$img_path,$is_odd,$is_index){
 ?>
   <div class="<?php echo $is_odd ? "is-odd" : "is-even" ?>" >
     <div class="card3">
@@ -193,7 +193,7 @@ function display($image,$name,$shrine,$all_group,$img_path,$is_odd){
         </a>
         <div>
           <p class="title3">
-            <?php echo ($GLOBALS["index"]+=1)."." //総数を数える際にアンコメント ?><?php echo $name[0] ?>
+            <?php if($is_index) echo ($GLOBALS["index"]+=1)."." ?><?php echo $name[0] ?>
           </p>
           <p class="content3">
 <?php

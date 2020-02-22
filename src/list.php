@@ -40,6 +40,8 @@
     $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1;
     $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1;
     $index=0;
+    $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
+    //別表神社リストでは官国幣社を除いているため、一覧表示する際に官国幣社にも別表神社クラスを付与してあげる必要がある(官国幣社は別表神社の部分集合)
 ?>
     <ul class="three-select">
       <li>
@@ -202,6 +204,7 @@ function display($image,$name,$shrine,$all_group,$img_path,$is_odd,$is_index){
             foreach ($arr as $a) {
               if($a[0]==$image && ($class_num+=1)<5){
                 echo $title."<br>";
+                if(in_array($title,$GLOBALS["kan_koku_hei"]) && ($class_num+=1)<5) echo "別表神社<br>";
               }
             }
           }

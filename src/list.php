@@ -39,6 +39,7 @@
     $select_class = isset($_POST["select_class"]) ? $_POST["select_class"] : -1;
     $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1;
     $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1;
+    $index=0;
 ?>
     <ul class="three-select">
       <li>
@@ -191,7 +192,9 @@ function display($image,$name,$shrine,$all_group,$img_path,$is_odd){
           <img src="<?php echo $merge_image_file ?>" class="image3" />
         </a>
         <div>
-          <p class="title3"><?php echo $name[0] ?></p>
+          <p class="title3">
+            <?php echo ($GLOBALS["index"]+=1)."." //総数を数える際にアンコメント ?><?php echo $name[0] ?>
+          </p>
           <p class="content3">
 <?php
           $class_num=0;  //5つ以上のクラスは表示させない

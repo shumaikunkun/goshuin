@@ -7,6 +7,8 @@
     <title> 双馬の御朱印日記【メンバー】 </title>
     <link rel="stylesheet" href="../css/all.css" type="text/css">
     <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../js/pagetop.js"></script>
   </head>
   <body background="<?php echo $img_path ?>background.jpg">
 <?php

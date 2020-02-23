@@ -96,7 +96,7 @@ $all_ichinomiya=
     ["susanoo","備後国一之宮<br>素盞嗚神社"],
 
     ["itsukushma","安芸国一之宮<br>厳島神社"],
-    ["tamanoo","周防国一之宮<br>玉祖神社"],
+    ["tamanooya","周防国一之宮<br>玉祖神社"],
     ["shimonosekisumiyoshi","長門国一之宮<br>住吉神社"],
     ["ube","因幡国一之宮<br>宇倍神社"],
     ["shitori","伯耆国一之宮<br>倭文神社"],
@@ -346,7 +346,7 @@ $all_ichinomiya=
     ["ube","宇倍神社"],
     ["mizuwakasu","水若酢神社"],
     ["miho","美保神社"],
-    ["tamanoo","玉祖神社"],
+    ["tamanooya","玉祖神社"],
     ["tamura","田村神社"],
     ["kotohira","金刀比羅宮"],
     ["isono","伊曽乃神社"],

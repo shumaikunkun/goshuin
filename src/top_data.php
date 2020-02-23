@@ -293,13 +293,22 @@ $all_group=[
     ["109toyokawa","豊川稲荷"],
   ],
 
-  "日本五大稲荷神社"=>
+  "日本七大稲荷神社"=>
   [
     ["013fushimi","伏見稲荷大社"],
     ["yuutokuinari","祐徳稲荷神社"],
     ["082kasama","笠間稲荷神社"],
     ["takekoma","竹駒神社"],
     ["taikodani","太鼓谷稲成神社"],
+
+    ["shiwainari","志和稲荷神社	"],
+    ["yakyuuinari","箭弓稲荷神社"],
+    ["kusadoinari","草戸稲荷神社"],
+    ["091oujiinari","王子稲荷神社"],
+    ["takahashiinari","高橋稲荷神社"],
+
+    ["217kanmuri","冠稲荷神社"],
+    ["tsumagoi","妻戀神社"],
   ],
 
   "関東三大稲荷"=>
@@ -308,6 +317,20 @@ $all_group=[
     ["shirasasainari","白笹稲荷神社"],
     ["091oujiinari","王子稲荷神社"],
     ["shouzokuinari","装束稲荷神社"],
+  ],
+
+  "東京三大稲荷"=>
+  [
+    ["327higashifushimi","東伏見稲荷神社"],
+    ["342toyokawainari","豊川稲荷東京別院"],
+    ["kasamainaritokyo","笠間稲荷神社東京別院"],
+  ],
+
+  "東海三大稲荷"=>
+  [
+    ["109toyokawa","豊川稲荷"],
+    ["chiyoboinari","千代保稲荷神社"],
+    ["sankouinari","三光稲荷神社"],
   ],
 
   "日本三大八幡"=>
@@ -460,14 +483,14 @@ $all_group=[
 
   "平将門北斗七星"=>
   [
-    ["000","鳥越神社"],
+    ["torikoe","鳥越神社"],
     ["121kabuto","兜神社"],
     ["000kanda","神田明神"],
-    ["000","築土八幡神社"],
+    ["tsukudohachiman","築土八幡神社"],
 
-    ["000","水稲荷神社"],
+    ["mizuinari","水稲荷神社"],
     ["000yoroi","鎧神社"],
-    ["000","築土神社"],
+    ["tsukudo","築土神社"],
     ["000karasumori","烏森神社"],
   ],
 
@@ -685,11 +708,11 @@ $all_group=[
   "全国東照宮"=>
   [
     ["171sendaitou","仙台東照宮"],
-    ["000","出羽三山神社"],
+    ["dewa","出羽三山神社"],
     ["148mitotou","水戸東照宮"],
     ["087nikkou","日光東照宮"],
 
-    ["000","赤城神社"],
+    ["akagi","赤城神社"],
     ["216serada","世良田東照宮"],
     ["350senbatoushou","仙波東照宮"],
     ["204mitsumine","三峯神社"],

@@ -153,8 +153,8 @@
           if(array_key_exists($shrine_kind_add[$select_shrine],$name[1])){
             echo "<div class='space-on-h2'></div><h2>";
             if($select_shrine==sizeof($shrine_kind)){  //総社信仰の場合と人物信仰の場合でタイトルを場合分け
-              echo "国総社";
               echo $name[1][$shrine_kind_add[$select_shrine]];
+              echo "国総社";
             }else{
               echo "主祭神：";
               foreach($name[1][$shrine_kind_add[$select_shrine]] as $n => $godname){

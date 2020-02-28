@@ -106,7 +106,7 @@
   // ●ローカルでの実行コマンド
   // php -S 127.0.0.1:8080
   // ●ローカルでのURL
-  // http://localhost:8080/src/top.php
+  // http://localhost:8080/src/index.php
   // ●リモートでのURL
-  // http://cgi.u.tsukuba.ac.jp/~s1711520/goshuin/src/top.php
+  // http://cgi.u.tsukuba.ac.jp/~s1711520/goshuin/src/index.php
 ?>

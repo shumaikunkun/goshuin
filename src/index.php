@@ -4,6 +4,8 @@
 <?php $img_path="../img/" ?>
 <head>
   <meta charset="utf-8">
+  <meta name="keywords" content="双馬の御朱印日記,御朱印,寺社,神社,寺院,全国一宮,別表神社,官国幣社">
+  <meta name="description" content="全国の有名寺社の御朱印を各くくりごとに分けて表示し、検索可能なWebサイトです。">
   <title> 双馬の御朱印日記【トップ】 </title>
   <link rel="stylesheet" href="../css/all.css" type="text/css">
   <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">

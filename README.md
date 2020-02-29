@@ -2,7 +2,7 @@
 # 双馬の御朱印日記
 
 ## URL
-http://cgi.u.tsukuba.ac.jp/~s1711520/goshuin/src
+http://cgi.u.tsukuba.ac.jp/~s1711520/goshuin
 
 ## データ
 + データ1（約400箇所）

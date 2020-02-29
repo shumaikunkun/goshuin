@@ -174,6 +174,15 @@ $all_group=[
     ["240kawaguchisengen","河口浅間神社"],
   ],
 
+  "世界遺産（日光）"=>
+  [
+    ["087nikkou","日光東照宮"],
+    ["086rinnou","日光輪王寺"],
+    ["088nikkoufutarasan","日光二荒山神社"],
+    ["089daiyuu","大猷院"],
+    ["090daiyuuinkinkaku","金閣殿"],
+  ],
+
   "世界遺産（平泉）"=>
   [
     ["184hiraizumishirayama","平泉寺"],
@@ -181,6 +190,48 @@ $all_group=[
     ["183konjiki","金色堂"],
     ["186moutsuu","毛越寺"],
     ["185gikei","義経堂"],
+  ],
+
+  "世界遺産（京都）"=>
+  [
+    ["kamigamo","賀茂別雷神社"],
+    ["shimogamo","賀茂御祖神社"],
+    ["006touji","教王護国寺"],
+    ["kiyomizu","清水寺"],
+    ["enryaku","延暦寺"],
+
+    ["daigo","醍醐寺"],
+    ["ninna","仁和寺"],
+    ["byoudouin","平等院"],
+    ["ujigami","宇治上神社"],
+    ["kouzan","高山寺"],
+
+    ["saihou","西芳寺"],
+    ["009tenryuu","天龍寺"],
+    ["rokuon","鹿苑寺"],
+    ["jishou","慈照寺"],
+    ["ryouan","龍安寺"],
+  ],
+
+  "世界遺産（奈良）"=>
+  [
+    ["houryuu","法隆寺"],
+    ["hokki","法起寺"],
+    ["toudai","東大寺"],
+    ["koufuku","興福寺"],
+    ["392kasuga","春日大社"],
+
+    ["gangou","元興寺"],
+    ["yakushi","薬師寺"],
+    ["toushoudai","唐招提寺"],
+  ],
+
+  "世界遺産（各地）"=>
+  [
+    ["munakata","宗像大社"],
+    ["itsukushma","厳島神社"],
+    ["sahimeyama","佐毘売山神社"],
+    ["iwamirakan","石見羅漢寺"],
   ],
 
   "仙台六芒星"=>
@@ -236,16 +287,6 @@ $all_group=[
     ["032asakusaootori","鷲神社"],
     ["033yoshiwara","吉原神社"],
     ["029yasaki","矢先稲荷神社"],
-  ],
-
-
-  "日光二社一寺"=>
-  [
-    ["087nikkou","日光東照宮"],
-    ["086rinnou","日光輪王寺"],
-    ["088nikkoufutarasan","日光二荒山神社"],
-    ["089daiyuu","大猷院"],
-    ["090daiyuuinkinkaku","金閣殿"],
   ],
 
   "東国三社"=>

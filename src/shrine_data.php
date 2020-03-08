@@ -145,6 +145,7 @@ $all_ichinomiya=
     ["haruna","上野国六宮<br>榛名神社"],
     ["shizuka","常陸国二宮<br>静神社"],
     ["146mitoyoshida","常陸国三宮<br>吉田神社"],
+    ["sunomiya","安房国二宮<br>洲宮神社"],
 
     ["351kanasana","武蔵国二宮<br>金鑽神社"],
     ["223kawawa","相模国二宮<br>川匂神社"],
@@ -221,7 +222,7 @@ $all_ichinomiya=
     ["358katori","香取神宮"],
     ["158awa","安房神社"],
     ["038hikawa","氷川神社"],
-    ["","日枝神社"],
+    ["064hie","日枝神社"],
     ["025meiji","明治神宮"],
     ["227mishima","三嶋大社"],
     ["231sengen","浅間大社"],
@@ -314,7 +315,7 @@ $all_ichinomiya=
   "国幣中社"=>
   [
     ["hakodate","函館八幡宮"],
-    ["shiogama","鹽竈神社"],
+    ["175shiogama","鹽竈神社"],
     ["oomonoimi","鳥海山大物忌神社"],
     ["yatsukitsutsukowake","都都古別神社"],
     ["babatsutsukowake","都都古和気神社"],

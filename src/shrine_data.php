@@ -150,14 +150,15 @@ $all_ichinomiya=
     ["223kawawa","相模国二宮<br>川匂神社"],
     ["269ibuki","美濃国二宮<br>伊富岐神社"],
     ["inaba","美濃国三宮<br>伊奈波神社"],
-    ["hodaka","信濃国二宮<br>穂高神社"],
+    ["270tairyou","美濃国三宮<br>大領神社"],
 
+    ["hodaka","信濃国二宮<br>穂高神社"],
     ["276wakasahime","若狭国二宮<br>若狭姫神社"],
     ["280tsurugi","越前国二宮<br>劔神社"],
+    ["301imizu","越中国元二宮<br>射水神社"],
     ["288sugouisobe","加賀国二宮<br>菅生石部神社"],
     ["298isurugihiko","能登国二宮<br>伊須流岐比古神社"],
-    ["297amehikagehime","加賀国二宮<br>天日陰比咩神社"],
-    ["301imizu","越中国元二宮<br>射水神社"],
+    ["297amehikagehime","能登国二宮<br>天日陰比咩神社"],
 
     ["104ooagata","尾張国二宮<br>大縣神社"],
     ["027atsuta","尾張国三宮<br>熱田神社"],

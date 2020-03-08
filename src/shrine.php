@@ -29,7 +29,7 @@
   <div class="hero">
     <div id="photo">
 <?php
-    $moving_image=["_toga","_kashima","_matsudaira","_toyokawa","_tsurugaya"];
+    $moving_image=["__toyokawa","__oosugi","__futamiokitama","__byoudou","__kaizenkou"];
     foreach ($moving_image as $a) {
 ?>
       <!-- <li> -->

@@ -194,23 +194,25 @@ $all_group=[
 
   "世界遺産（京都）"=>
   [
-    ["kamigamo","賀茂別雷神社"],
-    ["shimogamo","賀茂御祖神社"],
+    ["445kamigamo","賀茂別雷神社"],
+    ["420shimogamo","賀茂御祖神社"],
     ["006touji","教王護国寺"],
-    ["kiyomizu","清水寺"],
+    ["406kiyomizu","清水寺"],
     ["enryaku","延暦寺"],
 
-    ["daigo","醍醐寺"],
-    ["ninna","仁和寺"],
-    ["byoudouin","平等院"],
-    ["ujigami","宇治上神社"],
+    ["461daigo","醍醐寺"],
+    ["437ninna","仁和寺"],
+    ["459byoudou","平等院"],
+    ["458ujikami","宇治上神社"],
     ["kouzan","高山寺"],
 
     ["saihou","西芳寺"],
     ["009tenryuu","天龍寺"],
-    ["rokuon","鹿苑寺"],
-    ["jishou","慈照寺"],
-    ["ryouan","龍安寺"],
+    ["430rokuon","鹿苑寺"],
+    ["423jishou","慈照寺"],
+    ["436ryouan","龍安寺"],
+
+    ["462sampou","三宝院"],
   ],
 
   "世界遺産（奈良）"=>
@@ -260,9 +262,9 @@ $all_group=[
   [
     ["009tenryuu","天龍寺"],
     ["shoukoku","相国寺"],
-    ["kennin","建仁寺"],
-    ["toufuku","東福寺"],
-    ["manju","万寿寺"],
+    ["409kennin","建仁寺"],
+    ["399toufuku","東福寺"],
+    ["400manju","万寿寺"],
   ],
 
 
@@ -377,7 +379,7 @@ $all_group=[
   "日本三大八幡"=>
   [
     ["usa","宇佐八幡宮"],
-    ["iwashimizu","石清水八幡宮"],
+    ["456iwashimizuhachiman","石清水八幡宮"],
     ["hakozaki","筥崎宮"],
     ["047tsurugaoka","鶴岡八幡宮"],
   ],
@@ -385,7 +387,7 @@ $all_group=[
   "日本三大天神"=>
   [
     ["dazaifu","太宰府天満宮"],
-    ["kitano","北野天満宮"],
+    ["434kitanotenman","北野天満宮"],
     ["houfu","防府天満宮"],
   ],
 
@@ -624,14 +626,14 @@ $all_group=[
 
   "浄土宗総本山＋七大本山"=>
   [
-    ["chion","総本山<br>知恩院"],
+    ["411chion","総本山<br>知恩院"],
     ["060zoujou","大本山<br>増上寺"],
     ["koumyou","大本山<br>光明寺"],
     ["001zenkou","大本山<br>善光寺"],
 
-    ["konkaikoumyou","大本山<br>金戒光明寺"],
-    ["chionji","大本山<br>知恩寺"],
-    ["shoujouke","大本山<br>清浄華院"],
+    ["422konkaikoumyou","大本山<br>金戒光明寺"],
+    ["425chionji","大本山<br>知恩寺"],
+    ["419shoujouke","大本山<br>清浄華院"],
     ["zendou","大本山<br>善導寺"],
   ],
 
@@ -645,21 +647,21 @@ $all_group=[
 
     ["232kitayamahonmon","大本山<br>北山本門寺"],
     ["131ikegami","大本山<br>池上本門寺"],
-    ["000","大本山<br>妙顕寺"],
-    ["000","大本山<br>本圀寺"],
+    ["427myouken","大本山<br>妙顕寺"],
+    ["honkoku","大本山<br>本圀寺"],
   ],
 
 
   "臨済宗九大本山"=>
   [
-    ["nanzen","大本山<br>南禅寺"],
+    ["414nanzen","大本山<br>南禅寺"],
     ["009tenryuu","大本山<br>天龍寺"],
     ["shoukoku","大本山<br>相国寺"],
-    ["kennin","大本山<br>建仁寺"],
-    ["toufuku","大本山<br>東福寺"],
+    ["409kennin","大本山<br>建仁寺"],
+    ["399toufuku","大本山<br>東福寺"],
 
-    ["daitoku","大本山<br>大徳寺"],
-    ["myoushin","大本山<br>妙心寺"],
+    ["431daitoku","大本山<br>大徳寺"],
+    ["438myoushin","大本山<br>妙心寺"],
     ["040kenchou","大本山<br>建長寺"],
     ["041engaku","大本山<br>円覚寺"],
   ],

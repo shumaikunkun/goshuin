@@ -193,8 +193,8 @@
 ?>
     </div>
 <?php
-  //imgディレクトリ内の全ファイルを一覧表示
-  //foreach (glob("../img/*") as $filename) { if(preg_match('/\d\d\d\w+/',$filename)){ echo (str_replace("../img/","",$filename))."<br>"; }}
+  #imgディレクトリ内の全ファイルを一覧表示
+  foreach (glob("../img/*") as $filename) { if(preg_match('/\d\d\d\w+/',$filename)){ echo (str_replace("../img/","",$filename))."<br>"; }}
 ?>
   </div>
 <?php

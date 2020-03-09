@@ -21,8 +21,7 @@
   </div>
   <div class="hero">
   </div>
-  <div class="content">
-    <h1 class="big-title">条件</h1>
+
 <?php
     require('list_data.php');  //$all_goshuin, $add_goshuin
     require('top_data.php');  //$all_group
@@ -44,6 +43,9 @@
     $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
     //別表神社リストでは官国幣社を除いているため、一覧表示する際に官国幣社にも別表神社クラスを付与してあげる必要がある(官国幣社は別表神社の部分集合)
 ?>
+
+  <div class="content">
+    <h1 class="big-title">条件</h1>
     <ul class="three-select">
       <li>
         <h3>神社か寺院で絞り込む</h3>

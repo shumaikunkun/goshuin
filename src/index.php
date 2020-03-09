@@ -4,13 +4,16 @@
 <?php $img_path="../img/" ?>
 <head>
   <meta charset="utf-8">
+  <title> 双馬の御朱印日記【トップ】 </title>
   <meta name="author" content="shumaikun">
   <meta name="keywords" content="双馬の御朱印日記,御朱印,寺社,神社,寺院,全国一宮,別表神社,官国幣社">
   <meta name="description" content="全国の有名寺社の御朱印を各くくりごとに分けて表示し、検索可能なWebサイトです。">
-  <meta property="og:image" content="<?php echo $img_path ?>icon.ico">
-  <meta property="og:description" content="test">
-  <meta property="og:title" content="Test">
-  <title> 双馬の御朱印日記【トップ】 </title>
+  <meta property="og:image" content="<?php echo $img_path ?>__tsurugi.jpg">
+  <meta property="og:title" content="双馬の御朱印日記【トップ】">
+  <meta property="og:description" content="全国一宮,二宮,三宮,奉幣二十二社,官国幣社,別表神社,各宗派本山,各信仰総本社,世界遺産,坂東三十三箇所,西国三十三箇所,">
+  <meta name="twitter:image" content="<?php echo $img_path ?>__tsurugi.jpg">
+  <meta name="twitter:title" content="双馬の御朱印日記【トップ】">
+  <meta name="twitter:description" content="test">
   <link rel="stylesheet" href="../css/all.css" type="text/css">
   <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">

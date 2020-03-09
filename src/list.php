@@ -39,12 +39,26 @@
     $select_class = isset($_POST["select_class"]) ? $_POST["select_class"] : -1;
     $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1;
     $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1;
+    $search_word = isset($_POST["search_word"]) ? $_POST["search_word"] : "";
     $index=0;
     $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
     //別表神社リストでは官国幣社を除いているため、一覧表示する際に官国幣社にも別表神社クラスを付与してあげる必要がある(官国幣社は別表神社の部分集合)
 ?>
 
   <div class="content">
+    <h1 class="big-title">検索</h1>
+
+      <form class="" action="list.php" method="post">
+
+        <div class="search__container">
+          <p class="search__title">
+            検索したい単語を入力（例：八幡）
+          </p>
+          <input name="search_word" class="search__input" type="text" placeholder="検索">
+        </div>
+
+      </form>
+
     <h1 class="big-title">条件</h1>
     <ul class="three-select">
       <li>
@@ -101,7 +115,14 @@
 
     <div class="not-three-select">
 <?php
-    if($select_class==1){  //全神社
+    if(!$search_word==""){
+      echo "<h1 class='big-title2'>".$search_word."を含む寺社の御朱印</h1><br>";
+      foreach($all_goshuin+$add_goshuin as $image => $name){
+        if(preg_match("{".$search_word."}",$name[0])){
+          display($image,$name,$all_ichinomiya+$all_group,$is_odd=!$is_odd,True);
+        }
+      }
+    }elseif($select_class==1){  //全神社
       echo "<h1 class='big-title2'>全ての神社</h1><br>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
         if(in_array(mb_substr($name[0],-1),$confirm_shrine)){
@@ -215,7 +236,7 @@ function display($image,$name,$all_group,$is_odd,$is_index){
   <div class="<?php echo $is_odd ? "is-odd" : "is-even" ?>" >
     <div class="card3">
       <div class="box3">
-        <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w./',$image) ? $image : "000").".jpg"; ?>" target="_blank">
+        <a href="<?php echo $merge_image_file = $img_path.(preg_match('/\d\d\d\w./',$image) ? $image : "000").".jpg"; ?>" target="_blank">
           <img src="<?php echo $merge_image_file ?>" class="image3" />
         </a>
         <div>

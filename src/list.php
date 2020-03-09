@@ -39,7 +39,7 @@
     $select_class = isset($_POST["select_class"]) ? $_POST["select_class"] : -1;
     $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1;
     $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1;
-    $search_word = isset($_POST["search_word"]) ? $_POST["search_word"] : "";
+    $search_word = isset($_POST["search_word"]) ? preg_replace("/\w|[ -~]/","",$_POST["search_word"]) : "";
     $index=0;
     $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
     //別表神社リストでは官国幣社を除いているため、一覧表示する際に官国幣社にも別表神社クラスを付与してあげる必要がある(官国幣社は別表神社の部分集合)
@@ -115,7 +115,7 @@
 
     <div class="not-three-select">
 <?php
-    if(!$search_word==""){
+    if(!$search_word==""){  //文字列検索
       echo "<h1 class='big-title2'>".$search_word."を含む寺社の御朱印</h1><br>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
         if(preg_match("{".$search_word."}",$name[0])){

@@ -497,7 +497,7 @@ $all_ichinomiya=
     ["takemizuwake","武水別神社"],
     ["nyakuichiouji","若一王子神社"],
     ["310sakurayama","桜山八幡宮"],
-    ["akiba","秋葉山本宮秋葉神社"],
+    ["akiha","秋葉山本宮秋葉神社"],
     ["ikonahimenomikoto","伊古奈比咩命神社"],
     ["yaidu","焼津神社"],
     ["ooi","大井神社"],

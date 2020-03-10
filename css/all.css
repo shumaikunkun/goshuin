@@ -776,3 +776,54 @@ float: left;
         	color: #333333;
         	text-align: center;
         }
+
+
+/* 検索候補リスト */
+
+        ul.cp_list2 {
+          margin-left: 15px; 
+        	padding:0.5em;
+        	list-style-type:none;
+        }
+        ul.cp_list2 li {
+        	position:relative;
+        	padding: 0em 0.3em 0em 1.3em;
+        }
+        ul.cp_list2 li::before,ul.cp_list2 li::after {
+        	position: absolute;
+        	content: '';
+        	display: inline-block;
+        }
+        ul.cp_list2 li::after {
+        	top: .35em;
+        	left: 0em;
+        	width: 14px;
+        	height: 14px;
+        	background-color: #EC407A;
+        	border-radius: 100%;
+        }
+        ul.cp_list2 li::before {
+        	z-index: 2;
+        	top: 0.65em;
+        	left: 0.3em;
+        	width: 5px;
+        	height: 5px;
+        	border-right: 2px solid #fff;
+        	border-bottom: 2px solid #fff;
+        	transform: rotate(-45deg);
+        }
+
+
+.search_word input[type="submit"]{
+  border: none;
+  background: #fff;
+  /* text-decoration: underline; */
+  color:#00f;
+  font-size: 16px;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.search_word input:hover{
+  cursor: pointer;
+}

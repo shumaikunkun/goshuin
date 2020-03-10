@@ -39,10 +39,12 @@
     $select_class = isset($_POST["select_class"]) ? $_POST["select_class"] : -1;
     $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1;
     $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1;
-    $search_word = isset($_POST["search_word"]) ? preg_replace("/\w|[ -~]/","",$_POST["search_word"]) : "";
+    $search_word = isset($_POST["search_word"]) ? preg_replace("/\w|[ -~]|　/","",$_POST["search_word"]) : "";  //検索語句から英字数字記号空白を取り除く
     $index=0;
     $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
     //別表神社リストでは官国幣社を除いているため、一覧表示する際に官国幣社にも別表神社クラスを付与してあげる必要がある(官国幣社は別表神社の部分集合)
+    $new_old_kanji=["竜"=>"龍","滝"=>"瀧","総"=>"總","仏"=>"佛","沢"=>"澤","国"=>"國","県"=>"縣","剣"=>"劔","気"=>"氣","真"=>"眞","円"=>"圓","医"=>"醫","宝"=>"寶","台"=>"臺","壱"=>"壹","栄"=>"榮","塩"=>"鹽","釜"=>"竈","応"=>"應","岳"=>"嶽","斎"=>"齋","広"=>"廣","厳"=>"嚴","桜"=>"櫻","寿"=>"壽","実"=>"實","写"=>"冩","将"=>"將","浄"=>"淨","条"=>"條","双"=>"雙","体"=>"體","灯"=>"燈","浜"=>"濱","万"=>"萬","弥"=>"彌","予"=>"豫","与"=>"與","恋"=>"戀",];
+    //検索する際に旧字体でもどちらでもヒットするための置換表
 ?>
 
   <div class="content">
@@ -118,9 +120,18 @@
     if(!$search_word==""){  //文字列検索
       echo "<h1 class='big-title2'>".$search_word."を含む寺社の御朱印</h1><br>";
       foreach($all_goshuin+$add_goshuin as $image => $name){
-        if(preg_match("{".$search_word."}",$name[0])){
+        //検索ワードに旧字体または新字体を含んでいた場合は、全て旧字体にした文字列と全て新字体にした文字列で検索する。
+        $new_search_word=change_new_kanji($search_word);
+        $old_search_word=change_old_kanji($search_word);
+        if(preg_match("/$search_word|$new_search_word|$old_search_word/",$name[0])){
           display($image,$name,$all_ichinomiya+$all_group,$is_odd=!$is_odd,True);
         }
+        // //旧字体と新字体の漢字をどちらも含んでる寺社名がないかチェックする用
+        // foreach ($new_old_kanji as $k => $v) {
+        //   if(preg_match("{".$k."}",$name[0]) && preg_match("{".$v."}",$name[0])){
+        //     display($image,$name,$all_ichinomiya+$all_group,$is_odd=!$is_odd,True);
+        //   }
+        // }
       }
     }elseif($select_class==1){  //全神社
       echo "<h1 class='big-title2'>全ての神社</h1><br>";
@@ -262,4 +273,20 @@ function display($image,$name,$all_group,$is_odd,$is_index){
   </div>
 <?php
 }
+?>
+
+<?php
+
+function change_new_kanji($string){
+  global $new_old_kanji;
+  foreach ($new_old_kanji as $new => $old) $string = str_replace($old, $new, $string);
+  return $string;
+}
+
+function change_old_kanji($string){
+  global $new_old_kanji;
+  foreach ($new_old_kanji as $new => $old) $string = str_replace($new, $old, $string);
+  return $string;
+}
+
 ?>

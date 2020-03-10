@@ -50,16 +50,18 @@
     $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1;
     $search_word = isset($_POST["search_word"]) ? preg_replace("/\w|[ -~]|　/","",$_POST["search_word"]) : "";  //検索語句から英字数字記号空白を取り除く
     $index=0;  //一覧表示するときに御朱印ごとに番号を振っていく用
-    $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
     //別表神社リストでは官国幣社を除いているため、一覧表示する際に官国幣社にも別表神社クラスを付与してあげる必要がある(官国幣社は別表神社の部分集合)
-    $new_old_kanji=["竜"=>"龍","滝"=>"瀧","総"=>"總","仏"=>"佛","沢"=>"澤","国"=>"國","県"=>"縣","剣"=>"劔","気"=>"氣","真"=>"眞","円"=>"圓","医"=>"醫","宝"=>"寶","台"=>"臺","壱"=>"壹","栄"=>"榮","塩"=>"鹽","釜"=>"竈","応"=>"應","岳"=>"嶽","斎"=>"齋","広"=>"廣","厳"=>"嚴","桜"=>"櫻","寿"=>"壽","実"=>"實","写"=>"冩","将"=>"將","浄"=>"淨","条"=>"條","双"=>"雙","体"=>"體","灯"=>"燈","浜"=>"濱","万"=>"萬","弥"=>"彌","予"=>"豫","与"=>"與","恋"=>"戀","幡"=>"旛","島"=>"嶋",];
+    $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
     //検索する際に旧字体でもどちらでもヒットするための置換表
+    $new_old_kanji=["竜"=>"龍","滝"=>"瀧","総"=>"總","仏"=>"佛","沢"=>"澤","国"=>"國","県"=>"縣","剣"=>"劔","気"=>"氣","真"=>"眞","円"=>"圓","医"=>"醫","宝"=>"寶","台"=>"臺","壱"=>"壹","栄"=>"榮","塩"=>"鹽","釜"=>"竈","応"=>"應","岳"=>"嶽","斎"=>"齋","広"=>"廣","厳"=>"嚴","桜"=>"櫻","寿"=>"壽","実"=>"實","写"=>"冩","将"=>"將","浄"=>"淨","条"=>"條","双"=>"雙","体"=>"體","灯"=>"燈","浜"=>"濱","万"=>"萬","弥"=>"彌","予"=>"豫","与"=>"與","恋"=>"戀","幡"=>"旛","島"=>"嶋",];
+    //検索ワードがマッチしなかったら、以下からランダムでユーザに候補を提示
     $serch_word_example=[["大社","神宮","大神宮",],["清水","成田山","大仏","観音","大師","厄除け","不動","稲荷","国分","塩釜","仙台","天","伏見稲荷","別院","気","妙","聖典","御霊","吉備津","護国","比咩","金閣","総社","長谷","法華","光明","金",],["本能寺","平安神宮","清澄寺","久遠寺","剣神社","妙心寺","常陸国総社","極楽寺","大洗磯前神社","八坂神社","總持寺","住吉大社","榴岡天満宮","大國魂神社","石川護國神社","専修寺","川越大師","秋葉神社","東本願寺","湯島天満宮","本行寺","那古寺","仙波東照宮","大和神社","大神神社",],];
+
 ?>
 
   <div class="content">
     <h1 class="big-title">検索</h1>
-    <form class="" action="list.php" method="post">
+    <form action="list.php" method="post">
       <div class="search__container">
         <p class="search__title">検索したい寺社名を入力（例：護国）</p>
         <input name="search_word" class="search__input" type="text" placeholder="検索">
@@ -71,7 +73,7 @@
     <ul class="three-select">
       <li>
         <h3>神社か寺院で絞り込む</h3>
-        <form class="" action="list.php" method="post">
+        <form action="list.php" method="post">
           <div class="cp_ipselect cp_sl02">
           <select name="select_class" onchange="submit(this.form)">
             <option value="" hidden>未選択</option>
@@ -87,7 +89,7 @@
       </li>
       <li>
         <h3>信仰で絞り込む（神社）</h3>
-        <form class="" action="list.php" method="post">
+        <form action="list.php" method="post">
           <div class="cp_ipselect cp_sl02">
           <select name="select_shrine" onchange="submit(this.form)">
             <option value="" hidden>未選択</option>
@@ -104,7 +106,7 @@
       </li>
       <li>
         <h3>宗派で絞り込む（寺院）</h3>
-        <form class="" action="list.php" method="post">
+        <form action="list.php" method="post">
           <div class="cp_ipselect cp_sl02">
           <select name="select_temple" onchange="submit(this.form)">
             <option value="" hidden>未選択</option>
@@ -144,9 +146,15 @@
       if(!$is_hit){
         echo "<p>　マッチする寺社がありません。以下のようなワードで検索してみましょう。</p><ul>";
         foreach ($serch_word_example as $arr) {
-          echo "<li>";
-          echo $arr[mt_rand(0,sizeof($arr)-1)];
-          echo "</li>";
+          $selected_word=$arr[mt_rand(0,sizeof($arr)-1)]
+?>
+          <li>
+            <form name="search_word" action="list.php" method="post">
+              <input type="hidden" name="search_word" value="<?php echo $selected_word ?>">
+              <input type="submit" value="<?php echo $selected_word ?>">
+            </form>
+          </li>
+<?php
         }
         echo "</ul>";
       }

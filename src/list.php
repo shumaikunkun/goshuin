@@ -19,8 +19,7 @@
   <div class="hide">
     <img src="<?php echo $img_path ?>background.jpg" alt="">
   </div>
-  <div class="hero">
-  </div>
+
 
 <?php
     require('list_data.php');  //$all_goshuin, $add_goshuin
@@ -40,7 +39,7 @@
     $select_shrine = isset($_POST["select_shrine"]) ? $_POST["select_shrine"] : -1;
     $select_temple = isset($_POST["select_temple"]) ? $_POST["select_temple"] : -1;
     $search_word = isset($_POST["search_word"]) ? preg_replace("/\w|[ -~]|　/","",$_POST["search_word"]) : "";  //検索語句から英字数字記号空白を取り除く
-    $index=0;
+    $index=0;  //一覧表示するときに御朱印ごとに番号を振っていく用
     $kan_koku_hei=["官幣大社","国幣大社","官幣中社","国幣中社","官幣小社","国幣小社","別格官幣社"];
     //別表神社リストでは官国幣社を除いているため、一覧表示する際に官国幣社にも別表神社クラスを付与してあげる必要がある(官国幣社は別表神社の部分集合)
     $new_old_kanji=["竜"=>"龍","滝"=>"瀧","総"=>"總","仏"=>"佛","沢"=>"澤","国"=>"國","県"=>"縣","剣"=>"劔","気"=>"氣","真"=>"眞","円"=>"圓","医"=>"醫","宝"=>"寶","台"=>"臺","壱"=>"壹","栄"=>"榮","塩"=>"鹽","釜"=>"竈","応"=>"應","岳"=>"嶽","斎"=>"齋","広"=>"廣","厳"=>"嚴","桜"=>"櫻","寿"=>"壽","実"=>"實","写"=>"冩","将"=>"將","浄"=>"淨","条"=>"條","双"=>"雙","体"=>"體","灯"=>"燈","浜"=>"濱","万"=>"萬","弥"=>"彌","予"=>"豫","与"=>"與","恋"=>"戀",];
@@ -49,17 +48,15 @@
 
   <div class="content">
     <h1 class="big-title">検索</h1>
-
-      <form class="" action="list.php" method="post">
-
-        <div class="search__container">
-          <p class="search__title">
-            検索したい単語を入力（例：八幡）
-          </p>
-          <input name="search_word" class="search__input" type="text" placeholder="検索">
-        </div>
-
-      </form>
+    <form class="" action="list.php" method="post">
+      <div class="search__container">
+        <p class="search__title">
+          検索したい単語を入力（例：護国）
+        </p>
+        <input name="search_word" class="search__input" type="text" placeholder="検索">
+        <p class="credits__text">旧字体・新字体どちらもマッチします</p>
+      </div>
+    </form>
 
     <h1 class="big-title">条件</h1>
     <ul class="three-select">
@@ -119,12 +116,14 @@
 <?php
     if(!$search_word==""){  //文字列検索
       echo "<h1 class='big-title2'>".$search_word."を含む寺社の御朱印</h1><br>";
+      $is_hit=False;
       foreach($all_goshuin+$add_goshuin as $image => $name){
         //検索ワードに旧字体または新字体を含んでいた場合は、全て旧字体にした文字列と全て新字体にした文字列で検索する。
         $new_search_word=change_new_kanji($search_word);
         $old_search_word=change_old_kanji($search_word);
         if(preg_match("/$search_word|$new_search_word|$old_search_word/",$name[0])){
           display($image,$name,$all_ichinomiya+$all_group,$is_odd=!$is_odd,True);
+          $is_hit=True;
         }
         // //旧字体と新字体の漢字をどちらも含んでる寺社名がないかチェックする用
         // foreach ($new_old_kanji as $k => $v) {
@@ -132,6 +131,9 @@
         //     display($image,$name,$all_ichinomiya+$all_group,$is_odd=!$is_odd,True);
         //   }
         // }
+      }
+      if(!$is_hit){
+        echo "<p>　検索結果がありません。</p>";
       }
     }elseif($select_class==1){  //全神社
       echo "<h1 class='big-title2'>全ての神社</h1><br>";

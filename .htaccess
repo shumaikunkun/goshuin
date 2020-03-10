@@ -1,3 +1,5 @@
+
+
 <Files ~ "^\.ht">
 deny from all
 </Files>

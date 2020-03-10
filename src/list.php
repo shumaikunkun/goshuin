@@ -1,14 +1,25 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<?php $img_path="../img/" ?>
+<?php
+  require('../config/config.php');
+?>
 <head>
   <meta charset="utf-8">
-  <title> 双馬の御朱印日記【リスト】 </title>
-  <link rel="stylesheet" href="../css/all.css" type="text/css">
+  <title> <?php echo $title."【一覧】" ?> </title>
+  <meta name="author" content="shumaikun">
+  <meta name="keywords" content="<?php echo $keyword ?>">
+  <meta name="description" content="<?php echo $description ?>">
+  <meta property="og:image" content="<?php echo $img_path ?>__tsurugi.jpg">
+  <meta property="og:title" content="<?php echo $title."【一覧】" ?>">
+  <meta property="og:description" content="<?php echo $description ?>">
+  <meta name="twitter:image" content="<?php echo $img_path ?>__tsurugi.jpg">
+  <meta name="twitter:title" content="<?php echo $title."【一覧】" ?>">
+  <meta name="twitter:description" content="<?php echo $description ?>">
   <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
+  <link rel="stylesheet" href="<?php echo $css_path ?>all.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="../js/pagetop.js"></script>
+  <script src="<?php echo $js_path ?>pagetop.js"></script>
 </head>
 <body background="<?php echo $img_path ?>background.jpg">
 <?php
@@ -20,10 +31,9 @@
     <img src="<?php echo $img_path ?>background.jpg" alt="">
   </div>
 
-
 <?php
     require('list_data.php');  //$all_goshuin, $add_goshuin
-    require('top_data.php');  //$all_group
+    require('index_data.php');  //$all_group
     require('shrine_data.php');  //$all_ichinomiya
     $confirm_shrine=["社","宮",];  //寺社名の最後の１文字がこの配列に含まれていたら神社、いなければ寺院
     // $temple=["寺","院","堂","仏","殿","尊","動","師","山","天","塔","音","荷","神",];

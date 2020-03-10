@@ -1,19 +1,31 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<?php $img_path="../img/" ?>
+<?php
+  require('../config/config.php');
+?>
 <head>
   <meta charset="utf-8">
-  <title> 双馬の御朱印日記【トップ】 </title>
-  <link rel="stylesheet" href="../css/all.css" type="text/css">
+  <title> <?php echo $title."【全国一宮】" ?> </title>
+  <meta name="author" content="shumaikun">
+  <meta name="keywords" content="<?php echo $keyword ?>">
+  <meta name="description" content="<?php echo $description ?>">
+  <meta property="og:image" content="<?php echo $img_path ?>__tsurugi.jpg">
+  <meta property="og:title" content="<?php echo $title."【全国一宮】" ?>">
+  <meta property="og:description" content="<?php echo $description ?>">
+  <meta name="twitter:image" content="<?php echo $img_path ?>__tsurugi.jpg">
+  <meta name="twitter:title" content="<?php echo $title."【全国一宮】" ?>">
+  <meta name="twitter:description" content="<?php echo $description ?>">
   <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
+  <link rel="stylesheet" href="<?php echo $css_path ?>all.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="<?php echo $js_path ?>pagetop.js"></script>
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-  <script src="../js/top.js" ></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="../js/pagetop.js"></script>
+  <script src="<?php echo $js_path ?>top.js" ></script>
+
 </head>
 <body background="<?php echo $img_path ?>background.jpg">
 <?php

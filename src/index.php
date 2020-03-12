@@ -14,7 +14,6 @@
   <meta property="og:title" content="<?php echo $title."【トップ】" ?>">
   <meta property="og:description" content="<?php echo $description ?>">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="<?php echo $img_path ?>__tsurugi__low.jpg">
   <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
   <link rel="stylesheet" href="<?php echo $css_path ?>all.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>

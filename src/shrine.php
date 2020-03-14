@@ -16,6 +16,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
   <link rel="stylesheet" href="<?php echo $css_path ?>all.css" type="text/css">
+<?php
+  //遷移画像は優先でロードさせる
+  $moving_image=["__toyokawa","__oosugi","__futamiokitama","__byoudou","__kaizenkou"];
+  foreach ($moving_image as $a) {
+?>
+    <link rel="preload" href="<?php echo $img_path.$a ?>.jpg" as="image">
+<?php
+  }
+?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script src="<?php echo $js_path ?>pagetop.js"></script>
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -39,7 +48,6 @@
   <div class="hero">
     <div id="photo">
 <?php
-    $moving_image=["__toyokawa","__oosugi","__futamiokitama","__byoudou","__kaizenkou"];
     foreach ($moving_image as $a) {
 ?>
       <!-- <li> -->

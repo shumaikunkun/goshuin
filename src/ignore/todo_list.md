@@ -14,9 +14,7 @@
     + https://copypet.jp/2012/
   + タップ先に検索をスペースも設置
     + https://webdesignfacts.net/entry/searchform-css/
-+ 画像のロード順を変更
-  + トップ画面の繊維画像を優先的に読み込む
-    + https://webkikaku.co.jp/homepage/blog/hpseisaku/htmlcss/preload/
++ 画像をロードするまで、他の画像で差し替え
 
 ## 優先度小
 + 検索候補の箇条書きUIの改善
@@ -34,3 +32,7 @@
     + https://deshinon.com/2019/03/03/hukusuu-sugoi-css-koseiteki/
 + iPhoneでの文字サイズバグを解消
   + https://webkan.hateblo.jp/entry/20151026/p1
++ 画像のロード順を変更
+  + トップ画面の繊維画像を優先的に読み込む
+    + https://webkikaku.co.jp/homepage/blog/hpseisaku/htmlcss/preload/
+    + https://blog.ijoru.com/?p=694

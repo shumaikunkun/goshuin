@@ -43,7 +43,7 @@
     foreach ($moving_image as $a) {
 ?>
       <!-- <li> -->
-      <img src="<?php echo $img_path.$a ?>.jpg" alt="">
+      <img src="<?php echo $img_path.$a ?>.jpg" rel="preload" alt="">
       <!-- </li> -->
 <?php
     }

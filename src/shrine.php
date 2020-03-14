@@ -32,7 +32,7 @@
   while(!feof($fp)){echo fgets($fp);}
 ?>
   <div class="hide">
-    <img src="<?php echo $img_path ?>background.jpg" alt="">
+    <img src="<?php echo $img_path ?>background.jpg" rel="preload" alt="">
   </div>
   <!-- <div class="slide">
     <ul class="bxslider"> -->

@@ -390,7 +390,7 @@ $all_group=[
   [
     ["327higashifushimi","東伏見稲荷神社"],
     ["342toyokawainari","豊川稲荷東京別院"],
-    ["kasamainaritokyo","笠間稲荷神社東京別院"],
+    ["kasamainaritokyo","笠間稲荷神社東京別社"],
   ],
 
   "東海三大稲荷"=>
@@ -527,7 +527,7 @@ $all_group=[
   [
     ["000nishiarai","西新井大師<br>總持寺"],
     ["133kawasaki","川崎大師<br>平間寺"],
-    ["357kanfuku","観福寺大師堂"],
+    ["357kanfuku","大師堂<br>観福寺"],
   ],
 
   "五色不動"=>

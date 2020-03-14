@@ -42,17 +42,17 @@
 ?>
         <div class="card5">
           <div class="box5">
-            <img src="<?php echo $img_path ?>__toyokawa.jpg" class="image5">
-            <div>
+            <img src="<?php echo $img_path.$arr[2].".jpg" ?>" class="image5">
+            <div class="textbox5">
               <p class="title5"> <?php echo $arr[0]." " //年月 ?>
 <?php
-              if(!empty($arr[2])){
+              if(!empty($arr[3])){
                 echo $arr[1]."旅行" //旅行場所
 ?>
                 </p>
-                <p class="content5">【訪問史跡】
+                <p class="content5">【訪問史跡・名勝】
 <?php
-                foreach($arr[2] as $a){ //訪問史跡リスト
+                foreach($arr[3] as $a){ //訪問史跡リスト
 ?>
                   <?php //echo $index+=1 ?> <?php echo $a." " ?>
 <?php

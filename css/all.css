@@ -830,10 +830,11 @@ float: left;
     }
     .box5 {
         display: flex;
+
     }
     .image5 {
-        width: 130px;
-        height: 130px;
+        width: 125px;
+        height: 125px;
         object-fit: cover;
         border-radius: 5px 0 0 5px;
     }
@@ -847,4 +848,8 @@ float: left;
         padding: 0px 20px;
         /* 上下0px、左右15px */
         color: #666;
+        
+    }
+    .textbox5{
+      width:700px;
     }

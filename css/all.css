@@ -839,16 +839,17 @@ float: left;
         border-radius: 5px 0 0 5px;
     }
     .title5 {
-        font-size: 130%;
+        font-size: 20px;
         margin: 10px;
         padding-left: 15px;
         color: #444;
     }
     .content5 {
+        font-size: 15px;
         padding: 0px 20px;
         /* 上下0px、左右15px */
         color: #666;
-        
+
     }
     .textbox5{
       width:700px;

@@ -1,6 +1,8 @@
 # todoリスト
 
 ## 優先度高
++ iPhoneでの文字サイズバグを解消
+  + https://webkan.hateblo.jp/entry/20151026/p1
 + ignoreディレクトリにアクセスできないようにする
 
 ## 優先度中

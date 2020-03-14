@@ -37,6 +37,8 @@ body {
     display: flex;
     flex-flow: column;
     min-height: 100vh;
+    /* iPhoneでの文字サイズバグを修正するため */
+    -webkit-text-size-adjust: 100%;
 }
 
 article,aside,details,figcaption,figure,

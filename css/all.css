@@ -816,3 +816,35 @@ float: left;
 .search_word input:hover{
   cursor: pointer;
 }
+
+
+
+
+/* メンバー画面の訪問史跡一覧のデザイン */
+    .card5 {
+        width: 825px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 3px 6px #ccc;
+    }
+    .box5 {
+        display: flex;
+    }
+    .image5 {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 5px 0 0 5px;
+    }
+    .title5 {
+        font-size: 130%;
+        margin: 10px;
+        padding-left: 15px;
+        color: #444;
+    }
+    .content5 {
+        padding: 0px 20px;
+        /* 上下0px、左右15px */
+        color: #666;
+    }

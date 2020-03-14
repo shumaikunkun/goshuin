@@ -32,43 +32,47 @@
     </div>
     <div class="content">
 
-      <h2> しゅーまいくん (Webサイト制作者)</h2>
-      <table class="prof">
+      <!-- <h2> しゅーまいくん (Webサイト制作者)</h2> -->
+      <h1 class="big-title">訪問史跡一覧</h1><br>
+
 <?php
       require('member_data.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
       // $index=0;
       foreach($all_trip as $arr){
 ?>
-        <tr>
-          <td class="month"> <?php echo $arr[0] //年月 ?> </td>
+        <div class="card5">
+          <div class="box5">
+            <img src="<?php echo $img_path ?>__toyokawa.jpg" class="image5">
+            <div>
+              <p class="title5"> <?php echo $arr[0]." " //年月 ?>
 <?php
-          if(!empty($arr[2])){
+              if(!empty($arr[2])){
+                echo $arr[1]."旅行" //旅行場所
 ?>
-            <td> <?php echo $arr[1] //旅行場所 ?>旅行
-              <ul  class="cp_list" style="font-size:75%;">
-              <!-- <ul> -->
+                </p>
+                <p class="content5">【訪問史跡】
 <?php
-              foreach($arr[2] as $a){ //訪問史跡リスト
+                foreach($arr[2] as $a){ //訪問史跡リスト
 ?>
-                <li class="place"> <?php //echo $index+=1 ?> <?php echo $a ?></li>
+                  <?php //echo $index+=1 ?> <?php echo $a." " ?>
+<?php
+                }
+?>
+                </p>
+<?php
+              }else{
+                echo $arr[1] ?>
+                </p>
 <?php
               }
 ?>
-              </ul>
-            </td>
+            </div>
+          </div>
+        </div>
 <?php
-          }else{
+      }
 ?>
-            <td> <?php echo $arr[1] ?> </td>
-<?php
-          }
-?>
-        </tr>
-<?php
-        }
-?>
-      </table>
-
+      <!-- <br>
       <h2> VAVA-BOON (御朱印提供協力)</h2>
       <p> 　三度の飯より御朱印好き！ </p>
 
@@ -76,7 +80,7 @@
       <p> 　酒は百薬の長 </p>
 
       <h2> アサカァァァ </h2>
-      <p> 　アサクサァァァ </p>
+      <p> 　アサクサァァァ </p> -->
 
 	  </div>
 <?php

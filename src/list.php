@@ -125,12 +125,13 @@
 <?php
     if(!$search_word==""){  //文字列検索
       echo "<h1 class='big-title2'>".$search_word."を含む寺社の御朱印</h1><br>";
-      $is_hit=False;
+      $is_hit=False;  //何もヒットしなかった時に検知するため
       foreach($all_goshuin+$add_goshuin as $image => $name){
         //検索ワードに旧字体または新字体を含んでいた場合は、全て旧字体にした文字列と全て新字体にした文字列で検索する。
-        $new_search_word=change_new_kanji($search_word);
-        $old_search_word=change_old_kanji($search_word);
-        if(preg_match("/$search_word|$new_search_word|$old_search_word/",$name[0])){
+        //旧字体と新字体が混在する寺社名はないので2通りで十分
+        $all_new_search_word=change_kanji($search_word,True);
+        $all_old_search_word=change_kanji($search_word,False);
+        if(preg_match("/$all_new_search_word|$all_old_search_word/",$name[0])){
           display($image,$name,$all_ichinomiya+$all_group,$is_odd=!$is_odd,True);
           $is_hit=True;
         }
@@ -205,14 +206,14 @@
             }
           }
         }
-      }else{
+      }else{  //総社・人物
         foreach($all_goshuin+$add_goshuin as $image => $name){
           if(array_key_exists($shrine_kind_add[$select_shrine],$name[1])){
             echo "<div class='space-on-h2'></div><h2>";
             if($select_shrine==sizeof($shrine_kind)){  //総社信仰の場合と人物信仰の場合でタイトルを場合分け
               echo $name[1][$shrine_kind_add[$select_shrine]];
               echo "国総社";
-            }else{
+            }else{  //人物
               echo "主祭神：";
               foreach($name[1][$shrine_kind_add[$select_shrine]] as $n => $godname){
                 if($n!=0) echo ",";  //名前を区切るカンマを出力
@@ -296,20 +297,25 @@ function display($image,$name,$all_group,$is_odd,$is_index){
   </div>
 <?php
 }
-?>
 
-<?php
-
-function change_new_kanji($string){
+//旧字体を新字体に、新字体を旧字体に変換する関数
+function change_kanji($string,$to_new){  //第二引数がTrueなら旧字体から新字体に、Falseなら新字体から旧字体に
   global $new_old_kanji;
-  foreach ($new_old_kanji as $new => $old) $string = str_replace($old, $new, $string);
+  foreach ($new_old_kanji as $new => $old) $string = $to_new ? str_replace($old, $new, $string) : str_replace($new, $old, $string);
   return $string;
 }
 
-function change_old_kanji($string){
-  global $new_old_kanji;
-  foreach ($new_old_kanji as $new => $old) $string = str_replace($new, $old, $string);
-  return $string;
-}
+// //旧字体を新字体に変換する関数
+// function change_new_kanji($string){
+//   global $new_old_kanji;
+//   foreach ($new_old_kanji as $new => $old) $string = str_replace($old, $new, $string);
+//   return $string;
+// }
+// //新字体を旧字体に変換する関数
+// function change_old_kanji($string){
+//   global $new_old_kanji;
+//   foreach ($new_old_kanji as $new => $old) $string = str_replace($new, $old, $string);
+//   return $string;
+// }
 
 ?>

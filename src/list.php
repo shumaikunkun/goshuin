@@ -7,26 +7,27 @@
 <head>
   <meta charset="utf-8">
   <title> <?php echo $title."【一覧】" ?> </title>
-  <meta name="author" content="shumaikun">
-  <meta name="keywords" content="<?php echo $keyword ?>">
-  <meta name="description" content="<?php echo $description ?>">
-  <meta property="og:image" content="<?php echo $img_path ?>__tsurugi.jpg">
-  <meta property="og:title" content="<?php echo $title."【一覧】" ?>">
-  <meta property="og:description" content="<?php echo $description ?>">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
-  <link rel="stylesheet" href="<?php echo $css_path ?>all.css" type="text/css">
+  <meta name="author" content="shumaikun" />
+  <meta name="keywords" content="<?php echo $keyword ?>" />
+  <meta name="description" content="<?php echo $description ?>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@unity_shumai" />
+  <meta property="og:image" content="<?php echo $img_path."__tsurugi.jpg" ?>" />
+  <meta property="og:title" content="<?php echo $title."【一覧】" ?>" />
+  <meta property="og:description" content="<?php echo $description ?>" />
+  <link rel="shortcut icon" href="<?php echo $img_path."icon.ico" ?>" />
+  <link rel="stylesheet" href="<?php echo $css_path."all.css" ?>" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <script src="<?php echo $js_path ?>pagetop.js"></script>
+  <script src="<?php echo $js_path."pagetop.js" ?>"></script>
 </head>
-<body background="<?php echo $img_path ?>background.jpg">
+<body background="<?php echo $img_path."background.jpg" ?>">
 <?php
   // 共通部分のヘッダーのhtmlファイルを読み込む
   $fp=fopen("header.html","r");
   while(!feof($fp)){echo fgets($fp);}
 ?>
   <div class="hide">
-    <img src="<?php echo $img_path ?>background.jpg" alt="">
+    <img src="<?php echo $img_path."background.jpg" ?>" alt="">
   </div>
 
 <?php

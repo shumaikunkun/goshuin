@@ -7,15 +7,16 @@
 <head>
   <meta charset="utf-8">
   <title> <?php echo $title."【全国一宮】" ?> </title>
-  <meta name="author" content="shumaikun">
-  <meta name="keywords" content="<?php echo $keyword ?>">
-  <meta name="description" content="<?php echo $description ?>">
-  <meta property="og:image" content="<?php echo $img_path ?>__tsurugi.jpg">
-  <meta property="og:title" content="<?php echo $title."【全国一宮】" ?>">
-  <meta property="og:description" content="<?php echo $description ?>">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="shortcut icon" href="<?php echo $img_path ?>icon.ico">
-  <link rel="stylesheet" href="<?php echo $css_path ?>all.css" type="text/css">
+  <meta name="author" content="shumaikun" />
+  <meta name="keywords" content="<?php echo $keyword ?>" />
+  <meta name="description" content="<?php echo $description ?>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@unity_shumai" />
+  <meta property="og:image" content="<?php echo $img_path."__tsurugi.jpg" ?>" />
+  <meta property="og:title" content="<?php echo $title."【全国一宮】" ?>" />
+  <meta property="og:description" content="<?php echo $description ?>" />
+  <link rel="shortcut icon" href="<?php echo $img_path."icon.ico" ?>" />
+  <link rel="stylesheet" href="<?php echo $css_path."all.css" ?>" type="text/css" />
 <?php
   //遷移画像は優先でロードさせる
   $moving_image=["__toyokawa","__oosugi","__futamiokitama","__byoudou","__kaizenkou"];

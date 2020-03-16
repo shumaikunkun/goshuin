@@ -38,7 +38,7 @@
 <?php
       require('member_data.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
       // $index=0;
-      foreach($all_trip as $arr){
+      foreach(array_reverse($all_trip) as $arr){
 ?>
         <div class="card5">
           <div class="box5">

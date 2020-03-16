@@ -42,14 +42,19 @@
 ?>
         <div class="card5">
           <div class="box5">
-            <img src="<?php echo $img_path.$arr[2].".jpg" ?>" class="image5">
+<?php
+            //元の解像度の画像
+            $uncompressed_img = $img_path.$arr[2].".jpg";
+            //1/10圧縮した解像度の画像
+            $compressed_img = $img_path.$arr[2]."_10x.jpg";
+            //000と__oosugi1が圧縮画像なし
+?>
+            <img src="<?php echo in_array($compressed_img,glob($img_path."__*_10x.jpg")) ? $compressed_img : $uncompressed_img ?>" class="image5">
             <div class="textbox5">
-              <p class="title5"> <?php echo $arr[0]." " //年月 ?>
 <?php
               if(!empty($arr[3])){
-                echo $arr[1]."旅行" //旅行場所
 ?>
-                </p>
+                <p class="title5"> <?php echo $arr[0]." " //年月 ?><?php echo $arr[1]."旅行" //旅行場所 ?></p>
                 <p class="content5">【訪問史跡・名勝】
 <?php
                 foreach($arr[3] as $a){ //訪問史跡リスト
@@ -61,8 +66,8 @@
                 </p>
 <?php
               }else{
-                echo $arr[1] ?>
-                </p>
+?>
+                <p class="title5"> <?php echo $arr[0]." " //年月 ?><?php echo $arr[1] ?></p>
 <?php
               }
 ?>

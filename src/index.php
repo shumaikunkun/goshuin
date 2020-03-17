@@ -12,6 +12,8 @@
   <meta name="description" content="<?php echo $description ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@unity_shumai" />
+  <meta property="og:url" content="<?php echo (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] ?>" />
+  <meta property="og:type" content="website" />
   <meta property="og:image" content="<?php echo $img_path."108iga.jpg.jpg" ?>" />
   <meta property="og:title" content="<?php echo $title."【トップ】" ?>" />
   <meta property="og:description" content="<?php echo $description ?>" />
@@ -64,6 +66,7 @@
 
       <div class="content">
     <?php
+      echo (empty($_SERVER['HTTPS']) ? 'http://' : 'https://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
       require('index_data.php');  //それぞれの表のデータ(JSON)は、別ファイルに記述
       foreach($all_group as $name => $arr){
         $size=sizeof($arr);

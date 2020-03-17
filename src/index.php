@@ -12,7 +12,7 @@
   <meta name="description" content="<?php echo $description ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@unity_shumai" />
-  <meta property="og:image" content="<?php echo $img_path."__tsurugi.jpg" ?>" />
+  <meta property="og:image" content="<?php echo $img_path."108iga.jpg.jpg" ?>" />
   <meta property="og:title" content="<?php echo $title."【トップ】" ?>" />
   <meta property="og:description" content="<?php echo $description ?>" />
   <link rel="shortcut icon" href="<?php echo $img_path."icon.ico" ?>" />

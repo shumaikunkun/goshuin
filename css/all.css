@@ -856,3 +856,11 @@ float: left;
     .textbox5{
       width:700px;
     }
+
+
+/* SNSシェアボタン */
+
+.share-button{
+  text-align: center;
+  margin-bottom: 50px;
+}

@@ -447,31 +447,42 @@ $all_ichinomiya=
 
   "別表神社"=>
   [
-
+    ["otarusumiyoshi","小樽住吉神社"],
+    ["kamikawa","上川神社"],
+    ["obihiro","帯廣神社"],
+    ["tarumaezan","樽前山神社"],
     ["saruga","猿賀神社"],
     ["shiwainari","志和稲荷神社"],
     ["moriokahachiman","盛岡八幡宮"],
     ["koganeyama","黄金山神社"],
     ["takekoma","竹駒神社"],
+    宮城縣護國神社
     ["taiheizanmiyoshi","太平山三吉神社"],
     ["akitasuwa","秋田諏訪宮"],
+    秋田県護国神社
     ["kinbou","鶴岡金峯神社"],
     ["miyauchikumano","宮内熊野大社"],
+    山形県護国神社
     ["ayukaihachiman","鮎貝八幡宮"],
     ["yachihachiman","谷地八幡宮"],
     ["choukaigassan","鳥海月山両所宮"],
     ["sagaehachiman","寒河江八幡宮"],
     ["kitadate","北舘神社"],
+    福島縣護國神社
     ["081tsukubasan","筑波山神社"],
     ["148mitotou","水戸東照宮"],
     ["356oosugi","大杉神社"],
     ["082kasama","笠間稲荷神社"],
+    茨城県護国神社
+    群馬縣護國神社
     ["204mitsumine","三峯神社"],
     ["207hodosan","宝登山神社"],
     ["yakyuuinari","箭弓稲荷神社"],
     ["039kawagoehikawa","川越氷川神社"],
     ["068washinomiya","鷲宮神社"],
     ["koma","高麗神社"],
+    千葉縣護國神社
+    東京大神宮
     ["nogi","乃木神社"],
     ["000kanda","神田神社"],
     ["024tougou","東郷神社"],
@@ -484,21 +495,29 @@ $all_ichinomiya=
     ["houtokuninomiya","報徳二宮神社"],
     ["inage","稲毛神社"],
     ["afuri","大山阿夫利神社"],
+    新潟縣護國神社
     ["256niigatahakusan","新潟白山神社"],
+    富山県護國神社
     ["toyamahie","富山日枝神社"],
     ["oonominato","大野湊神社"],
+    石川護国神社
+    福井県護国神社
     ["fukuishinmei","福井神明神社"],
     ["239mimurosengen","冨士御室浅間神社"],
     ["242takeda","武田神社"],
     ["komurosengen","小室浅間神社"],
+    山梨縣護國神社
+    長野縣護國神社
     ["yohashira","四柱神社"],
     ["fukashi","深志神社"],
     ["tenaga","手長神社"],
     ["takemizuwake","武水別神社"],
     ["nyakuichiouji","若一王子神社"],
+    岐阜護國神社
     ["310sakurayama","桜山八幡宮"],
     ["akiha","秋葉山本宮秋葉神社"],
     ["ikonahimenomikoto","伊古奈比咩命神社"],
+    靜岡縣護國神社
     ["yaidu","焼津神社"],
     ["ooi","大井神社"],
     ["265gosha","五社神社・諏訪神社"],

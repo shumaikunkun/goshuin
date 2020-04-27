@@ -5,7 +5,7 @@ $all_group=[
     ["025meiji","明治神宮"],
     ["023yasukuni","靖国神社"],
     ["064hie","日枝神社"],
-    ["022toukyou","東京大神宮"],
+    ["022toukyoudai","東京大神宮"],
     ["208ookunitama","大國魂神社"],
   ],
 
@@ -118,7 +118,7 @@ $all_group=[
 
     ["081tsukubasan","筑波山神社"],
     ["356oosugi","大杉神社"],
-    ["083ibarakiken","茨城縣護国神社"],
+    ["083ibarakigokoku","茨城縣護国神社"],
     ["151hitachi","常陸國總社宮"],
 
     ["147mitohachiman","水戸八幡宮"],
@@ -250,7 +250,7 @@ $all_group=[
     ["170tsutsujigaoka","榴岡天満宮"],
     ["171sendaitou","仙台東照宮"],
 
-    ["191miyagiken","宮城縣護國神社"],
+    ["191miyagigokoku","宮城縣護國神社"],
     ["172aoba","青葉神社"],
     ["169sendaiatago","愛宕神社"],
   ],
@@ -317,7 +317,7 @@ $all_group=[
     ["ishihama","石浜神社"],
     ["032asakusaootori","鷲神社"],
     ["033yoshiwara","吉原神社"],
-    ["029yasaki","矢先稲荷神社"],
+    ["029yasakiinari","矢先稲荷神社"],
   ],
 
   "東国三社"=>
@@ -962,19 +962,19 @@ $all_group=[
 
   "全国護國神社"=>
   [
-    ["191miyagiken","宮城縣護國神社"],
-    ["083ibarakiken","茨城縣護國神社"],
-    ["202saitamaken","埼玉縣護國神社"],
-    ["243yamanashiken","山梨縣護國神社"],
+    ["191miyagigokoku","宮城縣護國神社"],
+    ["083ibarakigokoku","茨城縣護國神社"],
+    ["202saitamagokoku","埼玉縣護國神社"],
+    ["243yamanashigokoku","山梨縣護國神社"],
 
-    ["257niigataken","新潟縣護國神社"],
-    ["320aichiken","愛知縣護國神社"],
+    ["257niigatagokoku","新潟縣護國神社"],
+    ["320aichigokoku","愛知縣護國神社"],
     ["311hidagokoku","飛騨護國神社"],
-    ["304toyamaken","富山縣護國神社"],
+    ["304toyamagokoku","富山縣護國神社"],
 
-    ["290ishikawaken","石川護國神社"],
-    ["284fukuiken","福井縣護國神社"],
-    ["345mieken","三重縣護國神社"],
+    ["290ishikawagokoku","石川護國神社"],
+    ["284fukuigokoku","福井縣護國神社"],
+    ["345miegokoku","三重縣護國神社"],
     ["388oosakagokoku","大阪護國神社"],
     ["407kyoutogokoku","京都霊山護國神社"],
   ],

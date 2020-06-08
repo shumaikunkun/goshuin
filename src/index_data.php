@@ -193,7 +193,7 @@ $all_group=[
 
   "世界遺産（平泉）"=>
   [
-    ["184hiraizumishirayama","平泉寺"],
+    ["184hiraizumishirayama","平泉白山神社"],
     ["182chuuson","中尊寺"],
     ["183konjiki","金色堂"],
     ["186moutsuu","毛越寺"],
@@ -448,13 +448,27 @@ $all_group=[
     ["hakatasumiyoshi","筑前国一宮<br>住吉神社"],
   ],
 
-  "日本三大熊野 "=>
+  "日本三大熊野"=>
   [
     ["374kumanohonguu","熊野本宮大社"],
     ["373kumanohayatama","熊野速玉大社"],
     ["370kumanonachi","熊野那智大社"],
     ["kumanokoutai","熊野皇大神社"],
     ["miyauchikumano","宮内熊野大社"],
+  ],
+
+  "日本三大愛宕"=>
+  [
+    ["atago","京都愛宕神社"],
+    ["062toukyouatago","東京愛宕神社"],
+    ["washioatago","鷲尾愛宕神社"],
+  ],
+
+  "日本三大祗園"=>
+  [
+    ["410yasaka","八坂神社"],
+    ["112tsushima","津島神社"],
+    ["kushida","櫛田神社"],
   ],
 
   "日本三大弁天"=>
@@ -960,38 +974,38 @@ $all_group=[
   ],
 
 
-  "全国護國神社"=>
-  [
-    ["191miyagigokoku","宮城縣護國神社"],
-    ["083ibarakigokoku","茨城縣護國神社"],
-    ["202saitamagokoku","埼玉縣護國神社"],
-    ["243yamanashigokoku","山梨縣護國神社"],
+  // "全国護國神社"=>
+  // [
+  //   ["191miyagigokoku","宮城縣護國神社"],
+  //   ["083ibarakigokoku","茨城縣護國神社"],
+  //   ["202saitamagokoku","埼玉縣護國神社"],
+  //   ["243yamanashigokoku","山梨縣護國神社"],
+  //
+  //   ["257niigatagokoku","新潟縣護國神社"],
+  //   ["320aichigokoku","愛知縣護國神社"],
+  //   ["311hidagokoku","飛騨護國神社"],
+  //   ["304toyamagokoku","富山縣護國神社"],
+  //
+  //   ["290ishikawagokoku","石川護國神社"],
+  //   ["284fukuigokoku","福井縣護國神社"],
+  //   ["345miegokoku","三重縣護國神社"],
+  //   ["388oosakagokoku","大阪護國神社"],
+  //   ["407kyoutogokoku","京都霊山護國神社"],
+  // ],
 
-    ["257niigatagokoku","新潟縣護國神社"],
-    ["320aichigokoku","愛知縣護國神社"],
-    ["311hidagokoku","飛騨護國神社"],
-    ["304toyamagokoku","富山縣護國神社"],
 
-    ["290ishikawagokoku","石川護國神社"],
-    ["284fukuigokoku","福井縣護國神社"],
-    ["345miegokoku","三重縣護國神社"],
-    ["388oosakagokoku","大阪護國神社"],
-    ["407kyoutogokoku","京都霊山護國神社"],
-  ],
-
-
-  "全国総社"=>
-  [
-    ["188mutsusousha","陸奥総社宮"],
-    ["151hitachi","常陸国総社宮"],
-    ["208ookunitama","大國魂神社"],
-    ["222rokusho","六所神社"],
-
-    ["113kou","大国霊神社"],
-    ["228shizuokasengen","静岡浅間神社"],
-    ["271nanguuotabi","南宮御旅神社"],
-    ["309hidasousha","飛騨総社"],
-  ],
+  // "全国総社"=>
+  // [
+  //   ["188mutsusousha","陸奥総社宮"],
+  //   ["151hitachi","常陸国総社宮"],
+  //   ["208ookunitama","大國魂神社"],
+  //   ["222rokusho","六所神社"],
+  //
+  //   ["113kou","大国霊神社"],
+  //   ["228shizuokasengen","静岡浅間神社"],
+  //   ["271nanguuotabi","南宮御旅神社"],
+  //   ["309hidasousha","飛騨総社"],
+  // ],
 
 
   "全国国分寺"=>

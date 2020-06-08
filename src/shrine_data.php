@@ -4,7 +4,7 @@ $all_ichinomiya=
 [
   "全国一宮"=>
   [
-    #["hokkaidou","蝦夷国一之宮<br>北海道神宮"],
+
     ["iwakiyama","津軽国一之宮<br>岩木山神社"],
     ["181komagata","陸中国一之宮<br>駒形神社"],
     ["175shiogama","陸前国一之宮<br>鹽竈神社"],
@@ -136,6 +136,8 @@ $all_ichinomiya=
     ["kaijin","対馬国一之宮<br>海神神社"],
     ["iduharahachiman","対馬国一之宮<br>厳原八幡宮神社"],
     ["naminoue","琉球国一之宮<br>波上宮"],
+
+    ["hokkaidou","蝦夷国一之宮<br>北海道神宮"],
   ],
 
   "全国二宮以下"=>

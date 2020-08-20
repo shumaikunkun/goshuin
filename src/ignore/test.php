@@ -1,15 +1,18 @@
+<style type="text/css">
+  img.mini{
+    width:46px;
+
+  }
+</style>
+
 <?php
-//可変関数のテスト
 
-function hello($name) {
-    echo "Hello $name !";
+$img_path="../../img/";
+
+foreach(glob($img_path."*.jpg") as $filename){
+?>
+<img src="<?php echo $filename ?>" class="mini" alt="画像">
+<?php
 }
-
-// hello("太郎");
-
-'hello'("太郎");
-
-$func = 'hello';
-$func("次郎");
 
 ?>

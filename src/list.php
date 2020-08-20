@@ -272,7 +272,17 @@ function display($image,$name,$all_group,$is_odd,$is_index){
   <div class="<?php echo $is_odd ? "is-odd" : "is-even" ?>" >
     <div class="card3">
       <div class="box3">
-        <a href="<?php echo $merge_image_file = $img_path.(preg_match('/\d\d\d\w./',$image) ? $image : "000").".jpg"; ?>" target="_blank">
+<?php
+        $merge_image_file = $img_path.$image.".jpg";
+        if(!in_array($merge_image_file,glob($img_path."*.jpg"))){  //データがない場合
+          if(preg_match('/\d\d\d.+/',$image)){  //数字から始まる取得済だがデータなし
+            $merge_image_file = $img_path."black.jpg";
+          }else{  //数字から始まらない＞未取得
+            $merge_image_file = $img_path."000.jpg";
+          }
+        }
+?>
+        <a href="<?php echo $merge_image_file ?>" target="_blank">
           <img src="<?php echo $merge_image_file ?>" class="image3" />
         </a>
         <div>
@@ -285,7 +295,7 @@ function display($image,$name,$all_group,$is_odd,$is_index){
           foreach($all_group as $title => $arr){
             foreach ($arr as $a) {
               if($a[0]==$image && ($class_num+=1)<5){
-                echo in_array($title,$kan_koku_hei) ? "別表神社　" : "";  //官国幣社のクラスを持っている要素は別表神社も表示する
+                #echo in_array($title,$kan_koku_hei) ? "別表神社　" : "";  //官国幣社のクラスを持っている要素は別表神社も表示する
                 echo $title."<br>";
               }
             }

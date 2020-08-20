@@ -99,7 +99,17 @@
         foreach($a as $b){  //御朱印の画像
 ?>
           <div class="card1">
-            <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w+/',$b[0]) ? $b[0] : "000").".jpg"; ?>" target="_blank">
+<?php
+            $merge_image_file = $img_path.$b[0].".jpg";
+            if(!in_array($merge_image_file,glob($img_path."*.jpg"))){  //データがない場合
+              if(preg_match('/\d\d\d.+/',$b[0])){  //数字から始まる取得済だがデータなし
+                $merge_image_file = $img_path."black.jpg";
+              }else{  //数字から始まらない＞未取得
+                $merge_image_file = $img_path."000.jpg";
+              }
+            }
+?>
+            <a href="<?php echo $merge_image_file ?>" target="_blank">
               <image class="image1" src="<?php echo $merge_image_file ?>"/>
             </a>
             <p class="title1"><?php echo preg_match('/<br>/',$b[1]) ? preg_split('/<br>/',$b[1])[1] : $b[1] ?></p>

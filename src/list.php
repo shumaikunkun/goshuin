@@ -276,7 +276,7 @@ function display($image,$name,$all_group,$is_odd,$is_index){
         $merge_image_file = $img_path.$image.".jpg";
         if(!in_array($merge_image_file,glob($img_path."*.jpg"))){  //データがない場合
           if(preg_match('/\d\d\d.+/',$image)){  //数字から始まる取得済だがデータなし
-            $merge_image_file = $img_path."black.jpg";
+            $merge_image_file = $img_path."test.jpg";
           }else{  //数字から始まらない＞未取得
             $merge_image_file = $img_path."000.jpg";
           }

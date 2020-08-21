@@ -36,6 +36,7 @@ $all_ichinomiya=
     ["205chichibu","知知夫国一之宮<br>秩父神社"],
 
     ["003suwa","信濃国一之宮<br>諏訪大社"],
+    //suwa
     ["231sengen","甲斐国一之宮<br>浅間神社"],
     ["241yamanashisengen","駿河国一之宮<br>浅間大社"],
     ["264oguni","遠江国一之宮<br>小國神社"],
@@ -75,7 +76,7 @@ $all_ichinomiya=
     ["387ootori","和泉国一之宮<br>大鳥大社"],
     ["390hiraoka","河内国一之宮<br>枚岡神社"],
     ["389sumiyoshi","摂津国一之宮<br>住吉大社"],
-    ["ikasuri","摂津国一之宮<br>坐摩神社"],
+    ["710ikasuri","摂津国一之宮<br>坐摩神社"],
 
     ["445kamigamo","山城国一之宮<br>賀茂別雷神社"],
     ["420shimogamo","山城国一之宮<br>賀茂御祖神社"],
@@ -86,18 +87,18 @@ $all_ichinomiya=
     ["473izanagi","淡路国一之宮<br>伊弉諾神社"],
     ["izushi","但馬国一之宮<br>出石神社"],
     ["awaga","但馬国一之宮<br>粟鹿神社"],
-    ["iwa","播磨国一之宮<br>伊和神社"],
-    ["nakayama","美作国一之宮<br>中山神社"],
+    ["632iwa","播磨国一之宮<br>伊和神社"],
+    ["633nakayama","美作国一之宮<br>中山神社"],
 
-    ["futsumitama","備前国一之宮<br>石上布都魂神社"],
-    ["kibitsuhiko","備前国一之宮<br>吉備津彦神社"],
-    ["kibitsu","備中国一之宮<br>吉備津神社"],
-    ["bingokibitsu","備後国一之宮<br>備後吉備津神社"],
-    ["susanoo","備後国一之宮<br>素盞嗚神社"],
+    ["636futsumitama","備前国一之宮<br>石上布都魂神社"],
+    ["641kibitsuhiko","備前国一之宮<br>吉備津彦神社"],
+    ["642kibitsu","備中国一之宮<br>吉備津神社"],
+    ["646bingokibitsu","備後国一之宮<br>備後吉備津神社"],
+    ["647susanoo","備後国一之宮<br>素盞嗚神社"],
 
-    ["itsukushma","安芸国一之宮<br>厳島神社"],
-    ["tamanooya","周防国一之宮<br>玉祖神社"],
-    ["shimonosekisumiyoshi","長門国一之宮<br>住吉神社"],
+    ["667itsukushima","安芸国一之宮<br>厳島神社"],
+    ["673tamanooya","周防国一之宮<br>玉祖神社"],
+    ["682shimonosekisumiyoshi","長門国一之宮<br>住吉神社"],
     ["ube","因幡国一之宮<br>宇倍神社"],
     ["shitori","伯耆国一之宮<br>倭文神社"],
 
@@ -113,10 +114,10 @@ $all_ichinomiya=
     ["493yakurahime","阿波国一之宮<br>八倉比売神社"],
     ["575tamura","讃岐国一之宮<br>田村神社"],
 
-    ["ooyamatsumi","伊予国一之宮<br>大山祇神社"],
+    ["659ooyamatsumi","伊予国一之宮<br>大山祇神社"],
     ["511tosa","土佐国一之宮<br>土佐神社"],
-    ["hakatasumiyoshi","筑前国一之宮<br>住吉神社"],
-    ["hakozaki","筑前国一之宮<br>筥崎宮"],
+    ["695hakatasumiyoshi","筑前国一之宮<br>住吉神社"],
+    ["698hakozaki","筑前国一之宮<br>筥崎宮"],
     ["koura","筑後国一之宮<br>高良大社"],
 
     ["usa","豊前国一之宮<br>宇佐神宮"],
@@ -144,9 +145,11 @@ $all_ichinomiya=
   [
     ["kinowa","出羽国二宮<br>城輪神社"],
     ["komonoimi","出羽国三宮<br>小物忌神社"],
-    ["akagi","上野国二宮<br>赤城神社"],
-    ["ikaho","上野国三宮<br>伊香保神社"],
-    ["haruna","上野国六宮<br>榛名神社"],
+    ["620ninomiyaakagi","上野国二宮<br>赤城神社"],
+    //akagi
+    //621miyosawaakagi
+    ["615ikaho","上野国三宮<br>伊香保神社"],
+    ["614haruna","上野国六宮<br>榛名神社"],
 
     ["ninomiya","武蔵国二宮<br>二宮神社"],  //武蔵六社
     ["038hikawa","武蔵国三宮<br>氷川神社"],  //武蔵六社
@@ -193,16 +196,16 @@ $all_ichinomiya=
     ["awaga","但馬国二宮<br>粟鹿神社"],
     ["yabu","但馬国三宮<br>養父神社"],
     ["sakamisumiyoshi","播磨国三宮<br>酒見住吉神社"],
-    ["ani","備前国二宮<br>安仁神社"],
-    ["takano","美作国二宮<br>高野神社"],  //美作三社
+    ["637ani","備前国二宮<br>安仁神社"],
+    ["635takano","美作国二宮<br>高野神社"],  //美作三社
 
     ["oomiwayama","伯耆国二宮<br>大神山神社"],
     ["sada","出雲国二宮<br>佐太神社"],
     ["tabato","石見国二宮<br>多鳩神社"],
-    ["","石見国三宮<br>大祭天石門彦神社"],
-    ["hayatani","安芸国二宮<br>速谷神社"],
+    ["aaaa","石見国三宮<br>大祭天石門彦神社"],
+    ["666hayatani","安芸国二宮<br>速谷神社"],
 
-    ["iminomiya","長門国二宮<br>忌宮神社"],
+    ["680iminomiya","長門国二宮<br>忌宮神社"],
     ["suouizumo","周防国二宮<br>出雲神社"],  //周防五社
     ["nikabe","周防国三宮<br>仁壁神社"],  //周防五社
     ["akada","周防国四宮<br>赤田神社"],  //周防五社
@@ -242,7 +245,7 @@ $all_ichinomiya=
     ["448hiyoshi","日吉大社"],
     ["442umemiya","梅宮大社"],
     ["424yoshida","吉田神社"],
-    ["hirota","廣田神社"],
+    ["705hirota","廣田神社"],
     ["410yasaka","八坂神社"],
 
     ["434kitanotenman","北野天満宮"],
@@ -297,15 +300,15 @@ $all_ichinomiya=
     ["390hiraoka","枚岡神社"],  //一宮
     ["387ootori","大鳥大社"],  //一宮
     ["389sumiyoshi","住吉大社"],  //一宮  //二十二社
-    ["ikukunitama","生国魂神社"],
+    ["713ikukunitama","生国魂神社"],
     ["455minase","水無瀬神宮"],  //神宮
-    ["hirota","廣田神社"],  //二十二社
+    ["705hirota","廣田神社"],  //二十二社
     ["473izanagi","伊弉諾神宮"],  //一宮  //神宮
     ["izumo","出雲大社"],  //一宮
-    ["akama","赤間神宮"],  //神宮
-    ["kashii","香椎宮"],  //神宮
-    ["munakata","宗像大社"],
-    ["hakozaki","筥崎宮"],  //一宮
+    ["683akama","赤間神宮"],  //神宮
+    ["699kashii","香椎宮"],  //神宮
+    ["702munakata","宗像大社"],
+    ["698hakozaki","筥崎宮"],  //一宮
     ["usa","宇佐神宮"],  //一宮  //神宮
     ["aso","阿蘇神社"],  //一宮
     ["miyazaki","宮崎神宮"],  //神宮
@@ -320,7 +323,7 @@ $all_ichinomiya=
     ["268nanguu","南宮大社"],  //一宮
     ["tado","多度大社"],  //二宮以下
     ["kumano","熊野大社"],  //一宮
-    ["ooyamatsumi","大山祇神社"],  //一宮
+    ["659ooyamatsumi","大山祇神社"],  //一宮
     ["koura","高良大社"],  //一宮
   ],
 
@@ -338,14 +341,14 @@ $all_ichinomiya=
     ["454ooharano","大原野神社"],  //二十二社
     ["424yoshida","吉田神社"],  //二十二社
     ["434kitanotenman","北野天満宮"],  //二十二社
-    ["ikasuri","坐摩神社"],  //一宮
-    ["ikuta","生田神社"],
-    ["watatsumi","海神社"],
-    ["nagata","長田神社"],
-    ["kibitsu","吉備津神社"],  //一宮
-    ["itsukushma","厳島神社"],  //一宮
-    ["shimonosekisumiyoshi","下関住吉神社"],
-    ["dazaifu","太宰府天満宮"],
+    ["710ikasuri","坐摩神社"],  //一宮
+    ["470ikuta","生田神社"],
+    ["625watatsumi","海神社"],
+    ["623nagata","長田神社"],
+    ["642kibitsu","吉備津神社"],  //一宮
+    ["667itsukushima","厳島神社"],  //一宮
+    ["682shimonosekisumiyoshi","下関住吉神社"],
+    ["689dazaifu","太宰府天満宮"],
     ["hikosan","英彦山神宮"],  //神宮
     ["yatsushiro","八代宮"],  //建武中興十五社
   ],
@@ -367,7 +370,7 @@ $all_ichinomiya=
     ["196samukawa","寒川神社"],  //一宮
     ["047tsurugaoka","鶴岡八幡宮"],  //一宮
     ["241yamanashisengen","一宮浅間神社"],  //一宮
-    ["ikushimatarushima","生島足島神社"],
+    ["609ikushimatarushima","生島足島神社"],
     ["258iyahiko","弥彦神社"],  //一宮
     ["301imizu","射水神社"],  //一宮
     ["289shirayamahime","白山比咩神社"],  //一宮
@@ -379,20 +382,20 @@ $all_ichinomiya=
     ["izumodai","出雲大神宮"],  //一宮
     ["kono","籠神社"],  //一宮
     ["izushi","出石神社"],  //一宮
-    ["iwa","伊和神社"],  //一宮
-    ["nakayama","中山神社"],  //一宮
-    ["ani","安仁神社"],  //二宮以下
-    ["hayatani","速谷神社"],  //二宮以下
+    ["632iwa","伊和神社"],  //一宮
+    ["633nakayama","中山神社"],  //一宮
+    ["637ani","安仁神社"],  //二宮以下
+    ["666hayatani","速谷神社"],  //二宮以下
     ["ube","宇倍神社"],  //一宮
     ["mizuwakasu","水若酢神社"],  //一宮
     ["miho","美保神社"],
-    ["tamanooya","玉祖神社"],  //一宮
-    ["tamura","田村神社"],  //一宮
-    ["kotohira","金刀比羅宮"],
+    ["673tamanooya","玉祖神社"],  //一宮
+    ["575tamura","田村神社"],  //一宮
+    ["561kotohira","金刀比羅宮"],
     ["isono","伊曽乃神社"],
     ["inbe","忌部神社"],
-    ["ooasahiko","大麻比古神社"],  //一宮
-    ["tosa","土佐神社"],  //一宮
+    ["476ooasahiko","大麻比古神社"],  //一宮
+    ["511tosa","土佐神社"],  //一宮
     ["sasamuta","西寒多神社"],  //一宮
     ["tajima","田島神社"],
     ["ikisumiyoshi","壱岐住吉神社"],
@@ -404,9 +407,9 @@ $all_ichinomiya=
   "官幣小社"=>
   [
     ["208ookunitama","大國魂神社"],  //総社
-    ["kamado","竈門神社"],
-    ["shikaumi","志賀海神社"],
-    ["hakatasumiyoshi","博多住吉神社"],   //一宮
+    ["690kamado","竈門神社"],
+    ["700shikaumi","志賀海神社"],
+    ["695hakatasumiyoshi","博多住吉神社"],   //一宮
     ["naminoue","波上宮"],  //一宮
   ],
 
@@ -422,8 +425,8 @@ $all_ichinomiya=
     ["264oguni","小國神社"],  //一宮
     ["228shizuokasengen","静岡浅間神社"],  //総社
     ["izuyama","伊豆山神社"],
-    ["togakushi","戸隠神社"],
-    ["hodaka","穂高神社"],  //二宮以下
+    ["599togakushichuusha","戸隠神社"],
+    ["594hodaka","穂高神社"],  //二宮以下
     ["watatsu","度津神社"],  //一宮
     ["308takase","高瀬神社"],  //一宮
     ["305oyamamae","雄山神社"],  //一宮
@@ -434,16 +437,16 @@ $all_ichinomiya=
     ["110toga","砥鹿神社"],  //一宮
     ["112tsushima","津島神社"],
     ["113kou","尾張大国霊神社"],  //総社
-    ["kibitsuhiko","吉備津彦神社"],  //一宮
-    ["bingokibitsu","吉備津神社"],  //一宮
-    ["nunakuma","沼名前神社"],
+    ["641kibitsuhiko","吉備津彦神社"],  //一宮
+    ["646bingokibitsu","吉備津神社"],  //一宮
+    ["652nunakuma","沼名前神社"],
     ["oomiwayama","大神山神社"],  //二宮以下
     ["shitori","倭文神社"],  //一宮
     ["hinomisaki","日御碕神社"],
     ["mononobe","物部神社"],  //一宮
     ["susa","須佐神社"],
     ["sada","佐太神社"],  //二宮以下
-    ["iminomiya","忌宮神社"],  //二宮以下
+    ["680iminomiya","忌宮神社"],  //二宮以下
     ["chiriku","千栗八幡宮"],  //一宮
     ["yusuhara","柞原八幡宮"],  //一宮
     ["fujisaki","藤崎八旛宮"],  //二宮以下
@@ -471,13 +474,13 @@ $all_ichinomiya=
     ["402toyokuni","豊国神社"],
     ["418nashinoki","梨木神社"],
     ["tanzan","談山神社"],
-    ["abeno","阿部野神社"],  //建武中興十五社
+    ["715abeno","阿部野神社"],  //建武中興十五社
     ["shijounawate","四條畷神社"],  //建武中興十五社
-    ["minatogawa","湊川神社"],  //建武中興十五社
+    ["622minatogawa","湊川神社"],  //建武中興十五社
     ["nawa","名和神社"],  //建武中興十五社
-    ["toyosaka","豊榮神社"],
-    ["noda","野田神社"],
-    ["yamauchi","山内神社"],
+    ["676toyosaka","豊榮神社"],
+    ["675noda","野田神社"],
+    ["514yamauchi","山内神社"],
     ["saga","佐嘉神社"],
     ["kikuchi","菊池神社"],  //建武中興十五社
     ["terukuni","照国神社"],
@@ -544,7 +547,7 @@ $all_ichinomiya=
     ["355karasawayama","唐澤山神社"],  //官国幣社
 
     ["352nukisaki","貫前神社"],  //官国幣社
-    ["gunmagokoku","群馬縣護國神社"],
+    ["611gunmagokoku","群馬縣護國神社"],
 
     ["038hikawa","氷川神社"],  //官国幣社
     ["351kanasana","金鑽神社"],  //官国幣社
@@ -616,19 +619,19 @@ $all_ichinomiya=
     ["komurosengen","小室浅間神社"],
     ["243yamanashigokoku","山梨縣護國神社"],
 
-    ["suwakamishahonmiya","諏訪大社上社本宮"],  //官国幣社
-    ["suwakamishamaemiya","諏訪大社上社前宮"],  //官国幣社
-    ["suwashimoshaharumiya","諏訪大社下社春宮"],  //官国幣社
-    ["suwashimoshaakimiya","諏訪大社下社秋宮"],  //官国幣社
-    ["ikushimatarushima","生島足島神社"],  //官国幣社
-    ["togakushi","戸隠神社"],  //官国幣社
-    ["hodaka","穂高神社"],  //官国幣社
-    ["naganogokoku","長野縣護國神社"],
-    ["yohashira","四柱神社"],
-    ["fukashi","深志神社"],
-    ["tenaga","手長神社"],
-    ["takemizuwake","武水別神社"],
-    ["nyakuichiouji","若一王子神社"],
+    ["585suwakamishahonmiya","諏訪大社上社本宮"],  //官国幣社
+    ["586suwakamishamaemiya","諏訪大社上社前宮"],  //官国幣社
+    ["587suwashimoshaharumiya","諏訪大社下社春宮"],  //官国幣社
+    ["588suwashimoshaakimiya","諏訪大社下社秋宮"],  //官国幣社
+    ["609ikushimatarushima","生島足島神社"],  //官国幣社
+    ["599togakushichuusha","戸隠神社"],  //官国幣社
+    ["594hodaka","穂高神社"],  //官国幣社
+    ["593naganogokoku","長野縣護國神社"],
+    ["592yohashira","四柱神社"],
+    ["591fukashi","深志神社"],
+    ["589tenaga","手長神社"],
+    ["603takemizuwake","武水別神社"],
+    ["596nyakuichiouji","若一王子神社"],
 
     ["268nanguu","南宮大社"],  //官国幣社
     ["316minashi","水無神社"],  //官国幣社
@@ -702,31 +705,31 @@ $all_ichinomiya=
     ["389sumiyoshi","住吉大社"],  //官国幣社
     ["390hiraoka","枚岡神社"],  //官国幣社
     ["387ootori","大鳥大社"],  //官国幣社
-    ["ikukunitama","生國魂神社"],  //官国幣社
+    ["713ikukunitama","生國魂神社"],  //官国幣社
     ["455minase","水無瀬神宮"],  //官国幣社
-    ["ikasuri","坐摩神社"],  //官国幣社
-    ["abeno","阿部野神社"],  //官国幣社
+    ["710ikasuri","坐摩神社"],  //官国幣社
+    ["715abeno","阿部野神社"],  //官国幣社
     ["shijounawate","四條畷神社"],  //官国幣社
-    ["oosakatenman","大阪天満宮"],
-    ["koudu","高津宮"],
-    ["imamiyaebisu","今宮戎神社"],
+    ["709oosakatenman","大阪天満宮"],
+    ["712koudu","高津宮"],
+    ["714imamiyaebisu","今宮戎神社"],
     ["388oosakagokoku","大阪護國神社"],
 
     ["473izanagi","伊奘諾神宮"],  //官国幣社
-    ["hirota","廣田神社"],  //官国幣社
+    ["705hirota","廣田神社"],  //官国幣社
     ["470ikuta","生田神社"],  //官国幣社
-    ["nagata","長田神社"],  //官国幣社
-    ["watatsumi","海神社"],  //官国幣社
-    ["minatogawa","湊川神社"],  //官国幣社
+    ["623nagata","長田神社"],  //官国幣社
+    ["625watatsumi","海神社"],  //官国幣社
+    ["622minatogawa","湊川神社"],  //官国幣社
     ["izushi","出石神社"],  //官国幣社
-    ["iwa","伊和神社"],  //官国幣社
-    ["nishinomiya","西宮神社"],
-    ["itatehyouzu","射楯兵主神社"],
-    ["hiromine","廣峯神社"],
+    ["632iwa","伊和神社"],  //官国幣社
+    ["704nishinomiya","西宮神社"],
+    ["628itatehyouzu","射楯兵主神社"],
+    ["630hiromine","廣峯神社"],
     ["akouooishi","赤穂大石神社"],
     ["tada","多田神社"],
-    ["himejigokoku","兵庫縣姫路護國神社"],
-    ["koubegokoku","兵庫縣神戸護國神社"],
+    ["629himejigokoku","兵庫縣姫路護國神社"],
+    ["703koubegokoku","兵庫縣神戸護國神社"],
 
     ["392kasuga","春日大社"],  //官国幣社
     ["395oomiwa","大神神社"],  //官国幣社
@@ -770,32 +773,32 @@ $all_ichinomiya=
     ["matsuegokoku","松江護國神社"],
     ["hamadagokoku","濱田護國神社"],
 
-    ["kibitsu","吉備津神社"],  //官国幣社
-    ["nakayama","中山神社"],  //官国幣社
-    ["ani","安仁神社"],  //官国幣社
-    ["kibitsuhiko","吉備津彦神社"],  //官国幣社
-    ["okayamagokoku","岡山縣護國神社"],
+    ["642kibitsu","吉備津神社"],  //官国幣社
+    ["633nakayama","中山神社"],  //官国幣社
+    ["637ani","安仁神社"],  //官国幣社
+    ["641kibitsuhiko","吉備津彦神社"],  //官国幣社
+    ["638okayamagokoku","岡山縣護國神社"],
 
-    ["itsukushma","厳島神社"],  //官国幣社
-    ["hayatani","速谷神社"],  //官国幣社
-    ["nunakuma","沼名前神社"],  //官国幣社
-    ["bingokibitsu","備後吉備津神社"],  //官国幣社
-    ["fukuyamahachiman","福山八幡宮"],
+    ["667itsukushima","厳島神社"],  //官国幣社
+    ["666hayatani","速谷神社"],  //官国幣社
+    ["652nunakuma","沼名前神社"],  //官国幣社
+    ["646bingokibitsu","備後吉備津神社"],  //官国幣社
+    ["648fukuyamahachiman","福山八幡宮"],
     ["kameyama","亀山神社"],
-    ["hijiyama","比治山神社"],
-    ["bingogokoku","備後護国神社"],
-    ["hiroshimagokoku","広島護国神社"],
+    ["661hijiyama","比治山神社"],
+    ["649bingogokoku","備後護国神社"],
+    ["660hiroshimagokoku","広島護国神社"],
 
-    ["akama","赤間神宮"],  //官国幣社
-    ["shimonosekisumiyoshi","下関住吉神社"],  //官国幣社
-    ["toyosaka","豊栄神社"],  //官国幣社
-    ["noda","野田神社"],  //官国幣社
-    ["tamanooya","玉祖神社"],  //官国幣社
-    ["iminomiya","忌宮神社"],  //官国幣社
-    ["houfu","防府天満宮"],
-    ["kotozakihachiman","琴崎八幡宮"],
-    ["shimonosekikameyamahachiman","下関亀山八幡宮"],
-    ["yamaguchigokoku","山口県護国神社"],
+    ["683akama","赤間神宮"],  //官国幣社
+    ["682shimonosekisumiyoshi","下関住吉神社"],  //官国幣社
+    ["676toyosaka","豊栄神社"],  //官国幣社
+    ["675noda","野田神社"],  //官国幣社
+    ["673tamanooya","玉祖神社"],  //官国幣社
+    ["680iminomiya","忌宮神社"],  //官国幣社
+    ["672houfu","防府天満宮"],
+    ["679kotozakihachiman","琴崎八幡宮"],
+    ["684shimonosekikameyamahachiman","下関亀山八幡宮"],
+    ["674yamaguchigokoku","山口県護国神社"],
 
     ["inbe","忌部神社"],  //官国幣社
     ["476ooasahiko","大麻比古神社"],  //官国幣社
@@ -804,7 +807,7 @@ $all_ichinomiya=
     ["575tamura","田村神社"],  //官国幣社
     ["561kotohira","金刀比羅宮"],  //官国幣社
 
-    ["ooyamatsumi","大山祇神社"],  //官国幣社
+    ["659ooyamatsumi","大山祇神社"],  //官国幣社
     ["isono","伊曾乃神社"],  //官国幣社
     ["552ishiduchi","石鎚神社"],
     ["527warei","和霊神社"],
@@ -813,31 +816,31 @@ $all_ichinomiya=
 
     ["511tosa","土佐神社"],  //官国幣社
     ["515ushioetenman","潮江天満宮"],
-    ["kouchigokoku","高知県護国神社"],
+    ["516kouchigokoku","高知県護国神社"],
 
-    ["kashii","香椎宮"],  //官国幣社
-    ["munakata","宗像大社"],  //官国幣社
-    ["hakozaki","筥崎宮"],  //官国幣社
-    ["koura","高良大社"],  //官国幣社
+    ["699kashii","香椎宮"],  //官国幣社
+    ["702munakata","宗像大社"],  //官国幣社
+    ["698hakozaki","筥崎宮"],  //官国幣社
+    ["komura","高良大社"],  //官国幣社
     ["hikosan","英彦山神宮"],  //官国幣社
-    ["dazaifu","太宰府天満宮"],  //官国幣社
-    ["kamado","竈門神社"],  //官国幣社
-    ["hakatasumiyoshi","博多住吉神社"],  //官国幣社
-    ["shikaumi","志賀海神社"],  //官国幣社
-    ["miyajidake","宮地嶽神社"],
+    ["689dazaifu","太宰府天満宮"],  //官国幣社
+    ["690kamado","竈門神社"],  //官国幣社
+    ["695hakatasumiyoshi","博多住吉神社"],  //官国幣社
+    ["700shikaumi","志賀海神社"],  //官国幣社
+    ["701miyajidake","宮地嶽神社"],
     ["suiten","水天宮"],
-    ["kushida","櫛田神社"],
+    ["696kushida","櫛田神社"],
     ["fuurou","風浪宮"],
-    ["tobihatahachiman","飛幡八幡宮"],
-    ["kousouhachiman","甲宗八幡神社"],
-    ["umihachiman","宇美八幡宮"],
+    ["686tobihatahachiman","飛幡八幡宮"],
+    ["685kousouhachiman","甲宗八幡神社"],
+    ["691umihachiman","宇美八幡宮"],
     ["ootomi","大富神社"],
-    ["terumo","光雲神社"],
+    ["693terumo","光雲神社"],
     ["nousohachiman","曩祖八幡宮"],
-    ["washioatago","鷲尾愛宕神社"],
-    ["wakamatsuebisu","若松恵比須神社"],
-    ["fukuokagokoku","福岡縣護國神社"],
-    ["tookaebisu","十日恵比須神社"],
+    ["692washioatago","鷲尾愛宕神社"],
+    ["687wakamatsuebisu","若松恵比須神社"],
+    ["694fukuokagokoku","福岡縣護國神社"],
+    ["697tookaebisu","十日恵比須神社"],
 
     ["saga","佐嘉神社"],  //官国幣社
     ["tajima","田島神社"],  //官国幣社
@@ -872,8 +875,8 @@ $all_ichinomiya=
     ["kanbashira","神柱宮"],
     ["sano","狭野神社"],
     ["aoshima","青島神社"],
-    ["amanoiwato","天岩戸神社"],
     ["takachiho","高千穂神社"],
+    ["amanoiwato","天岩戸神社"],
 
     ["kirishima","霧島神宮"],  //官国幣社
     ["kagoshima","鹿児島神宮"],  //官国幣社

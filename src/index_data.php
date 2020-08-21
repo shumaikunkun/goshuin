@@ -239,7 +239,7 @@ $all_group=[
   "世界遺産（各地）"=>
   [
     ["munakata","宗像大社"],
-    ["itsukushma","厳島神社"],
+    ["itsukushima","厳島神社"],
     ["sahimeyama","佐毘売山神社"],
     ["iwamirakan","石見羅漢寺"],
   ],
@@ -474,7 +474,7 @@ $all_group=[
   "日本三大弁天"=>
   [
     ["tsukubusuma","都久夫須麻神社"],
-    ["itsukushma","厳島神社"],
+    ["itsukushima","厳島神社"],
     ["197enoshima","江島神社"],
   ],
 

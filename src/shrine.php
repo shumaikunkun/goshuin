@@ -103,7 +103,7 @@
             $merge_image_file = $img_path.$b[0].".jpg";
             if(!in_array($merge_image_file,glob($img_path."*.jpg"))){  //データがない場合
               if(preg_match('/\d\d\d.+/',$b[0])){  //数字から始まる取得済だがデータなし
-                $merge_image_file = $img_path."black.jpg";
+                $merge_image_file = $img_path."test.jpg";
               }else{  //数字から始まらない＞未取得
                 $merge_image_file = $img_path."000.jpg";
               }

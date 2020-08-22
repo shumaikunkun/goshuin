@@ -130,12 +130,16 @@ body{
   width: 100%;
   z-index: 100;
 }
-/*
-.site-logo img{
-height: 20px;
-width: auto;
+
+@font-face{
+  font-family: 'Fushimi';
+  src: url('../font/fushimi.ttf') format('truetype');
 }
-*/
+.site-logo{
+  font-family: 'Fushimi';
+  font-size: 50px;
+}
+
 .gnav__menu{
   display: flex;
 }
@@ -859,8 +863,28 @@ float: left;
 
 
 /* SNSシェアボタン */
-
 .share-button{
   text-align: center;
   margin-bottom: 40px;
 }
+
+
+@font-face{
+  font-family: 'Fushimi';
+  src: url('../font/fushimi.ttf') format('truetype');
+}
+
+.font-test{
+  color: #ff0000;
+  font-family: "Fushimi" ,serif;
+}
+
+
+
+/* @font-face{
+  font-family: 'Fushimi';
+  src: url('./font/fushimi.ttf') format('truetype');
+}
+.site-logo{
+  font-family: 'Fushimi';
+} */

@@ -4,64 +4,68 @@ $all_ichinomiya=
 [
   "全国一宮"=>
   [
-
+    ["hokkaidou","蝦夷国一之宮<br>北海道神宮"],
     ["iwakiyama","津軽国一之宮<br>岩木山神社"],
     ["181komagata","陸中国一之宮<br>駒形神社"],
     ["175shiogama","陸前国一之宮<br>鹽竈神社"],
-    ["oomonoimi","出羽国一之宮<br>大物忌神社吹浦口宮"],
-    ["000","出羽国一之宮<br>大物忌神社蕨岡口宮"],
-
     ["000isasumi","岩代国一之宮<br>伊佐須美神社"],
+
     ["babatsutsukowake","磐城国一之宮<br>都都古和氣神社"],
     ["yatsukitsutsukowake","磐城国一之宮<br>都々古別神社"],
     ["ishitsutsukowake","磐城国一之宮<br>石都々古和気神社"],
-    ["352nukisaki","上野国一之宮<br>貫前神社"],
+    ["oomonoimi","出羽国一之宮<br>大物忌神社吹浦口宮"],
+    ["000","出羽国一之宮<br>大物忌神社蕨岡口宮"],
 
+    ["352nukisaki","上野国一之宮<br>貫前神社"],
     ["340futarasan","下野国一之宮<br>日光二荒山神社中宮祠"],
     ["088nikkoufutarasan","下野国一之宮<br>日光二荒山神社"],
     ["085utsunomiyafutarasan","下野国一之宮<br>宇都宮二荒山神社"],
     ["071kashima","常陸国一之宮<br>鹿島神宮"],
-    ["358katori","下総国一之宮<br>香取神宮"],
 
+    ["358katori","下総国一之宮<br>香取神宮"],
     ["165tamasaki","上総国一之宮<br>玉前神社"],
     ["158awa","安房国一之宮<br>安房神社"],
     ["157susaki","安房国一之宮<br>洲崎神社"],
+    ["205chichibu","知知夫国一之宮<br>秩父神社"],
+
     ["038hikawa","武蔵国一之宮<br>氷川神社"],
     ["201hikawanyotai","武蔵国一之宮<br>氷川女體神社"],
-
     ["336ono","武蔵国一之宮<br>小野神社"],
     ["047tsurugaoka","相模国一之宮<br>鶴岡八幡宮"],
     ["196samukawa","相模国一之宮<br>寒川神社"],
-    ["227mishima","伊豆国一之宮<br>三嶋大社"],
-    ["205chichibu","知知夫国一之宮<br>秩父神社"],
 
-    ["003suwa","信濃国一之宮<br>諏訪大社"],
-    //suwa
     ["231sengen","甲斐国一之宮<br>浅間神社"],
+    ["003suwa","信濃国一之宮<br>諏訪大社上社本宮"],
+    ["586suwakamishamaemiya","信濃国一之宮<br>諏訪大社上社前宮"],
+    ["587suwashimoshaharumiya","信濃国一之宮<br>諏訪大社下社春宮"],
+    ["588suwashimoshaakimiya","信濃国一之宮<br>諏訪大社下社秋宮"],
+
+    ["227mishima","伊豆国一之宮<br>三嶋大社"],
     ["241yamanashisengen","駿河国一之宮<br>浅間大社"],
     ["264oguni","遠江国一之宮<br>小國神社"],
     ["263kotonomama","遠江国一之宮<br>事任八幡宮"],
-
     ["110toga","三河国一之宮<br>砥鹿神社"],
+
     ["114masumita","尾張国一之宮<br>真清田神社"],
     ["115oomiwa","尾張国一之宮<br>大神神社"],
     ["316minashi","飛騨国一之宮<br>水無神社"],
     ["268nanguu","美濃国一之宮<br>南宮大社"],
-
-    ["301imizu","越中国一之宮<br>射水神社"],
-    ["299ecchuuketa","越中国一之宮<br>氣多神社"],
-    ["308takase","越中国一之宮<br>高瀬神社"],
-    ["305oyamamae","越中国一之宮<br>雄山神社"],
-    ["306oyamanaka","越中国一之宮<br>雄山神社"],
-
-    ["273kehi","越前国一之宮<br>氣比神宮"],
-    ["289shirayamahime","加賀国一之宮<br>白山比咩神社"],
-    ["295keta","能登国一之宮<br>氣多大社"],
-    ["275wakasahiko","若狭国一之宮<br>若狭彦神社"],
     ["watatsu","佐渡国一之宮<br>度津神社"],
 
     ["258iyahiko","越後国一之宮<br>彌彦神社"],
     ["262kota","越後国一之宮<br>居多神社"],
+    ["301imizu","越中国一之宮<br>射水神社"],
+    ["299ecchuuketa","越中国一之宮<br>氣多神社"],
+    ["308takase","越中国一之宮<br>高瀬神社"],
+
+    ["305oyamamae","越中国一之宮<br>雄山神社前立社壇"],
+    ["306oyamanaka","越中国一之宮<br>雄山神社中宮祈願殿"],
+    ["oyamamine","越中国一之宮<br>雄山神社峰本社"],
+    ["273kehi","越前国一之宮<br>氣比神宮"],
+    ["289shirayamahime","加賀国一之宮<br>白山比咩神社"],
+
+    ["295keta","能登国一之宮<br>氣多大社"],
+    ["275wakasahiko","若狭国一之宮<br>若狭彦神社"],
     ["343tsubakinakara","伊勢国一之宮<br>都波岐奈加等神社"],
     ["349tsubaki","伊勢国一之宮<br>椿大神社"],
     ["348aekuni","伊賀国一之宮<br>敢国神社"],
@@ -138,7 +142,6 @@ $all_ichinomiya=
     ["iduharahachiman","対馬国一之宮<br>厳原八幡宮神社"],
     ["naminoue","琉球国一之宮<br>波上宮"],
 
-    ["hokkaidou","蝦夷国一之宮<br>北海道神宮"],
   ],
 
   "全国二宮以下"=>
@@ -619,7 +622,7 @@ $all_ichinomiya=
     ["komurosengen","小室浅間神社"],
     ["243yamanashigokoku","山梨縣護國神社"],
 
-    ["585suwakamishahonmiya","諏訪大社上社本宮"],  //官国幣社
+    ["003suwa","諏訪大社上社本宮"],  //官国幣社
     ["586suwakamishamaemiya","諏訪大社上社前宮"],  //官国幣社
     ["587suwashimoshaharumiya","諏訪大社下社春宮"],  //官国幣社
     ["588suwashimoshaakimiya","諏訪大社下社秋宮"],  //官国幣社

@@ -238,8 +238,8 @@ $all_group=[
 
   "世界遺産（各地）"=>
   [
-    ["munakata","宗像大社"],
-    ["itsukushima","厳島神社"],
+    ["702munakata","宗像大社"],
+    ["667itsukushima","厳島神社"],
     ["sahimeyama","佐毘売山神社"],
     ["iwamirakan","石見羅漢寺"],
   ],
@@ -269,7 +269,7 @@ $all_group=[
 
   "南都十五大寺"=>
   [
-    ["shitennou","四天王寺"],
+    ["717shitennou","四天王寺"],
     ["gufuku","弘福寺(川原寺)"],
     ["006touji","東寺"],
     ["asuka","飛鳥寺(本元興寺)"],
@@ -367,7 +367,7 @@ $all_group=[
     ["013fushimi","伏見稲荷大社"],
     ["yuutokuinari","祐徳稲荷神社"],
     ["082kasama","笠間稲荷神社"],
-    ["saijou","最上稲荷"],
+    ["643saijou","最上稲荷"],
     ["109toyokawa","豊川稲荷"],
   ],
 
@@ -381,7 +381,7 @@ $all_group=[
 
     ["shiwainari","志和稲荷神社	"],
     ["yakyuuinari","箭弓稲荷神社"],
-    ["kusadoinari","草戸稲荷神社"],
+    ["650kusadoinari","草戸稲荷神社"],
     ["091oujiinari","王子稲荷神社"],
     ["takahashiinari","高橋稲荷神社"],
 
@@ -415,15 +415,15 @@ $all_group=[
   [
     ["usa","宇佐八幡宮"],
     ["456iwashimizuhachiman","石清水八幡宮"],
-    ["hakozaki","筥崎宮"],
+    ["698hakozaki","筥崎宮"],
     ["047tsurugaoka","鶴岡八幡宮"],
   ],
 
   "日本三大天神"=>
   [
-    ["dazaifu","太宰府天満宮"],
+    ["689dazaifu","太宰府天満宮"],
     ["434kitanotenman","北野天満宮"],
-    ["houfu","防府天満宮"],
+    ["672houfu","防府天満宮"],
   ],
 
   "関東三大天神"=>
@@ -444,8 +444,8 @@ $all_group=[
   "日本三大住吉"=>
   [
     ["389sumiyoshi","摂津国一宮<br>住吉大社"],
-    ["shimonosekisumiyoshi","長門国一宮<br>住吉神社"],
-    ["hakatasumiyoshi","筑前国一宮<br>住吉神社"],
+    ["682shimonosekisumiyoshi","長門国一宮<br>住吉神社"],
+    ["695hakatasumiyoshi","筑前国一宮<br>住吉神社"],
   ],
 
   "日本三大熊野"=>
@@ -461,27 +461,27 @@ $all_group=[
   [
     ["atago","京都愛宕神社"],
     ["062toukyouatago","東京愛宕神社"],
-    ["washioatago","鷲尾愛宕神社"],
+    ["692washioatago","鷲尾愛宕神社"],
   ],
 
   "日本三大祗園"=>
   [
     ["410yasaka","八坂神社"],
     ["112tsushima","津島神社"],
-    ["kushida","櫛田神社"],
+    ["696kushida","櫛田神社"],
   ],
 
   "日本三大弁天"=>
   [
     ["tsukubusuma","都久夫須麻神社"],
-    ["itsukushima","厳島神社"],
+    ["667itsukushima","厳島神社"],
     ["197enoshima","江島神社"],
   ],
 
   "天下三戒壇"=>
   [
     ["toudai","東大寺"],
-    ["kanzeon","観世音寺"],
+    ["688kanzeon","観世音寺"],
     ["338shimotsukeyakushi","下野薬師寺"],
   ],
 
@@ -541,7 +541,7 @@ $all_group=[
   "関東三大師（天台宗・良源）"=>
   [
     ["211sano","佐野厄除け大師<br>惣宗寺"],
-    // ["000","青柳大師<br>龍蔵寺"],
+    ["619aoyagi","青柳大師<br>龍蔵寺"],
     ["331kawagoetaishi","川越大師<br>喜多院"],
     // ["000","拝島大師<br>本覚院"],
     ["212ashikaga","足利厄除け大師<br>龍泉寺"],
@@ -600,7 +600,7 @@ $all_group=[
   "日本三名塔"=>
   [
     ["houryuu","法隆寺"],
-    ["rurikou","瑠璃光寺"],
+    ["677rurikou","瑠璃光寺"],
     ["461daigo","醍醐寺"],
     ["dewa","羽黒山五重塔"],
   ],
@@ -609,7 +609,7 @@ $all_group=[
   [
     ["aso","阿蘇神社"],
     ["071kashima","鹿島神宮"],
-    ["hakozaki","筥崎宮"],
+    ["698hakozaki","筥崎宮"],
   ],
 
   "日本三大山門"=>
@@ -702,12 +702,12 @@ $all_group=[
     ["000","天王寺"],
   ],
 
-  "法相宗二大別当"=>
-  [
-    ["koufuku","大本山<br>興福寺"],
-    ["ichijou","興福寺別当<br>一乗院"],
-    ["daijou","興福寺別当<br>大乗院"],
-  ],
+  // "法相宗二大別当"=>
+  // [
+  //   ["koufuku","大本山<br>興福寺"],
+  //   ["ichijou","興福寺別当<br>一乗院"],
+  //   ["daijou","興福寺別当<br>大乗院"],
+  // ],
 
   "天台宗十大宗派総本山"=>
   [
@@ -718,7 +718,7 @@ $all_group=[
     ["kimpusen","金峯山修験本宗総本山<br>金峯山寺"],
 
     ["koutaku","羽黒山修験本宗本山<br>荒沢寺"],
-    ["shitennou","和宗総本山<br>四天王寺"],
+    ["717shitennou","和宗総本山<br>四天王寺"],
     ["386kokawa","粉河観音宗総本山<br>粉河寺"],
     ["kurama","鞍馬弘教総本山<br>鞍馬寺"],
     ["035sensou","聖観音宗総本山<br>浅草寺"],
@@ -758,11 +758,11 @@ $all_group=[
 
     ["sakuraihase","真言宗豊山派総本山<br>桜井長谷寺"],
     ["negoro","新義真言宗総本山<br>根来寺"],
-    ["suma","真言宗須磨寺派大本山<br>須磨寺"],
+    ["624suma","真言宗須磨寺派大本山<br>須磨寺"],
     ["chougosonshi","信貴山真言宗総本山<br>朝護孫子寺"],
-    ["kiyoshikoujinseichou","真言三宝派大本山<br>清荒神清澄寺"],
+    ["706kiyoshikoujinseichou","真言三宝派大本山<br>清荒神清澄寺"],
 
-    ["nakayamadera","真言宗中山寺派大本山<br>中山寺"],
+    ["707nakayamadera","真言宗中山寺派大本山<br>中山寺"],
     ["saidai","真言律宗総本山<br>西大寺"],
     ["391ikoma","真言律宗大本山<br>宝山寺"],
   ],
@@ -844,9 +844,9 @@ $all_group=[
 
     ["097komikado","小御門神社"],
     ["kikuchi","菊池神社"],
-    ["minatogawa","湊川神社"],
+    ["622minatogawa","湊川神社"],
     ["nawa","名和神社"],
-    ["abeno","阿倍野神社"],
+    ["715abeno","阿倍野神社"],
 
     ["fujishima","藤島神社"],
     ["347yuuki","結城神社"],

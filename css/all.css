@@ -136,8 +136,8 @@ body{
   src: url('../font/fushimi.ttf') format('truetype');
 }
 .site-logo{
-  font-family: 'Fushimi';
-  font-size: 50px;
+  /* font-family: 'Fushimi';
+  font-size: 50px; */
 }
 
 .gnav__menu{

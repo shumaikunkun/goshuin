@@ -190,8 +190,9 @@ $all_group=[
     ["087nikkou","日光東照宮"],
     ["086rinnou","日光輪王寺"],
     ["088nikkoufutarasan","日光二荒山神社"],
+    ["340futarasan","日光二荒山神社中宮祠"],
     ["089daiyuu","大猷院"],
-    ["090daiyuuinkinkaku","金閣殿"],
+    // ["090daiyuuinkinkaku","金閣殿"],
   ],
 
   "世界遺産（平泉）"=>

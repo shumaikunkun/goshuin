@@ -164,11 +164,11 @@ $all_group=[
   "世界遺産（吉野）"=>
   [
     //["yoshino","吉野神宮"],
-    ["yoshinomikumari","吉野水分神社"],
-    ["yoshimizu","吉水神社"],
-    ["oominesan","大峰山寺"],
-    ["kimpusen","金峯山寺"],
-    ["kimpu","金峯神社"],
+    ["856yoshinomikumari","吉野水分神社"],
+    ["854yoshimizu","吉水神社"],
+    ["855oominesan","大峰山寺"],
+    ["853kimpusen","金峯山寺"],
+    ["857kimpu","金峯神社"],
   ],
 
 
@@ -209,15 +209,15 @@ $all_group=[
     ["420shimogamo","賀茂御祖神社"],
     ["006touji","教王護国寺"],
     ["406kiyomizu","清水寺"],
-    ["enryaku","延暦寺"],
+    ["823enryaku","延暦寺"],
 
     ["461daigo","醍醐寺"],
     ["437ninna","仁和寺"],
     ["459byoudou","平等院"],
     ["458ujikami","宇治上神社"],
-    ["kouzan","高山寺"],
+    ["811kouzanji","高山寺"],
 
-    ["saihou","西芳寺"],
+    // ["saihou","西芳寺"],
     ["009tenryuu","天龍寺"],
     ["430rokuon","鹿苑寺"],
     ["423jishou","慈照寺"],
@@ -228,23 +228,23 @@ $all_group=[
 
   "世界遺産（奈良）"=>
   [
-    ["houryuu","法隆寺"],
-    ["hokki","法起寺"],
-    ["toudai","東大寺"],
-    ["koufuku","興福寺"],
+    ["829houryuu","法隆寺"],
+    ["828hokki","法起寺"],
+    ["865toudai","東大寺"],
+    ["860koufuku","興福寺"],
     ["392kasuga","春日大社"],
 
-    ["gangou","元興寺"],
-    ["yakushi","薬師寺"],
-    ["toushoudai","唐招提寺"],
+    ["868gangou","元興寺"],
+    ["863yakushi","薬師寺"],
+    ["864toushoudai","唐招提寺"],
   ],
 
   "世界遺産（各地）"=>
   [
     ["702munakata","宗像大社"],
     ["667itsukushima","厳島神社"],
-    ["sahimeyama","佐毘売山神社"],
-    ["iwamirakan","石見羅漢寺"],
+    // ["sahimeyama","佐毘売山神社"],
+    // ["iwamirakan","石見羅漢寺"],
   ],
 
   "仙台六芒星"=>
@@ -260,23 +260,23 @@ $all_group=[
 
   "南都七大寺"=>
   [
-    ["toudai","東大寺"],
-    ["koufuku","興福寺"],
-    ["gangou","元興寺"],
-    ["daian","大安寺"],
-    ["saidai","西大寺"],
-    ["yakushi","薬師寺"],
-    ["houryuu","法隆寺"],
-    ["toushoudai","唐招提寺"],
+    ["865toudai","東大寺"],
+    ["860koufuku","興福寺"],
+    ["868gangou","元興寺"],
+    ["861daian","大安寺"],
+    ["870saidai","西大寺"],
+    ["863yakushi","薬師寺"],
+    ["829houryuu","法隆寺"],
+    ["864toushoudai","唐招提寺"],
   ],
 
   "南都十五大寺"=>
   [
     ["717shitennou","四天王寺"],
-    ["gufuku","弘福寺(川原寺)"],
+    ["839gufuku","弘福寺(川原寺)"],
     ["006touji","東寺"],
-    ["asuka","飛鳥寺(本元興寺)"],
-    ["shinyakushi","新薬師寺"],
+    ["838asuka","飛鳥寺(本元興寺)"],
+    ["866shinyakushi","新薬師寺"],
     //西寺
     //崇福寺
   ],
@@ -462,7 +462,7 @@ $all_group=[
 
   "日本三大愛宕"=>
   [
-    ["atago","京都愛宕神社"],
+    ["808atago","京都愛宕神社"],
     ["062toukyouatago","東京愛宕神社"],
     ["692washioatago","鷲尾愛宕神社"],
   ],
@@ -483,14 +483,14 @@ $all_group=[
 
   "天下三戒壇"=>
   [
-    ["toudai","東大寺"],
+    ["865toudai","東大寺"],
     ["688kanzeon","観世音寺"],
     ["338shimotsukeyakushi","下野薬師寺"],
   ],
 
   "日本三大大仏"=>
   [
-    ["toudai","奈良大仏<br>東大寺"],
+    ["865toudai","奈良大仏<br>東大寺"],
     ["050koutoku","鎌倉大仏<br>高徳院"],
     ["401houkou","京大仏<br>方広寺"],
     ["302takaoka","高岡大仏<br>大佛寺"],
@@ -596,13 +596,13 @@ $all_group=[
   "日本三大霊場"=>
   [
     ["bodai","恐山<br>菩提寺"],
-    ["enryaku","比叡山<br>延暦寺"],
+    ["823enryaku","比叡山<br>延暦寺"],
     ["379kongoubu","高野山<br>金剛峯寺"],
   ],
 
   "日本三名塔"=>
   [
-    ["houryuu","法隆寺"],
+    ["829houryuu","法隆寺"],
     ["677rurikou","瑠璃光寺"],
     ["461daigo","醍醐寺"],
     ["746hagurosan","羽黒山五重塔"],
@@ -632,8 +632,8 @@ $all_group=[
   "日本三大梵鐘"=>
   [
     ["411chion","知恩院"],
-    ["houryuu","法隆寺"],
-    ["toudai","東大寺"],
+    ["829houryuu","法隆寺"],
+    ["865toudai","東大寺"],
   ],
 
 
@@ -714,11 +714,11 @@ $all_group=[
 
   "天台宗十大宗派総本山"=>
   [
-    ["enryaku","天台宗総本山<br>延暦寺"],
+    ["823enryaku","天台宗総本山<br>延暦寺"],
     ["450onjou","天台寺門宗総本山<br>園城寺"],
     ["447saikyou","天台真盛宗総本山<br>西教寺"],
     ["421shougo","本山修験宗総本山<br>聖護院"],
-    ["kimpusen","金峯山修験本宗総本山<br>金峯山寺"],
+    ["853kimpusen","金峯山修験本宗総本山<br>金峯山寺"],
 
     ["koutaku","羽黒山修験本宗本山<br>荒沢寺"],
     ["717shitennou","和宗総本山<br>四天王寺"],
@@ -729,7 +729,7 @@ $all_group=[
 
   "天台宗総本山＋四大本山"=>
   [
-    ["enryaku","総本山<br>延暦寺"],
+    ["823enryaku","総本山<br>延暦寺"],
     ["183konjiki","大本山<br>中尊寺"],
     ["086rinnou","大本山<br>輪王寺"],
     ["000kanei","大本山<br>寛永寺"],
@@ -755,18 +755,18 @@ $all_group=[
 
     ["437ninna","真言宗御室派総本山<br>仁和寺"],
     ["440daikaku","真言宗大覚寺派大本山<br>大覚寺"],
-    ["zentsuu","真言宗善通寺派総本山<br>善通寺"],
+    ["566_75zentsuu","真言宗善通寺派総本山<br>善通寺"],
     ["zuishin","真言宗善通寺派大本山<br>随心院"],
     ["405chishaku","真言宗智山派総本山<br>智積院"],
 
-    ["sakuraihase","真言宗豊山派総本山<br>桜井長谷寺"],
+    ["845sakuraihase","真言宗豊山派総本山<br>桜井長谷寺"],
     ["negoro","新義真言宗総本山<br>根来寺"],
     ["624suma","真言宗須磨寺派大本山<br>須磨寺"],
-    ["chougosonshi","信貴山真言宗総本山<br>朝護孫子寺"],
+    ["833chougosonshi","信貴山真言宗総本山<br>朝護孫子寺"],
     ["706kiyoshikoujinseichou","真言三宝派大本山<br>清荒神清澄寺"],
 
     ["707nakayamadera","真言宗中山寺派大本山<br>中山寺"],
-    ["saidai","真言律宗総本山<br>西大寺"],
+    ["870saidai","真言律宗総本山<br>西大寺"],
     ["391ikoma","真言律宗大本山<br>宝山寺"],
   ],
 
@@ -842,7 +842,7 @@ $all_group=[
 
   "建武中興十五社"=>
   [
-    ["yoshino","吉野神宮"],
+    ["851yoshino","吉野神宮"],
     ["044kamakura","鎌倉宮"],
     ["266iinoya","井伊谷宮"],
     ["yatsushiro","八代宮"],
@@ -928,6 +928,9 @@ $all_group=[
     ["371seiganto","第一番札所<br>青岸渡寺"],
     ["380kimii","第二番札所<br>紀三井寺"],
     ["386kokawa","第三番札所<br>粉河寺"],
+    ["841oka","第七番札所<br>岡寺"],
+    ["844sakuraihasesaigoku","第八番札所<br>長谷寺"],
+    ["859koufukusaigoku","第九番札所<br>興福寺"],
     //["mimuroto","第十番札所<br>三室戸寺"],
     ["461daigo","第十一番札所<br>醍醐寺"],
     ["453ishiyama","第十三番札所<br>石山寺"],
@@ -942,6 +945,12 @@ $all_group=[
     ["707nakayamadera","第廿四番札所<br>中山寺"],
     ["627ichijou","第廿六番札所<br>一乗寺"],
     ["631engyou","第廿七番札所<br>圓教寺"],
+    ["807nariai","第廿八番札所<br>成相寺"],
+    ["821choumei","第丗一番札所<br>長命寺"],
+    ["816kannonshou","第丗二番札所<br>観音正寺"],
+    ["846houkiin","番外札所<br>法起院"],
+
+
   ],
 
 
@@ -978,7 +987,7 @@ $all_group=[
     ["108iga","伊賀八幡宮"],
 
     ["322nagoyatoushou","名古屋東照宮"],
-    ["hiyoshitoushou","日吉東照宮"],
+    ["826hiyoshitoushou","日吉東照宮"],
     ["382kishuutoushou","紀州東照宮"],
     ["663hiroshimatoushou","広島東照宮"],
   ],

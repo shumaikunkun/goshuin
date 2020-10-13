@@ -563,10 +563,10 @@ $all_ichinomiya=
     ["205chichibu","秩父神社"],  //官国幣社
     ["204mitsumine","三峯神社"],
     ["207hodosan","宝登山神社"],
-    ["yakyuuinari","箭弓稲荷神社"],
+    ["873yakyuuinari","箭弓稲荷神社"],
     ["039kawagoehikawa","川越氷川神社"],
     ["068washinomiya","鷲宮神社"],
-    ["koma","高麗神社"],
+    ["876koma","高麗神社"],
 
     ["158awa","安房神社"],  //官国幣社
     ["358katori","香取神社"],  //官国幣社

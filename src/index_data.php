@@ -961,6 +961,7 @@ $all_group=[
     ["745ideha","出羽三山神社"],
     ["148mitotou","水戸東照宮"],
     ["087nikkou","日光東照宮"],
+    ["618maebashitoushou","前橋東照宮"],
 
     ["akagi","赤城神社"],
     ["216serada","世良田東照宮"],
@@ -991,6 +992,12 @@ $all_group=[
     ["826hiyoshitoushou","日吉東照宮"],
     ["382kishuutoushou","紀州東照宮"],
     ["663hiroshimatoushou","広島東照宮"],
+
+    ["798tottoritoushou","鳥取東照宮"],
+    ["782matsue","松江神社"],
+    ["577yashima","屋島神社"],
+    ["512kakegawa","掛川神社"],
+    ["chinzeisuwa","鎮西大社諏訪神社"],
   ],
 
 

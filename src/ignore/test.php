@@ -1,6 +1,6 @@
 <style type="text/css">
   img.mini{
-    width:46px;
+    width:33px;
 
   }
 </style>

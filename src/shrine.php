@@ -12,7 +12,7 @@
   <meta name="description" content="<?php echo $description ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@unity_shumai" />
-  <meta property="og:image" content="<?php echo $img_path."__tsurugi.jpg" ?>" />
+  <meta property="og:image" content="<?php echo $shrine_img_path."__tsurugi.jpg" ?>" />
   <meta property="og:title" content="<?php echo $title."【全国一宮】" ?>" />
   <meta property="og:description" content="<?php echo $description ?>" />
   <link rel="shortcut icon" href="<?php echo $img_path."icon.ico" ?>" />
@@ -22,7 +22,7 @@
   $moving_image=["__toyokawa","__oosugi","__futamiokitama","__byoudou","__kaizenkou"];
   foreach ($moving_image as $a) {
 ?>
-    <link rel="preload" href="<?php echo $img_path.$a ?>.jpg" as="image">
+    <link rel="preload" href="<?php echo $shrine_img_path.$a ?>.jpg" as="image">
 <?php
   }
 ?>
@@ -52,7 +52,7 @@
     foreach ($moving_image as $a) {
 ?>
       <!-- <li> -->
-      <img src="<?php echo $img_path.$a ?>.jpg" alt="">
+      <img src="<?php echo $shrine_img_path.$a ?>.jpg" alt="">
       <!-- </li> -->
 <?php
     }
@@ -100,12 +100,12 @@
 ?>
           <div class="card1">
 <?php
-            $merge_image_file = $img_path.$b[0].".jpg";
-            if(!in_array($merge_image_file,glob($img_path."*.jpg"))){  //データがない場合
+            $merge_image_file = $goshuin_img_path.$b[0].".jpg";
+            if(!in_array($merge_image_file,glob($goshuin_img_path."*.jpg"))){  //データがない場合
               if(preg_match('/\d\d\d.+/',$b[0])){  //数字から始まる取得済だがデータなし
-                $merge_image_file = $img_path."test.jpg";
+                $merge_image_file = $goshuin_img_path."test.jpg";
               }else{  //数字から始まらない＞未取得
-                $merge_image_file = $img_path."000.jpg";
+                $merge_image_file = $goshuin_img_path."000.jpg";
               }
             }
 ?>

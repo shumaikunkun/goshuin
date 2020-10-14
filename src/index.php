@@ -12,7 +12,7 @@
   <meta name="description" content="<?php echo $description ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@unity_shumai" />
-  <meta property="og:image" content="<?php echo $img_path."__tsurugi.jpg" ?>" />
+  <meta property="og:image" content="<?php echo $shrine_img_path."__tsurugi.jpg" ?>" />
   <meta property="og:title" content="<?php echo $title."【トップ】" ?>" />
   <meta property="og:description" content="<?php echo $description ?>" />
   <link rel="shortcut icon" href="<?php echo $img_path."icon.ico" ?>" />
@@ -22,7 +22,7 @@
   $moving_image=["__tsurugi","__heian","__amaharashi","__kennin","__iwashimizu"];
   foreach ($moving_image as $a) {
 ?>
-    <link rel="preload" href="<?php echo $img_path.$a ?>.jpg" as="image">
+    <link rel="preload" href="<?php echo $shrine_img_path.$a ?>.jpg" as="image">
 <?php
   }
 ?>
@@ -52,7 +52,7 @@
     foreach ($moving_image as $a) {
 ?>
       <!-- <li> -->
-      <img src="<?php echo $img_path.$a ?>.jpg" alt="">
+      <img src="<?php echo $shrine_img_path.$a ?>.jpg" alt="">
       <!-- </li> -->
 <?php
     }
@@ -100,7 +100,7 @@
             foreach($a as $b){  //御朱印の画像
     ?>
               <div class="card1">
-                <a href="<?php echo $merge_image_file=$img_path.(preg_match('/\d\d\d\w+/',$b[0]) ? $b[0] : "000").".jpg"; ?>" target="_blank">
+                <a href="<?php echo $merge_image_file=$goshuin_img_path.(preg_match('/\d\d\d\w+/',$b[0]) ? $b[0] : "000").".jpg"; ?>" target="_blank">
                   <image class="image1" src="<?php echo $merge_image_file ?>"/>
                 </a>
                 <p class="title1"><?php echo preg_match('/<br>/',$b[1]) ? preg_split('/<br>/',$b[1])[1] : $b[1] ?></p>

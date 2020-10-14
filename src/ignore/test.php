@@ -7,9 +7,9 @@
 
 <?php
 
-$img_path="../../img/";
+$goshuin_img_path="../../img/goshuin/";
 
-foreach(glob($img_path."*.jpg") as $filename){
+foreach(glob($goshuin_img_path."*.jpg") as $filename){
 ?>
 <img src="<?php echo $filename ?>" class="mini" alt="画像">
 <?php

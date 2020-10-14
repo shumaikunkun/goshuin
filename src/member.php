@@ -12,7 +12,7 @@
   <meta name="description" content="<?php echo $description ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@unity_shumai" />
-  <meta property="og:image" content="<?php echo $img_path."__tsurugi.jpg" ?>" />
+  <meta property="og:image" content="<?php echo $shrine_img_path."__tsurugi.jpg" ?>" />
   <meta property="og:title" content="<?php echo $title."【メンバー】" ?>" />
   <meta property="og:description" content="<?php echo $description ?>" />
   <link rel="shortcut icon" href="<?php echo $img_path."icon.ico" ?>" />
@@ -45,12 +45,12 @@
           <div class="box5">
 <?php
             //元の解像度の画像
-            $uncompressed_img = $img_path.$arr[2].".jpg";
+            $uncompressed_img = $shrine_img_path.$arr[2].".jpg";
             //1/10圧縮した解像度の画像
-            $compressed_img = $img_path.$arr[2]."_10x.jpg";
+            $compressed_img = $shrine_img_path.$arr[2]."_10x.jpg";
             //000と__oosugi1が圧縮画像なし
 ?>
-            <img src="<?php echo in_array($compressed_img,glob($img_path."__*_10x.jpg")) ? $compressed_img : $uncompressed_img ?>" class="image5">
+            <img src="<?php echo in_array($compressed_img,glob($shrine_img_path."__*_10x.jpg")) ? $compressed_img : $uncompressed_img ?>" class="image5">
             <div class="textbox5">
 <?php
               if(!empty($arr[3])){

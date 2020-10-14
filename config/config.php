@@ -1,6 +1,8 @@
 <?php
 
 $img_path="../img/";
+$goshuin_img_path=$img_path."goshuin/";
+$shrine_img_path=$img_path."shrine/";
 $css_path="../css/";
 $js_path="../js/";
 $title="双馬の御朱印日記";

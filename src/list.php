@@ -12,7 +12,7 @@
   <meta name="description" content="<?php echo $description ?>" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@unity_shumai" />
-  <meta property="og:image" content="<?php echo $img_path."__tsurugi.jpg" ?>" />
+  <meta property="og:image" content="<?php echo $shrine_img_path."__tsurugi.jpg" ?>" />
   <meta property="og:title" content="<?php echo $title."【一覧】" ?>" />
   <meta property="og:description" content="<?php echo $description ?>" />
   <link rel="shortcut icon" href="<?php echo $img_path."icon.ico" ?>" />
@@ -267,18 +267,18 @@
 <?php
 //各御朱印のカードデザインを表示する関数
 function display($image,$name,$all_group,$is_odd,$is_index){
-  global $img_path, $index, $kan_koku_hei;
+  global $goshuin_img_path, $index, $kan_koku_hei;
 ?>
   <div class="<?php echo $is_odd ? "is-odd" : "is-even" ?>" >
     <div class="card3">
       <div class="box3">
 <?php
-        $merge_image_file = $img_path.$image.".jpg";
-        if(!in_array($merge_image_file,glob($img_path."*.jpg"))){  //データがない場合
+        $merge_image_file = $goshuin_img_path.$image.".jpg";
+        if(!in_array($merge_image_file,glob($goshuin_img_path."*.jpg"))){  //データがない場合
           if(preg_match('/\d\d\d.+/',$image)){  //数字から始まる取得済だがデータなし
-            $merge_image_file = $img_path."test.jpg";
+            $merge_image_file = $goshuin_img_path."test.jpg";
           }else{  //数字から始まらない＞未取得
-            $merge_image_file = $img_path."000.jpg";
+            $merge_image_file = $goshuin_img_path."000.jpg";
           }
         }
 ?>

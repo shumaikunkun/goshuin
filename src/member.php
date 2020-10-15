@@ -6,7 +6,7 @@
 ?>
 <head>
   <meta charset="utf-8">
-  <title> <?php echo $title."【メンバー】" ?> </title>
+  <title> <?php echo $title."【訪問史跡】" ?> </title>
   <meta name="author" content="shumaikun" />
   <meta name="keywords" content="<?php echo $keyword ?>" />
   <meta name="description" content="<?php echo $description ?>" />
@@ -56,7 +56,7 @@
               if(!empty($arr[3])){
 ?>
                 <p class="title5"> <?php echo $arr[0]." " //年月 ?><?php echo $arr[1]."旅行" //旅行場所 ?></p>
-                <p class="content5">【訪問史跡・名勝】
+                <p class="content5">【訪問史跡】
 <?php
                 foreach($arr[3] as $a){ //訪問史跡リスト
 ?>

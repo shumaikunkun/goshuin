@@ -359,6 +359,16 @@ $all_group=[
     ["207hodosan","寶登山神社"],
   ],
 
+  "霧島六所権現"=>
+  [
+    ["917kirishima","霧島神宮"],
+    ["919sano","挟野神社"],
+    ["923higashikirishima","東霧島神社"],
+    ["918kirishimahigashi","霧島東神社"],
+    ["921kirishimamine","霧島岑神社"],
+    ["922hinamori","夷守神社"],
+  ],
+
   // "箱根三社"=>
   // [
   //   ["225hakone","箱根神社"],
@@ -582,6 +592,14 @@ $all_group=[
     ["000yoroi","鎧神社"],
     ["tsukudo","築土神社"],
     ["000karasumori","烏森神社"],
+  ],
+
+  "長崎四福寺"=>
+  [
+    ["877nagasakisuufuku","崇福寺"],
+    ["878nagasakikoufuku","興福寺"],
+    ["879nagasakifukusai","福済寺"],
+    ["880nagasakishoufuku","聖福寺"],
   ],
 
 

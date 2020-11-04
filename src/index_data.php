@@ -369,7 +369,7 @@ $all_group=[
   "日本三大稲荷"=>
   [
     ["013fushimi","伏見稲荷大社"],
-    ["yuutokuinari","祐徳稲荷神社"],
+    ["955yuutokuinari","祐徳稲荷神社"],
     ["082kasama","笠間稲荷神社"],
     ["643saijou","最上稲荷"],
     ["109toyokawa","豊川稲荷"],
@@ -378,7 +378,7 @@ $all_group=[
   "日本七大稲荷神社"=>
   [
     ["013fushimi","伏見稲荷大社"],
-    ["yuutokuinari","祐徳稲荷神社"],
+    ["955yuutokuinari","祐徳稲荷神社"],
     ["082kasama","笠間稲荷神社"],
     ["772takekoma","竹駒神社"],
     ["taikodaniinari","太鼓谷稲成神社"],
@@ -387,7 +387,7 @@ $all_group=[
     ["873yakyuuinari","箭弓稲荷神社"],
     ["650kusadoinari","草戸稲荷神社"],
     ["091oujiinari","王子稲荷神社"],
-    ["takahashiinari","高橋稲荷神社"],
+    ["902takahashiinari","高橋稲荷神社"],
 
     ["217kanmuri","冠稲荷神社"],
     ["tsumagoi","妻戀神社"],
@@ -417,9 +417,9 @@ $all_group=[
 
   "日本三大八幡"=>
   [
-    ["usa","宇佐八幡宮"],
+    ["944usa","宇佐八幡宮"],
     ["456iwashimizuhachiman","石清水八幡宮"],
-    ["698hakozaki","筥崎宮"],
+    ["949hakozaki","筥崎宮"],
     ["047tsurugaoka","鶴岡八幡宮"],
   ],
 
@@ -531,7 +531,7 @@ $all_group=[
     ["051shinshou","成田不動尊<br>新勝寺"],
     ["210takahata","高幡不動尊<br>金剛寺"],
     ["219fudougaoka","不動ケ岡不動尊<br>總願寺"],
-    ["ooyama","大山不動尊<br>大山寺"],//伊勢原
+    ["975ooyama","大山不動尊<br>大山寺"],//伊勢原
     ["123itabashi","板橋不動尊<br>願成寺"],
   ],
 
@@ -611,7 +611,7 @@ $all_group=[
 
   "日本三大楼門"=>
   [
-    ["aso","阿蘇神社"],
+    ["937aso","阿蘇神社"],
     ["071kashima","鹿島神宮"],
     ["698hakozaki","筥崎宮"],
   ],
@@ -790,7 +790,7 @@ $all_group=[
     ["422konkaikoumyou","大本山<br>金戒光明寺"],
     ["425chionji","大本山<br>知恩寺"],
     ["419shoujouke","大本山<br>清浄華院"],
-    ["zendou","大本山<br>善導寺"],
+    ["893zendou","大本山<br>善導寺"],
   ],
 
   "浄土真宗五大本山"=>
@@ -846,11 +846,11 @@ $all_group=[
     ["851yoshino","吉野神宮"],
     ["044kamakura","鎌倉宮"],
     ["266iinoya","井伊谷宮"],
-    ["yatsushiro","八代宮"],
+    ["906yatsushiro","八代宮"],
     ["274kanegasaki","金崎宮"],
 
     ["097komikado","小御門神社"],
-    ["kikuchi","菊池神社"],
+    ["894kikuchi","菊池神社"],
     ["622minatogawa","湊川神社"],
     ["nawa","名和神社"],
     ["715abeno","阿倍野神社"],
@@ -997,7 +997,7 @@ $all_group=[
     ["782matsue","松江神社"],
     ["577yashima","屋島神社"],
     ["512kakegawa","掛川神社"],
-    ["chinzeisuwa","鎮西大社諏訪神社"],
+    ["881chinzeisuwa","鎮西大社諏訪神社"],
   ],
 
 

@@ -710,7 +710,7 @@ $all_group=[
 
     ["198ryuukuchi","龍口寺"],
     ["296myoujou","妙成寺"],
-    ["myousen","妙宣寺"],
+    ["1000myousen","妙宣寺"],
   ],
 
   "江戸六塔"=>
@@ -873,7 +873,7 @@ $all_group=[
     ["nawa","名和神社"],
     ["715abeno","阿倍野神社"],
 
-    ["fujishima","藤島神社"],
+    ["980fujishima","藤島神社"],
     ["347yuuki","結城神社"],
     ["773ryouzen","霊山神社"],
     ["shijounawate","四条畷神社"],
@@ -998,7 +998,7 @@ $all_group=[
 
     ["265gosha","五社神社"],
     ["292ozaki","尾崎神社"],
-    ["sakae","佐佳枝廼社"],
+    ["983sakae","佐佳枝廼社"],
     ["314hidatoushou","飛騨東照宮"],
 
     ["houraisantoushou","鳳来山東照宮"],

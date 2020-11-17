@@ -52,16 +52,16 @@ $all_ichinomiya=
     ["231sengen","甲斐国一之宮<br>浅間神社"],
     ["268nanguu","美濃国一之宮<br>南宮大社"],
     ["316minashi","飛騨国一之宮<br>水無神社"],
-    ["watatsu","佐渡国一之宮<br>度津神社"],
+    ["997watatsu","佐渡国一之宮<br>度津神社"],
     ["258iyahiko","越後国一之宮<br>彌彦神社"],
 
     ["262kota","越後国一之宮<br>居多神社"],
-    ["305oyamamae","越中国一之宮<br>雄山神社前立社壇"],
-    ["306oyamanaka","越中国一之宮<br>雄山神社中宮祈願殿"],
-    ["oyamamine","越中国一之宮<br>雄山神社峰本社"],
-    ["308takase","越中国一之宮<br>高瀬神社"],
+    ["995oyamamae","越中国一之宮<br>雄山神社前立社壇"],
+    ["996oyamanaka","越中国一之宮<br>雄山神社中宮祈願殿"],
+    ["305oyamamae","越中国一之宮<br>雄山神社峰本社"],
+    ["990takase","越中国一之宮<br>高瀬神社"],
 
-    ["301imizu","越中国一之宮<br>射水神社"],
+    ["992imizu","越中国一之宮<br>射水神社"],
     ["299ecchuuketa","越中国一之宮<br>氣多神社"],
     ["295keta","能登国一之宮<br>氣多大社"],
     ["289shirayamahime","加賀国一之宮<br>白山比咩神社"],
@@ -252,7 +252,7 @@ $all_ichinomiya=
     ["389sumiyoshi","住吉大社"],
 
     ["448hiyoshi","日吉大社"],
-    ["442umemiya","梅宮大社"],
+    ["810umemiya","梅宮大社"],
     ["424yoshida","吉田神社"],
     ["705hirota","廣田神社"],
     ["410yasaka","八坂神社"],
@@ -345,7 +345,7 @@ $all_ichinomiya=
     ["822mikami","御上神社"],  //二宮以下
     ["385itakiso","伊太祁曽神社"],  //一宮
     ["370kumanonachi","熊野那智大社"],
-    ["442umemiya","梅宮大社"],  //二十二社
+    ["810umemiya","梅宮大社"],  //二十二社
     ["446kifune","貴船神社"],  //二十二社
     ["454ooharano","大原野神社"],  //二十二社
     ["424yoshida","吉田神社"],  //二十二社
@@ -381,7 +381,7 @@ $all_ichinomiya=
     ["241yamanashisengen","一宮浅間神社"],  //一宮
     ["609ikushimatarushima","生島足島神社"],
     ["258iyahiko","弥彦神社"],  //一宮
-    ["301imizu","射水神社"],  //一宮
+    ["992imizu","射水神社"],  //一宮
     ["289shirayamahime","白山比咩神社"],  //一宮
     ["275wakasahiko","若狭彦神社"],  //一宮
     ["276wakasahime","若狭姫神社"],  //二宮以下
@@ -436,9 +436,9 @@ $all_ichinomiya=
     ["969izuyama","伊豆山神社"],
     ["599togakushichuusha","戸隠神社"],
     ["594hodaka","穂高神社"],  //二宮以下
-    ["watatsu","度津神社"],  //一宮
-    ["308takase","高瀬神社"],  //一宮
-    ["305oyamamae","雄山神社"],  //一宮
+    ["997watatsu","度津神社"],  //一宮
+    ["990takase","高瀬神社"],  //一宮
+    ["995oyamamae","雄山神社"],  //一宮
     ["288sugouisobe","菅生石部神社"],
     ["280tsurugi","剱神社"],  //二宮以下
     ["316minashi","飛騨一宮水無神社"],  //一宮
@@ -474,8 +474,8 @@ $all_ichinomiya=
     ["023yasukuni","靖国神社"],
     ["229kunousan","久能山東照宮"],
     ["293oyama","尾山神社"],
-    ["fukui","福井神社"],
-    ["fujishima","藤島神社"],  //建武中興十五社
+    ["984fukui","福井神社"],
+    ["980fujishima","藤島神社"],  //建武中興十五社
     ["347yuuki","結城神社"],  //建武中興十五社
     ["kitabatake","北畠神社"],  //建武中興十五社
     ["443goou","護王神社"],
@@ -597,30 +597,30 @@ $all_ichinomiya=
     ["974afuri","大山阿夫利神社"],
 
     ["258iyahiko","彌彦神社"],  //官国幣社
-    ["watatsu","度津神社"],  //官国幣社
+    ["997watatsu","度津神社"],  //官国幣社
     ["257niigatagokoku","新潟縣護國神社"],
     ["256niigatahakusan","新潟白山神社"],
 
-    ["308takase","高瀬神社"],  //官国幣社
-    ["305oyamamae","雄山神社"],  //官国幣社
-    ["301imizu","射水神社"],  //官国幣社
+    ["990takase","高瀬神社"],  //官国幣社
+    ["995oyamamae","雄山神社"],  //官国幣社
+    ["992imizu","射水神社"],  //官国幣社
     ["304toyamagokoku","富山県護國神社"],
-    ["toyamahie","富山日枝神社"],
+    ["994toyamahie","富山日枝神社"],
 
     ["289shirayamahime","白山比咩神社"],  //官国幣社
     ["288sugouisobe","菅生石部神社"],  //官国幣社
     ["293oyama","尾山神社"],  //官国幣社
-    ["oonominato","大野湊神社"],
+    ["989oonominato","大野湊神社"],
     ["290ishikawagokoku","石川護国神社"],
 
     ["273kehi","気比神宮"],  //官国幣社
     ["274kanegasaki","金崎宮"],  //官国幣社
     ["275wakasahiko","若狭彦神社"],  //官国幣社
     ["280tsurugi","劔神社"],  //官国幣社
-    ["fujishima","藤島神社"],  //官国幣社
-    ["fukui","福井神社"],  //官国幣社
+    ["980fujishima","藤島神社"],  //官国幣社
+    ["984fukui","福井神社"],  //官国幣社
     ["284fukuigokoku","福井県護国神社"],
-    ["fukuishinmei","福井神明神社"],
+    ["985fukuishinmei","福井神明神社"],
 
     ["241yamanashisengen","一宮浅間神社"],  //官国幣社
     ["238kitaguchisengen","北口本宮冨士浅間神社"],
@@ -773,7 +773,7 @@ $all_ichinomiya=
     ["789kumano","熊野大社"],  //官国幣社
     ["790miho","美保神社"],  //官国幣社
     ["mizuwakasu","水若酢神社"],  //官国幣社
-    ["hinomisaki","日御碕神社"],  //官国幣社
+    ["779hinomisaki","日御碕神社"],  //官国幣社
     ["777mononobe","物部神社"],  //官国幣社
     ["778susa","須佐神社"],  //官国幣社
     ["781sada","佐太神社"],  //官国幣社

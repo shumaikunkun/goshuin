@@ -682,7 +682,7 @@ $all_group=[
     ["hakodatenarita","函館別院<br>函館寺"],
     ["oosakanarita","大阪別院<br>明王院"],
     ["105inuyamanarita","名古屋別院<br>大聖寺"],
-    ["fukuinarita","福井別院<br>九頭龍寺"],
+    ["986fukuinarita","福井別院<br>九頭龍寺"],
     //以下は分院、末寺の順
   ],
 

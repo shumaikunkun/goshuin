@@ -1057,6 +1057,7 @@ $all_group=[
   [
     ["174mutsukoku","陸奥国分寺"],
     ["140shimousa","下総国分寺"],
+    ["999sadokokubun","佐渡国分寺"],
     ["004shinano","信濃国分寺"],
     ["312hidakokubun","飛騨国分寺"],
     ["644bicchuukokubun","備中国分寺"],

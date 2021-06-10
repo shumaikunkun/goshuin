@@ -2,8 +2,8 @@
 # 双馬の御朱印日記
 
 ## URL
-https://seekgoshuin.herokuapp.com/src/
-https://deepgoshuin.tk/src/
++ https://seekgoshuin.herokuapp.com/src/
++ https://deepgoshuin.tk/src/
 
 ## データ
 + データ1（約1000箇所）
